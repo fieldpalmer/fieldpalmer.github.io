@@ -1,1 +1,0 @@
-# fieldpalmer.github.io
