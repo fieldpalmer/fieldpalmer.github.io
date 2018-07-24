@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    width: 100%;
+}
+
+#name-box {
+    background-color: #4aaaa5;
+    text-align: center;
+    width: 20%;
+    padding: 15px;
+    color: white;
+}
+
+#top-menu {
+    display: inline;
+    float: right;  
+}
+
+main {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin: 40px;
+    width: 600px;
+    margin: auto;
+}
+
+footer {
+    background-color: #666666;
+    padding: 20px;
+    border-top: 5px solid #4aaaa5;
+}
+
+#copyright {
+    text-align: center;
+}
