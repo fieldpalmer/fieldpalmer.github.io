@@ -9,53 +9,55 @@
 
 <body>
     <header>
-        <nav id="top-menu">
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div id="name-box">
-            <h1 id="name">Field Palmer</h1>
+        <div id="header-content">
+            <nav id="top-menu">
+                <a id="about" href="index.html">About</a>
+                <a id="portfolio" href="portfolio.html">Portfolio</a>
+                <a id ="contact" href="contact.html">Contact</a>
+            </nav>
+            <h1 id="name-box">Field Palmer</h1>
         </div>
     </header>
-    
-    <main id="portfolio">
-        <h1>Portfolio</h1>
-        <ul>
-            <li>
-                <a>
-                    <h3>Hangman</h3>
-                    <img src="#" id="hangman" alt="hangman">
-                </a>
-            </li>
-            <li>
-                <a>
-                    <h3>RPG Game</h3>
-                    <img src="#" id="rpg-game" alt="rpg-game">
-                </a>
-            </li>
-            <li>
-                <a>
-                    <h3>Trivia Game</h3>
-                    <img src="#" id="trivia-game" alt="trivia-game">
-                </a>
-            </li>
-            <li>
-                <a>
-                    <h3>Rutgers Info Widget</h3>
-                    <img src="#" id="rutgers-info-widget" alt="rutgers-info-widget">
-                </a>
-            </li>
-            <li>
-                <a>
-                    <h3>Rock Paper Scissor</h3>
-                    <img src="#" id="rock-paper-scissors" alt="rock-paper-scissors">
-                </a>
-            </li>
-        </ul>
-    </main>
-
+    <div id="main-content-area">
+        <main class="main" id="portfolio">
+            <h1 class="section-title" id="portfolio-title">Portfolio</h1>
+            <section id="gallery">
+                    <div id="hangman-box">
+                        <a href="#" class="gallery-icons">
+                            <img id="hangman-img" src="/assets/images/hangman_300x200.jpg" id="hangman" alt="hangman">
+                            <h3 id="hangman-h3" class="gallery-title">Hangman</h3>
+                        </a>
+                    </div>
+                    <div id="rpg-game-box">
+                        <a href="#" class="gallery-icons">
+                            <img id="rpg-game-img" src="/assets/images/rpg-300x200.jpg" id="rpg-game" alt="rpg-game">
+                            <h3 id="rpg-game-h3" class="gallery-title">RPG Game</h3>
+                        </a>
+                    </div>
+                    <div id="trivia-box">
+                        <a href="#" class="gallery-icons">
+                            <img id="trivia-img" src="assets/images/trivia300x200.jpeg" id="trivia-game" alt="trivia-game">
+                            <h3 id="trivia-h3" class="gallery-title">Trivia Game</h3>
+                        </a>
+                    </div> 
+                    <div id="rutgers-box">
+                        <a href="#"class="gallery-icons">
+                            <img id="rutgers-img" src="assets/images/Rutgers-University-300x200.jpg" id="rutgers-info-widget" alt="rutgers-info-widget">
+                            <h3 id="rutgers-h3" class="gallery-title">Rutgers Info Widget</h3>
+                        </a>
+                    </div>
+                    <div id="rock-paper-scissors-box">
+                        <a href="#" class="gallery-icons">
+                            <img id="rock-paper-scissors-img" src="assets/images/RPS_Logo.png" id="rock-paper-scissors" alt="rock-paper-scissors">
+                            <h3 id="rock-paper-scissors-h3" class="gallery-title">Rock Paper Scissors</h3>
+                        </a>
+                    </div>
+            </section>
+        </main>
+        <div id="push"></div>
+    </div>
     <footer>
         <p id="copyright">copyright &copy;</p>
     </footer>
 </body>
+</html>

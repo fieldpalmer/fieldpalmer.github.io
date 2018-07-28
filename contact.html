@@ -9,29 +9,31 @@
 
 <body>
     <header>
-        <nav id="top-menu">
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div id="name-box">
-            <h1>Field Palmer</h1>
+        <div id="header-content">
+            <nav id="top-menu">
+                <a id="about" href="index.html">About</a>
+                <a id="portfolio" href="portfolio.html">Portfolio</a>
+                <a id ="contact" href="contact.html">Contact</a>
+            </nav>
+            <h1 id="name-box">Field Palmer</h1>
         </div>
     </header>
-    
-    <main id="contact">
-        <h1>Contact</h1>
-        <form>
-            <h3>Name</h3>
-            <input type="text" id="name"><br>
-            <h3>Email</h3>
-            <input type="email" id="email"><br>
-            <h3>Message</h3>
-            <input type="text" id="message"><br>
-            <input type="submit" id="submit">
-        </form>
-    </main>
+    <div id="main-content-area">
+        <main class="main" id="contact">
+            <form>
+                <h3>Name</h3>
+                <input type="text" id="name" placeholder="John Smith"><br>
+                <h3>Email</h3>
+                <input type="email" id="email" placeholder="example@gmail.com"><br>
+                <h3>Message</h3>
+                <input type="text" id="message"><br>
+                <input type="submit" id="submit">
+            </form>
+        </main>
+        <div id="push"></div>
+    </div>
     <footer>
-        <p id="copyright">copyright &copy;</p>
+            <p id="copyright">copyright &copy;</p>
     </footer>
 </body>
+</html>
