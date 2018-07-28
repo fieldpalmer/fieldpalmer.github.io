@@ -35,10 +35,29 @@ a:hover {
     font-size: 103%;
 }
 
+
+.polaroid {
+    position: relative;
+    width: 200px;
+}
+   
+#pic-p {
+    position: absolute;
+    bottom: -285px;
+    left: 20px;
+    text-align: center;
+    width: 100%;
+    font: 18px 'Kaushan Script', cursive;
+    color: white;
+}
+
 #bio-image {
     display: inline;
     float: left;
-    padding: 0px 20px 20px 0px;
+    border: 20px solid #4aaaa5;
+    border-bottom: 65px solid #4aaaa5;
+    margin-right:20px;
+ 
 }
 
 #contact {
@@ -70,6 +89,12 @@ header {
     width: 960px;
     padding: 20px;
     margin: auto;
+}
+
+#html-comment {
+    font-size: 14px;
+    color: rgb(218, 62, 62);
+    font-style: italic;
 }
 
 #gallery {
