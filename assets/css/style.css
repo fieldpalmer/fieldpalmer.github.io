@@ -3,6 +3,7 @@ body {
     color: #777777;
     margin: auto;
     background-image: url("../images/oriental.png");
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -16,9 +17,22 @@ h3 {
     font-weight: normal;
 }
 
+h5 {
+    font: 18px 'Kaushan Script', cursive;
+}
+
 #submit {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 14px;
+}
+
+.btn {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+.navbar-header {
+    background-color: #4aaaa5;
 }
 
 a {
@@ -60,11 +74,6 @@ a:hover {
  
 }
 
-#contact {
-    border-right: none;
-    padding-right: 0;
-}
-
 header {
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
@@ -93,7 +102,7 @@ header {
 
 #html-comment {
     font-size: 14px;
-    color: rgb(218, 62, 62);
+    color: #00ff41;
     font-style: italic;
 }
 
@@ -118,7 +127,14 @@ header {
     padding: 15px; 
 }
 
-#hangman-box {
+.card-title {
+    background-color: #4aaaa5;
+    opacity: 0.8;
+}
+
+
+
+/* #hangman-box {
     position: relative;
 }
 
@@ -172,7 +188,7 @@ header {
     display: inline;
     float: right;
     padding-top: 30px;
-}
+} */
 
 .section-title {
     border-bottom: 2px solid #cccccc;
@@ -215,25 +231,38 @@ main {
     padding: 20px;
 }
 
-#stickyfoot {
+/* #stickyfoot {
     min-height: 100%;
     margin-bottom: -50px;
-}
+} */
 
 #push {
     height: 50px;
 }
 
-footer {
+.footer {
     background-color: #666666;
     padding: 20px 20px 0 20px;
     border-top: 5px solid #4aaaa5;
     height: 50px;
-    margin-top: auto;
+    margin-top: 50px;
 }
+
+p.copyright {
+    text-align: center;
+}
+
 
 #copyright {
     text-align: center;
     color: #cccccc;
     padding-top: 10px;
+}
+
+.menu-bar {
+    padding-bottom: none;
+}
+
+#contact-link {
+    border-right: none;
 }
