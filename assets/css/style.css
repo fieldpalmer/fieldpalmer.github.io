@@ -1,22 +1,51 @@
-body {
-    background-image: url("../images/oriental.png");
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
 
+
+
+body { 
+    height: 100%;
+    background-image: url("../images/abandonedMine.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
-header {
+header, footer {
+    background-color: rgba(20, 12, 48, 0.63);
     text-align: center;
-    font-family: 'Rakkas', cursive;
 }
 
-.content-area {
-    width: 80%;
-    padding: 20px;
+footer {
+    margin-top: 105px;
+}
+
+.content-box { 
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 40px auto;
+    background: rgba(20, 12, 48, 0.63);
+    width: 100%;
+    max-width: 75%;
+    border-radius: 5px;
+    padding-bottom: 32px;
+}
+
+h1, h2, h3 {
+    vertical-align: middle;
     margin: auto;
-    border: 1px solid #73c38c;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    background-color: white;
+    width: 90%;
+    color: white;
+}
+
+p {
+    width: 90%;
+    padding-left: 20px;
+}  
+
+.crystal-images {
+    margin: auto;
+}
+
+.gemPic {
+    width: 150px;
 }
 

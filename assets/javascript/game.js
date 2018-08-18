@@ -1,91 +1,122 @@
-function game () {
-    
-}
+$(document).ready(function() {
+   
+   //counter variables
+    var wins = 0;
+    var losses = 0;
+    var totalCount = 0; 
+    //blank string variables to be filled
+    var targetNumber = "";
+    var gemVal = "";   
+    //array of crystal image objects
+    var crystalImages = [
+        {
+            title: "amber",
+            class: "gemPic",
+            id: "amberGem",
+            src: "./assets/images/amber.png",
+            alt: "amber",
+        },
+        {
+            title: "cluster",
+            class: "gemPic",
+            id: "clusterGem",
+            src: "./assets/images/cluster.png",
+            alt: "cluster",
+        },
+        {
+            title: "tanzanite",
+            class: "gemPic",
+            id: "tanzaniteGem",
+            src: "./assets/images/tanzanite.png",
+            alt: "tanzanite",
+        },
+        {
+            title: "zircon",
+            class: "gemPic",
+            id: "zirconGem",
+            src: "./assets/images/zircon.png",
+            alt: "zircon",
+        },
+    ];
+   
+    //set random target number 19-120  
+    targetNumber = Math.floor(Math.random() * 102 + 19);
+    //display random target number on screen
+    $(".random-number").text(targetNumber);
+    //display total count on screen
+    $(".number-count").text(totalCount);
+    //display wins on screen
+    $(".winCount").text(wins);
+    //display losses on screen
+    $(".lossCount").text(losses);
 
-var vocab = ["alchemy","chemistry","alcohol","algebra","algorithm","alkaline","almanac","average","azimuth","cipher","nadir","soda","zenith","admiral","adobe","alcove","amber","arsenal","assassin","mafia","caliber","candy","check","cork","coffee","cotton","gauze","guitar","hazard","lazuli","mascara","mattress","monsoon","racquet","ream","safari","sash","satin","sofa","talcum","tariff","magazine","cover",];
-var answer = vocab[Math.floor(Math.random() * vocab.length)];
-var wordsPlayed = [];
-var wordsPlayedBox = document.getElementById("words-played");
-
-var answerBlanks = [];
-for ( var i = 0 ; i < answer.length ; i++) {
-    answerBlanks.push("_");
-}
-
-var answerBlanksText = document.getElementById("letters-box");
-answerBlanksText.innerHTML =  "Mystery Word: " + answerBlanks.join(" ");
-
-var answerLetters = answer.split("");
-var wrongLetters = [] ;
-var wrongLettersText = document.getElementById("key-input");
-var guessesLeft = 10;
-var guessesLeftText = document.getElementById("guesses-left");
-var rightGuessCount = 0;
-var winCount = 0;
-var winCountText = document.getElementById("win-count");
-var lossCount = 0;
-var lossCountText = document.getElementById("loss-count");
-
-function reset() {
-
-    userLetter = 0 ;
-    rightGuessCount = 0;
-    guessesLeft = 10;
-    guessesLeftText.innerHTML = guessesLeft;
-    wrongLetters = [];
-    answerBlanks = [];
-    answer = vocab[Math.floor(Math.random() * vocab.length)];
-    answerLetters = answer.split("");
-    
-    answerBlanks = [];
-    for (var i = 0 ; i < answer.length ; i++) {
-        answerBlanks.push("_")
-    }
-
-    answerBlanksText.innerHTML = "Mystery Word: " + answerBlanks.join(" ");
-    wrongLettersText.innerHTML = wrongLetters;
-
-}
-
-document.onkeyup = function(event) {
-
-    answerBlanksText.innerHTML =  "Mystery Word: " + answerBlanks.join(" ");
-
-    var userLetter = event.key;
-
-    if (answer.indexOf(userLetter) > -1) {
-        for ( var j = 0 ; j < answer.length ; j++ ) {
-            if (answerLetters[j] === userLetter) {
-                answerBlanks[j] = userLetter;
-                rightGuessCount++;
-                answerBlanksText.innerHTML = "Mystery Word: " + answerBlanks.join(" ");
-            }
-        }
-    } else {
-        wrongLetters.push(userLetter);
-        guessesLeft--;
-        wrongLettersText.innerHTML = wrongLetters.join(" ");
-        guessesLeftText.innerHTML = guessesLeft;
+    //add images to screen with attributes
+    function imageNumGen () {
+        //run through image array to create multiple images and obtain object info
+        for (var i = 0 ; i < crystalImages.length ; i++) {
+            //create picture element on screen
+            var gemPic = $("<img>");
+            //set attributes for that image element
+            gemPic.attr({
+                alt: crystalImages[i].alt,
+                class: crystalImages[i].class,
+                id: crystalImages[i].id,
+                src: crystalImages[i].src,
+            });
+            //append crystal image elements created from arry in blank span
+            $(".crystal-images").append(gemPic);
+            //wrap each image in a button to be clicked
+            gemPic.wrap("<button class='gemButton'></button>")
+            //set random number between 1-12 to equal each buttons value
+            gemVal = Math.floor(Math.random() * 12 + 1);
+            //apply that value to each button 
+            gemPic.parent().attr("value", gemVal);      
+        };
     } 
-    
-    function winLose () {
-        if (rightGuessCount === answer.length) {
-            winCount++;
-            winCountText.innerHTML = winCount;  
-            wordsPlayed.push(answer);
-            alert("You won!");
-            wordsPlayedBox.innerHTML = wordsPlayed.join(" ");
-            reset(); 
-        } 
-        if (guessesLeft === 0) {
-            lossCount++;
-            lossCountText.innerHTML = lossCount;
-            wordsPlayed.push(answer);
-            alert("You lose!");
-            wordsPlayedBox.innerHTML = wordsPlayed.join(" ");
-            reset();
-        }
-    }
 
-    winLose();
-};
+    //refresh values without refreshing page
+    function resetGame () {
+        //reset variables
+        totalCount = 0; 
+        targetNumber = Math.floor(Math.random() * 102 + 19);
+        //empty current images and values to replace with new ones
+        $(".crystal-images").empty();
+        //set random target number 19-120  
+        targetNumber = Math.floor(Math.random() * 102 + 19);
+        //display random target number on screen
+        $(".random-number").text(targetNumber);
+        //display total count on screen
+        $(".number-count").text(totalCount);
+        //run imageNumGen to display images with new values
+        imageNumGen();
+        winLose();
+    }; 
+
+    //run win/loss procedure
+    function winLose () {
+        $("button").on("click", function () {
+            //obtain value from button
+            var buttonVal = ($(this).val());
+            //parse string val to return integer
+            buttonVal = parseInt(buttonVal);
+            //add increment to total count
+            totalCount += buttonVal;
+            $(".number-count").html(totalCount); 
+            if (totalCount === targetNumber) {
+                wins++;
+                $(".winCount").text(wins);
+                resetGame();
+            } else if (totalCount > targetNumber) {
+                losses++;
+                $(".lossCount").text(losses);     
+                resetGame();
+            }
+        });   
+    };
+     //display images on screen
+     imageNumGen();
+     //act on click event
+     winLose(); 
+
+})
+
