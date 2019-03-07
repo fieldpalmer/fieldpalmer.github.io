@@ -797,6 +797,12 @@ ul.social-buttons li a:hover {
   top: 60%;
 }
 
+#contactArrow {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+}
+
 .arrow span {
   display: block;
   width: 27px;
