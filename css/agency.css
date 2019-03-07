@@ -755,7 +755,8 @@ ul.social-buttons li a:hover {
 
 /* my styles */
 
-#githubLink {
+#githubLink,
+#cvLink {
   color: #49e20e;
 }
 
