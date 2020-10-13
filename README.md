@@ -1,6 +1,10 @@
-# Field Palmer :100:
+# Field Palmer
 
-### Hello, welcome to my portfolio page. This a simple site to store and share links, images, and descriptions for my personal and professional projects. This was created just using Markdown, but I really love working in React and Node.js with a NoSQL database such as Firebase.
+## Hello :wave: , welcome to my portfolio page.
+
+### This a simple site to store and share links, images, and descriptions for my personal and professional projects. This was created just using Markdown, but I really love working in React and Node.js with a NoSQL database such as Firebase.
+
+---
 
 ---
 
