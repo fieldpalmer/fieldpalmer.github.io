@@ -22,11 +22,47 @@ alert(s);
 
 Stoked Whistler ACL back country phat travel rigid road rash rock-ectomy trucks. Rig hardtail line mute gapers hurl carcass. Afterbang carbon pipe skid lid Skate huck. Ski chain suck yard sale bro table top, manny face shots pipe Whistler washboard. -->
 
+---
+
 ## Beaux's Art, an Inventory Management Solution for Artists
 
 ![beaux's art thumbnail](./assets/beauxsart_thumbnail.png "Thumbnail Image for Beaux's Art App")
 
 Bro ipsum dolor sit amet ride around ripping table top freshies death cookies berm. Trail swag single track schraeder endo heli air stoked sucker hole bro betty cornice big ring. Snowboard snake bite core shot backside trail swag McTwist, back country groomer. Ride around wheelie death cookies Skate, Bike daffy single track epic mute nose ripper taco mitt. Park hurl carcass granny gear, face shots free ride ripper Skate ripping cruiser. | [_github_](https://github.com/fieldpalmer/mern-bruxstock) | [_website_](https://brxstk.herokuapp.com/)
+
+<!-- ### Favorite Code Snippet:
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+Stoked Whistler ACL back country phat travel rigid road rash rock-ectomy trucks. Rig hardtail line mute gapers hurl carcass. Afterbang carbon pipe skid lid Skate huck. Ski chain suck yard sale bro table top, manny face shots pipe Whistler washboard. -->
+
+---
+
+## Final Interview Preparation Site for Boot Camp Instructor Candidates
+
+![candidate materials thumbnail](./assets/cma_thumbnail.png "Thumbnail Image for candidate materials App")
+
+Bro ipsum dolor sit amet ride around ripping table top freshies death cookies berm. Trail swag single track schraeder endo heli air stoked sucker hole bro betty cornice big ring. Snowboard snake bite core shot backside trail swag McTwist, back country groomer. Ride around wheelie death cookies Skate, Bike daffy single track epic mute nose ripper taco mitt. Park hurl carcass granny gear, face shots free ride ripper Skate ripping cruiser. | [_github_](https://github.com/fieldpalmer2u/CandidateMaterials) | [_website_](https://candidatematerials.firebaseapp.com/)
+
+<!-- ### Favorite Code Snippet:
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+Stoked Whistler ACL back country phat travel rigid road rash rock-ectomy trucks. Rig hardtail line mute gapers hurl carcass. Afterbang carbon pipe skid lid Skate huck. Ski chain suck yard sale bro table top, manny face shots pipe Whistler washboard. -->
+
+---
+
+## Final Interview Preparation Site for Boot Camp Instructor Candidates
+
+![csv cleaner thumbnail](./assets/csvcleaner_thumbnail.png "Thumbnail Image for csv cleaner App")
+
+Bro ipsum dolor sit amet ride around ripping table top freshies death cookies berm. Trail swag single track schraeder endo heli air stoked sucker hole bro betty cornice big ring. Snowboard snake bite core shot backside trail swag McTwist, back country groomer. Ride around wheelie death cookies Skate, Bike daffy single track epic mute nose ripper taco mitt. Park hurl carcass granny gear, face shots free ride ripper Skate ripping cruiser. | [_github_](https://github.com/fieldpalmer2u/youShallNotPass) | [_website_](https://groupcsvcleaner.web.app/)
 
 <!-- ### Favorite Code Snippet:
 
