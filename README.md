@@ -7,13 +7,7 @@ This a simple site to store and share links, images, and descriptions for my per
 
 ---
 
----
-
----
-
-## Donde
-
-### Real-Time Messaging and Geolocation
+## Donde, a Real-Time Messaging and Geolocation Service
 
 ![donde thumbnail](./assets/donde_thumbnail.png "Thumbnail Image for Donde App")
 
@@ -28,13 +22,7 @@ alert(s);
 
 Stoked Whistler ACL back country phat travel rigid road rash rock-ectomy trucks. Rig hardtail line mute gapers hurl carcass. Afterbang carbon pipe skid lid Skate huck. Ski chain suck yard sale bro table top, manny face shots pipe Whistler washboard. -->
 
----
-
----
-
-## Beaux's Art
-
-### Inventory Management for Artists
+## Beaux's Art, an Inventory Management Solution for Artists
 
 ![beaux's art thumbnail](./assets/beauxsart_thumbnail.png "Thumbnail Image for Beaux's Art App")
 
