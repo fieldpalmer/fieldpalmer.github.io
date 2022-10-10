@@ -1,5 +1,6 @@
-import { getSkill, Skill, skills } from "../skills/config"
+import { getSkill, Skill } from "../skills/config"
 import Portfolio from "./../../images/portfolio-sg.png";
+import LandingPage from "./../../images/pwa-sg.png";
 import Shazamify from "./../../images/shazamify-sg.png";
 
 export type Project = {
@@ -21,12 +22,20 @@ export const projects: Project[] = [
     technologies: getSkill(["react", "typescript", "html", "css", "git", "npm"])
   },
   {
-    name: "Image Management",
-    description: "An online collaborative whiteboard app, with private and public rooms for people to chat and draw in real-time.",
-    image: Portfolio,
-    url: "",
-    github: "https://github.com/0xTijan/collaborative-canvas",
-    technologies: getSkill(["react", "typescript", "nodejs", "socket.io", "moralis", "solidity"])
+    name: "Business Landing Page",
+    description: "A fully responsive web app built with React and Tailwind to highlight a business or product.",
+    image: LandingPage,
+    url: "https://pwawebapp.netlify.app/",
+    github: "https://github.com/fieldpalmer/responsive-web-app",
+    technologies: getSkill(["react", "tailwind", "nodejs", "netlify"])
+  },
+  {
+    name: "Music Streaming App",
+    description: "Users can stream free clips of thousands of songs thanks to ShazamCore API.",
+    image: Shazamify,
+    url: "https://shazamify.netlify.app/",
+    github: "https://github.com/fieldpalmer/social-music-app",
+    technologies: getSkill(["react", "javascript", "netlify", "tailwind", "git", "npm"])
   },
   {
     name: "Geolocation Chat",
@@ -59,14 +68,6 @@ export const projects: Project[] = [
     url: "https://projects.tijan.dev/diamond-hands",
     github: "https://github.com/0xTijan/diamond-hands",
     technologies: getSkill(["solidity", "hardhat", "react", "javascript", "moralis"])
-  },
-  {
-    name: "Shazamify - Music Streaming",
-    description: "Users can stream free clips of thousands of songs thanks to ShazamCore API.",
-    image: Shazamify,
-    url: "https://shazamify.netlify.app/",
-    github: "https://github.com/fieldpalmer/social-music-app",
-    technologies: getSkill(["react", "javascript", "netlify", "tailwind", "git", "npm"])
   },
   {
     name: "Social Network",
