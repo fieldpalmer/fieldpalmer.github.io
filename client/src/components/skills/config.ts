@@ -16,6 +16,7 @@ import Python from "./../../images/python-logo.png";
 import Rust from "./../../images/rust-logo.png";
 import NodeJS from "./../../images/nodej-js.png";
 import Postman from "./../../images/postman-logo.png";
+import Tailwind from "./../../images/tailwind-logo.png";
 
 export type Skill = {
   name: string;
@@ -111,11 +112,11 @@ export const skills: Skill[] = [
     url: "https://www.python.org/",
     img: Python
   },
-  {
-    name: "IPFS",
-    url: "https://ipfs.io/",
-    img: IPFS
-  },
+//   {
+//     name: "IPFS",
+//     url: "https://ipfs.io/",
+//     img: IPFS
+//   },
   {
     name: "HTML",
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -136,11 +137,11 @@ export const skills: Skill[] = [
     url: "https://www.npmjs.com/",
     img: NPM
   },
-  // {
-  //   name: "YARN",
-  //   url: "https://yarnpkg.com/",
-  //   img: YARN
-  // },
+  {
+    name: "Tailwind",
+    url: "https://tailwindcss.com/",
+    img: Tailwind
+  },
   {
     name: "Git",
     url: "https://git-scm.com/",
