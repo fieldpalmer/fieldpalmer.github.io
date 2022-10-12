@@ -10,13 +10,14 @@ import Firebase from "./../../images/firebase-logo.png";
 import Web3 from "./../../images/web3js.png";
 import Mongo from "./../../images/mongo.svg";
 import Netlify from "./../../images/netlify-logo.png";
-import IPFS from "./../../images/ipfs-logo.png";
+// import IPFS from "./../../images/ipfs-logo.png";
 import GraphQL from "./../../images/graphql-logo.png";
 import Python from "./../../images/python-logo.png";
 import Rust from "./../../images/rust-logo.png";
 import NodeJS from "./../../images/nodej-js.png";
-import Postman from "./../../images/postman-logo.png";
+// import Postman from "./../../images/postman-logo.png";
 import Tailwind from "./../../images/tailwind-logo.png";
+import TS from "./../../images/ts-logo.png";
 
 export type Skill = {
   name: string;
@@ -42,11 +43,11 @@ export const skills: Skill[] = [
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     img: JS
   },
-  // {
-  //   name: "TypeScript",
-  //   url: "https://www.typescriptlang.org/",
-  //   img: TS
-  // },
+  {
+    name: "TypeScript",
+    url: "https://www.typescriptlang.org/",
+    img: TS
+  },
   {
     name: "NodeJS",
     url: "https://nodejs.org/en/",
@@ -62,11 +63,11 @@ export const skills: Skill[] = [
     url: "https://reactjs.org/",
     img: React
   },
-  {
-    name: "Postman",
-    url: "https://www.postman.com/",
-    img: Postman
-  },
+  // {
+  //   name: "Postman",
+  //   url: "https://www.postman.com/",
+  //   img: Postman
+  // },
   {
     name: "Netlify",
     url: "https://netlify.com/",
