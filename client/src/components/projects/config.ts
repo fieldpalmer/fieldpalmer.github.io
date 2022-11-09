@@ -23,12 +23,12 @@ export const projects: Project[] = [
     technologies: getSkill(["react", "typescript", "html", "css", "git", "npm"])
   },
   {
-    name: "Business Landing Page",
-    description: "A fully responsive web app built with React and Tailwind to highlight a business or product.",
-    image: LandingPage,
-    url: "https://pwawebapp.netlify.app/",
-    github: "https://github.com/fieldpalmer/responsive-web-app",
-    technologies: getSkill(["react", "tailwind", "nodejs", "netlify"])
+    name: "Data Dashboard",
+    description: "React and Syncfusion allow us to fluidly display data visualizations.",
+    image: Dashboard,
+    url: "https://datadashdemo.web.app/",
+    github: "https://github.com/fieldpalmer/data-dashboard",
+    technologies: getSkill(["react", "tailwind", "javascript", "firebase", "git", "npm"])
   },
   {
     name: "Music Streaming App",
@@ -39,12 +39,12 @@ export const projects: Project[] = [
     technologies: getSkill(["react", "javascript", "netlify", "tailwind", "git", "npm"])
   },
   {
-    name: "Data Dashboard",
-    description: "React and Syncfusion allow us to fluidly display data visualizations.",
-    image: Dashboard,
-    url: "https://datadashdemo.web.app/",
-    github: "https://github.com/fieldpalmer/data-dashboard",
-    technologies: getSkill(["react", "tailwind", "javascript", "firebase", "git", "npm"])
+    name: "Business Landing Page",
+    description: "A fully responsive web app built with React and Tailwind to highlight a business or product.",
+    image: LandingPage,
+    url: "https://pwawebapp.netlify.app/",
+    github: "https://github.com/fieldpalmer/responsive-web-app",
+    technologies: getSkill(["react", "tailwind", "nodejs", "netlify"])
   },
   // {
   //   name: "AWS Amplify",
