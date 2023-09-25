@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.b4509697.css",
-    "main.js": "/static/js/main.353b9650.js",
+    "main.js": "/static/js/main.dd234f0c.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/shazamify-sg.png": "/static/media/shazamify-sg.5425e30c02be3f04e551.png",
     "static/media/pwa-sg.png": "/static/media/pwa-sg.e16e695efe1ed7748e18.png",
     "static/media/portfolio-sg.png": "/static/media/portfolio-sg.de05797be18ce1d6a9de.png",
+    "static/media/thriveSampson.png": "/static/media/thriveSampson.cf6ca18c6bf77ca54920.png",
+    "static/media/mevArt.png": "/static/media/mevArt.9b49238ae8db8bebd683.png",
     "static/media/hi.png": "/static/media/hi.177b92020b808e4341c6.png",
     "static/media/dashboard-sg.png": "/static/media/dashboard-sg.584002462284d8478934.png",
     "static/media/python-logo.png": "/static/media/python-logo.15a5cabe79820db8855a.png",
@@ -29,11 +31,11 @@
     "static/media/mongo.svg": "/static/media/mongo.67761c18dd27879104c98bfc4930d459.svg",
     "index.html": "/index.html",
     "main.b4509697.css.map": "/static/css/main.b4509697.css.map",
-    "main.353b9650.js.map": "/static/js/main.353b9650.js.map",
+    "main.dd234f0c.js.map": "/static/js/main.dd234f0c.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4509697.css",
-    "static/js/main.353b9650.js"
+    "static/js/main.dd234f0c.js"
   ]
 }
