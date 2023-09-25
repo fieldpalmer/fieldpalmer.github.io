@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/fieldpalmer.github.io/static/css/main.b4509697.css",
+    "main.js": "/fieldpalmer.github.io/static/js/main.284f52fe.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/fieldpalmer.github.io/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/shazamify-sg.png": "/fieldpalmer.github.io/static/media/shazamify-sg.5425e30c02be3f04e551.png",
+    "static/media/pwa-sg.png": "/fieldpalmer.github.io/static/media/pwa-sg.e16e695efe1ed7748e18.png",
+    "static/media/portfolio-sg.png": "/fieldpalmer.github.io/static/media/portfolio-sg.de05797be18ce1d6a9de.png",
+    "static/media/hi.png": "/fieldpalmer.github.io/static/media/hi.177b92020b808e4341c6.png",
+    "static/media/dashboard-sg.png": "/fieldpalmer.github.io/static/media/dashboard-sg.584002462284d8478934.png",
+    "static/media/python-logo.png": "/fieldpalmer.github.io/static/media/python-logo.15a5cabe79820db8855a.png",
+    "static/media/netlify-logo.png": "/fieldpalmer.github.io/static/media/netlify-logo.603ef81c872f9df8c343.png",
+    "static/media/gas-logo.png": "/fieldpalmer.github.io/static/media/gas-logo.1506a20437a5f87ef0e4.png",
+    "static/media/CompCert_Functional_JS.png": "/fieldpalmer.github.io/static/media/CompCert_Functional_JS.8bcd0e6fbdf0cf296ebf.png",
+    "static/media/CompCert_ML2.png": "/fieldpalmer.github.io/static/media/CompCert_ML2.e10a5d2b5699875b685f.png",
+    "static/media/CompCert_ML1.png": "/fieldpalmer.github.io/static/media/CompCert_ML1.f77b12c7d7ebf8e1a55a.png",
+    "static/media/CompCert_Cybersecurity.png": "/fieldpalmer.github.io/static/media/CompCert_Cybersecurity.b5dbee4ab9837abe9700.png",
+    "static/media/CompCert_Data_Viz.png": "/fieldpalmer.github.io/static/media/CompCert_Data_Viz.29dc34887aee6a7fe567.png",
+    "static/media/graphql-logo.png": "/fieldpalmer.github.io/static/media/graphql-logo.0fed447ce4ed74374bdb.png",
+    "static/media/tailwind-logo.png": "/fieldpalmer.github.io/static/media/tailwind-logo.9c2e5bcf4f97d73e438e.png",
+    "static/media/html5-logo.png": "/fieldpalmer.github.io/static/media/html5-logo.59a2b57ff9f570656c9d.png",
+    "static/media/react-logo.png": "/fieldpalmer.github.io/static/media/react-logo.d1d003618737e62bb2df.png",
+    "static/media/rust-logo.png": "/fieldpalmer.github.io/static/media/rust-logo.c513561307cd6835cd7c.png",
+    "static/media/css-logo.png": "/fieldpalmer.github.io/static/media/css-logo.56232e401c146d04371f.png",
+    "static/media/js-logo.png": "/fieldpalmer.github.io/static/media/js-logo.940765f470ddd506af04.png",
+    "static/media/nodej-js.png": "/fieldpalmer.github.io/static/media/nodej-js.c26d3e42ae2c5e65f1ee.png",
+    "static/media/web3js.png": "/fieldpalmer.github.io/static/media/web3js.045007abf451e75768da.png",
+    "static/media/firebase-logo.png": "/fieldpalmer.github.io/static/media/firebase-logo.6ea3b0b39b97b0e49515.png",
+    "index.html": "/fieldpalmer.github.io/index.html",
+    "static/media/mongo.svg": "/fieldpalmer.github.io/static/media/mongo.67761c18dd27879104c98bfc4930d459.svg",
+    "main.b4509697.css.map": "/fieldpalmer.github.io/static/css/main.b4509697.css.map",
+    "main.284f52fe.js.map": "/fieldpalmer.github.io/static/js/main.284f52fe.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/fieldpalmer.github.io/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4509697.css",
+    "static/js/main.284f52fe.js"
+  ]
+}
