@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b4509697.css",
-    "main.js": "/static/js/main.dd234f0c.js",
+    "main.js": "/static/js/main.3759b83b.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/shazamify-sg.png": "/static/media/shazamify-sg.5425e30c02be3f04e551.png",
     "static/media/pwa-sg.png": "/static/media/pwa-sg.e16e695efe1ed7748e18.png",
@@ -21,6 +21,7 @@
     "static/media/graphql-logo.png": "/static/media/graphql-logo.0fed447ce4ed74374bdb.png",
     "static/media/tailwind-logo.png": "/static/media/tailwind-logo.9c2e5bcf4f97d73e438e.png",
     "static/media/html5-logo.png": "/static/media/html5-logo.59a2b57ff9f570656c9d.png",
+    "static/media/react-native.png": "/static/media/react-native.b746b4e2a0310ec8cb18.png",
     "static/media/react-logo.png": "/static/media/react-logo.d1d003618737e62bb2df.png",
     "static/media/rust-logo.png": "/static/media/rust-logo.c513561307cd6835cd7c.png",
     "static/media/css-logo.png": "/static/media/css-logo.56232e401c146d04371f.png",
@@ -31,11 +32,11 @@
     "static/media/mongo.svg": "/static/media/mongo.67761c18dd27879104c98bfc4930d459.svg",
     "index.html": "/index.html",
     "main.b4509697.css.map": "/static/css/main.b4509697.css.map",
-    "main.dd234f0c.js.map": "/static/js/main.dd234f0c.js.map",
+    "main.3759b83b.js.map": "/static/js/main.3759b83b.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4509697.css",
-    "static/js/main.dd234f0c.js"
+    "static/js/main.3759b83b.js"
   ]
 }
