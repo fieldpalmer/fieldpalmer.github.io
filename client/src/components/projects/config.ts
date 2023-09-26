@@ -73,7 +73,7 @@ export const projects: Project[] = [
       image: mevArt,
       url: 'https://markviser.com',
       github: '',
-      technologies: getSkill(['web design', 'google analytics', 'google ads'])
+      technologies: getSkill(['ux/ui design', 'google analytics', 'google ads'])
    },
    {
       name: 'Local Physical Therapy Clinic Landing Page',
@@ -82,6 +82,6 @@ export const projects: Project[] = [
       image: thriveSampson,
       url: 'https://thrivesampson.com',
       github: '',
-      technologies: getSkill(['web design', 'google analytics', 'google ads'])
+      technologies: getSkill(['ux/ui design', 'google analytics', 'google ads'])
    }
 ];
