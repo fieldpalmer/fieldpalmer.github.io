@@ -31,7 +31,7 @@ const About = () => {
                <Heading as='h3' size={getAlertSize()}>
                   💻{'   '}
                   <a
-                     href='https://drive.google.com/file/d/1MacYPEFqmRHmj2s21A3Xm4vyQ7CaTs92/view?usp=sharing'
+                     href='https://drive.google.com/file/d/1fSJC9HmDk5j-kpQI-ktcBP609ODhQrHn/view?usp=sharing'
                      className='contact-link'
                      target='_blank'
                      rel='noreferrer'
