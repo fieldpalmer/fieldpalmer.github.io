@@ -1,0 +1,111 @@
+.App {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(127deg, #092635, #1b4242, #5c8374, #9ec8b9);
+   background-size: 800% 800%;
+   -webkit-animation: AnimationName 13s ease infinite;
+   -moz-animation: AnimationName 13s ease infinite;
+   -o-animation: AnimationName 13s ease infinite;
+   animation: AnimationName 13s ease infinite;
+   font-family: 'Helvetica', sans-serif;
+}
+
+@-webkit-keyframes AnimationName {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
+}
+@-moz-keyframes AnimationName {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
+}
+@-o-keyframes AnimationName {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
+}
+@keyframes AnimationName {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
+}
+
+.Glass-Pane {
+   min-width: 85vmin;
+   max-width: 90vmax;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: calc(10px + 2vmin);
+   color: white;
+   border-radius: 13px;
+   min-height: 66vmin;
+   /* From https://css.glass */
+   background: rgba(9, 38, 53, 0.33);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.27);
+   backdrop-filter: blur(5.5px);
+   -webkit-backdrop-filter: blur(5.5px);
+   border: 2px solid rgba(255, 255, 255, 0.5);
+   margin: 13px;
+   padding-left: 13px;
+   padding-right: 13px;
+}
+
+@keyframes updown {
+   0% {
+      transform: translateY(-13%);
+   }
+
+   50% {
+      transform: translateY(13%);
+   }
+
+   100% {
+      transform: translateY(-13%);
+   }
+}
+
+.navIcon {
+   display: flex;
+   justify-content: center;
+   animation: updown 5s ease infinite;
+   color: rgba(255, 255, 255, 0.555);
+}
+
+@media (width < 420px) {
+   .Glass-Pane {
+      text-align: center;
+      /* gap: rem; */
+      min-height: 77vmax;
+      font-size: x-large;
+   }
+}
