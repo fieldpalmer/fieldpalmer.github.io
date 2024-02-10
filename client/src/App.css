@@ -1,83 +1,80 @@
 .App {
    min-height: 100vh;
    display: flex;
-   flex-direction: column;
    align-items: center;
    justify-content: center;
-   background: linear-gradient(127deg, #092635, #1b4242, #5c8374, #9ec8b9);
+   background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
    background-size: 800% 800%;
-   -webkit-animation: AnimationName 13s ease infinite;
-   -moz-animation: AnimationName 13s ease infinite;
-   -o-animation: AnimationName 13s ease infinite;
-   animation: AnimationName 13s ease infinite;
+   -webkit-animation: GradientWave 13s ease infinite;
+   -moz-animation: GradientWave 13s ease infinite;
+   -o-animation: GradientWave 13s ease infinite;
+   animation: GradientWave 13s ease infinite;
    font-family: 'Helvetica', sans-serif;
 }
 
-@-webkit-keyframes AnimationName {
-   0% {
-      background-position: 0% 51%;
-   }
-   50% {
-      background-position: 100% 50%;
-   }
-   100% {
-      background-position: 0% 51%;
-   }
+.App::before {
+   content: '';
+   position: absolute;
+   width: 400px;
+   height: 400px;
+   background: linear-gradient(#ffeb3b, #e91e63);
+   border-radius: 50%;
+   transform: translate(-420px, -180px);
 }
-@-moz-keyframes AnimationName {
-   0% {
-      background-position: 0% 51%;
-   }
-   50% {
-      background-position: 100% 50%;
-   }
-   100% {
-      background-position: 0% 51%;
-   }
-}
-@-o-keyframes AnimationName {
-   0% {
-      background-position: 0% 51%;
-   }
-   50% {
-      background-position: 100% 50%;
-   }
-   100% {
-      background-position: 0% 51%;
-   }
-}
-@keyframes AnimationName {
-   0% {
-      background-position: 0% 51%;
-   }
-   50% {
-      background-position: 100% 50%;
-   }
-   100% {
-      background-position: 0% 51%;
-   }
+.App::after {
+   content: '';
+   position: absolute;
+   width: 350px;
+   height: 350px;
+   background: linear-gradient(#2196f3, #83d8ff);
+   border-radius: 50%;
+   transform: translate(400px, 180px);
 }
 
-.Glass-Pane {
-   min-width: 85vmin;
-   max-width: 90vmax;
+.container {
+   position: relative;
+   width: 100%;
+   min-width: 80vmin;
+   max-width: 88vmin;
+   /* height: 50smin; */
+   padding: 3rem;
+   background: rgba(255, 255, 255, 0.1);
+   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.25);
+   border-right: 1px solid rgba(255, 255, 255, 0.1);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(25px);
+   border-radius: 10px;
+   z-index: 1;
+   overflow: hidden;
+}
+
+.container:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -40%;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.05);
+   transform: skewX(-15deg);
+   pointer-events: none;
+}
+
+.two-col-content {
    display: flex;
-   flex-direction: column;
-   align-items: center;
+   flex-direction: row;
+   column-gap: 3rem;
+   text-align: right;
    justify-content: center;
-   font-size: calc(10px + 2vmin);
-   color: white;
-   border-radius: 13px;
-   min-height: 66vmin;
-   /* From https://css.glass */
-   background: rgba(9, 38, 53, 0.33);
-   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.27);
-   backdrop-filter: blur(5.5px);
-   -webkit-backdrop-filter: blur(5.5px);
-   border: 2px solid rgba(255, 255, 255, 0.5);
-   margin: 13px;
-   padding-left: 13px;
-   padding-right: 13px;
+   align-items: center;
+}
+
+.navIcon {
+   display: flex;
+   justify-content: center;
+   animation: updown 5s ease infinite;
+   color: rgba(255, 255, 255, 0.555);
 }
 
 @keyframes updown {
@@ -94,18 +91,55 @@
    }
 }
 
-.navIcon {
-   display: flex;
-   justify-content: center;
-   animation: updown 5s ease infinite;
-   color: rgba(255, 255, 255, 0.555);
+@-webkit-keyframes GradientWave {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
+}
+@-moz-keyframes GradientWave {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
+}
+@-o-keyframes GradientWave {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
+}
+@keyframes GradientWave {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
 }
 
 @media (width < 420px) {
-   .Glass-Pane {
+   .container {
       text-align: center;
-      /* gap: rem; */
-      min-height: 77vmax;
-      font-size: x-large;
+      min-height: 88vmax;
+      max-width: 88vmin;
    }
 }
