@@ -1,16 +1,9 @@
 import React from 'react';
-import { LiaChevronUpSolid } from 'react-icons/lia';
-import { Link } from 'react-router-dom';
 import './contact.css';
 
 export default function Contact() {
    return (
-      <>
-         <Link to={`/projects`} className='navIcon chevronDown'>
-            <LiaChevronUpSolid />
-         </Link>
-         {/* <h2>Get in touch!</h2> */}
-
+      <div className='contact-info mx-5 px-5'>
          <div className='row'>
             <div className='col'>
                <div className='inputBox textarea'>
@@ -41,6 +34,6 @@ export default function Contact() {
                <input type='submit' value='Send' />
             </div>
          </div>
-      </>
+      </div>
    );
 }

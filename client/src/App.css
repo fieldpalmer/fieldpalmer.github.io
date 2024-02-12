@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+p {
+   font-size: calc(15px + 0.390625vw);
+}
+
 .App {
-   min-height: 100vh;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -10,33 +23,14 @@
    -o-animation: GradientWave 13s ease infinite;
    animation: GradientWave 13s ease infinite;
    font-family: 'Helvetica', sans-serif;
-}
-
-.App::before {
-   content: '';
-   position: absolute;
-   width: 400px;
-   height: 400px;
-   background: linear-gradient(#ffeb3b, #e91e63);
-   border-radius: 50%;
-   transform: translate(-420px, -180px);
-}
-.App::after {
-   content: '';
-   position: absolute;
-   width: 350px;
-   height: 350px;
-   background: linear-gradient(#2196f3, #83d8ff);
-   border-radius: 50%;
-   transform: translate(400px, 180px);
+   overflow-y: hidden;
+   overflow-x: hidden;
 }
 
 .container {
    position: relative;
-   width: 100%;
-   min-width: 80vmin;
-   max-width: 88vmin;
-   /* height: 50smin; */
+   min-width: 69svw;
+   max-width: 75svw;
    padding: 3rem;
    background: rgba(255, 255, 255, 0.1);
    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
@@ -59,15 +53,6 @@
    background: rgba(255, 255, 255, 0.05);
    transform: skewX(-15deg);
    pointer-events: none;
-}
-
-.two-col-content {
-   display: flex;
-   flex-direction: row;
-   column-gap: 3rem;
-   text-align: right;
-   justify-content: center;
-   align-items: center;
 }
 
 .navIcon {
@@ -141,5 +126,11 @@
       text-align: center;
       min-height: 88vmax;
       max-width: 88vmin;
+   }
+
+   .navIcon {
+      position: fixed;
+      bottom: 13%;
+      left: 50%;
    }
 }
