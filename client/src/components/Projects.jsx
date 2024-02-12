@@ -1,5 +1,4 @@
 import React from 'react';
-import { LiaChevronUpSolid, LiaChevronDownSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 import './projects.css';
 
@@ -45,9 +44,6 @@ const images = [
 export default function Projects() {
    return (
       <>
-         <Link to={`/`} className='navIcon chevronDown'>
-            <LiaChevronUpSolid />
-         </Link>
          {/* <h2>Projects</h2> */}
          <div className='gallery'>
             {images.map((img, index) => (
@@ -57,9 +53,6 @@ export default function Projects() {
                </div>
             ))}
          </div>
-         <Link to={`/contact`} className='navIcon chevronDown'>
-            <LiaChevronDownSolid />
-         </Link>
       </>
    );
 }

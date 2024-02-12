@@ -6,7 +6,7 @@ import { SlSocialSpotify } from 'react-icons/sl';
 
 export default function IconsList() {
    return (
-      <h3 className='icons-list'>
+      <h1 className='icons-list'>
          {/* <FaBeer /> */}
          <a href='https://linkedin.com' target='_blank' rel='noreferrer'>
             <SlSocialLinkedin />
@@ -17,9 +17,9 @@ export default function IconsList() {
          <a href='https://drive.google.com' target='_blank' rel='noreferrer'>
             <SlUser />
          </a>
-         <a href='https://spotfiy.com' target='_blank' rel='noreferrer'>
+         {/* <a href='https://spotfiy.com' target='_blank' rel='noreferrer'>
             <SlSocialSpotify />
-         </a>
-      </h3>
+         </a> */}
+      </h1>
    );
 }
