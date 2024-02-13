@@ -8,9 +8,9 @@ export default function Landing() {
       <>
          <div className='two-col-content'>
             <div className='bio-info'>
-               <div className='text'>
+               <div className='text-white'>
                   <h1 className='my-name'>Field Palmer</h1>
-                  <p className='my-title'>Web Design & Development</p>
+                  <p>Web Design & Development</p>
                </div>
                <hr className='bio-hr' />
                <IconsList />

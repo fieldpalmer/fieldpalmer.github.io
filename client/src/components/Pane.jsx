@@ -2,13 +2,12 @@ import React from 'react';
 import Landing from './Landing';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
-// import Projects from './Projects';
 import './pane.css';
 
 export default function Panel() {
    return (
       <>
-         <div id='glassPaneCarousel' className='carousel slide'>
+         <div id='glassPaneCarousel' className='carousel slide align-middle'>
             <div className='carousel-indicators'>
                <button
                   type='button'
@@ -43,7 +42,7 @@ export default function Panel() {
                </div>
             </div>
             <button
-               className='carousel-control-prev mr-5'
+               className='carousel-control-prev'
                type='button'
                data-bs-target='#glassPaneCarousel'
                data-bs-slide='prev'
@@ -52,7 +51,7 @@ export default function Panel() {
                <span className='visually-hidden'>Previous</span>
             </button>
             <button
-               className='carousel-control-next ml-5'
+               className='carousel-control-next'
                type='button'
                data-bs-target='#glassPaneCarousel'
                data-bs-slide='next'

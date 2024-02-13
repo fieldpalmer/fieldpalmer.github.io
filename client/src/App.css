@@ -1,37 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
 p {
    font-size: calc(15px + 0.390625vw);
 }
 
 .App {
    height: 100vh;
-   margin: 0;
-   padding: 0;
    display: flex;
    align-items: center;
    justify-content: center;
    background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
-   background-size: 800% 800%;
+   background-size: 800%;
    -webkit-animation: GradientWave 13s ease infinite;
    -moz-animation: GradientWave 13s ease infinite;
    -o-animation: GradientWave 13s ease infinite;
    animation: GradientWave 13s ease infinite;
-   font-family: 'Helvetica', sans-serif;
    overflow-y: hidden;
    overflow-x: hidden;
 }
 
 .container {
    position: relative;
-   min-width: 69svw;
-   max-width: 75svw;
-   padding: 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 3rem 1rem 3rem 1rem;
    background: rgba(255, 255, 255, 0.1);
    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
    border: 1px solid rgba(255, 255, 255, 0.25);
@@ -55,14 +46,7 @@ p {
    pointer-events: none;
 }
 
-.navIcon {
-   display: flex;
-   justify-content: center;
-   animation: updown 5s ease infinite;
-   color: rgba(255, 255, 255, 0.555);
-}
-
-@keyframes updown {
+/* @keyframes updown {
    0% {
       transform: translateY(-13%);
    }
@@ -74,7 +58,7 @@ p {
    100% {
       transform: translateY(-13%);
    }
-}
+} */
 
 @-webkit-keyframes GradientWave {
    0% {
@@ -123,14 +107,13 @@ p {
 
 @media (width < 420px) {
    .container {
-      text-align: center;
-      min-height: 88vmax;
-      max-width: 88vmin;
+      overflow-y: scroll;
+      height: 88vh;
    }
 
-   .navIcon {
+   .carousel-indicators {
       position: fixed;
-      bottom: 13%;
-      left: 50%;
+      top: 0;
+      /* bottom: 0; */
    }
 }
