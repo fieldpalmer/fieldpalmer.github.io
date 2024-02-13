@@ -1,67 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './portfolio.css';
-import { IoLogoJavascript, IoLogoNodejs, IoLogoPython } from 'react-icons/io';
-import { IoLogoReact, IoLogoFirebase, IoLogoCss3, IoLogoHtml5 } from 'react-icons/io5';
-import {
-   SiMongodb,
-   SiApollographql,
-   SiGraphql,
-   SiFigma,
-   SiAwsamplify
-} from 'react-icons/si';
+import SkillIcons from './SkillIcons';
 
 const images = [
    {
-      src: 'https://placehold.co/400',
+      src: 'https://placehold.co/200',
       alt: 'gallery image',
+      title: 'Full-Stack Development',
       desc: 'Description of project and technologies used maybe some icons'
    },
    {
-      src: 'https://placehold.co/400',
+      src: 'https://placehold.co/200',
       alt: 'gallery image',
+      title: 'User Interface Design',
       desc: 'Description of project and technologies used maybe some icons'
    },
    {
-      src: 'https://placehold.co/400',
+      src: 'https://placehold.co/200',
       alt: 'gallery image',
+      title: 'Systems Engineering',
       desc: 'Description of project and technologies used maybe some icons'
    }
 ];
 
 export default function Portfolio() {
    return (
-      <>
-         <div className='card-group px-5 mx-5'>
+      <div className='portfolio-content'>
+         <div className='row g-1 row-cols-1 row-cols-md-3 g-md-1 px-1 mx-5 my-5 mx-md-5 px-md-5'>
             {images.map((img, index) => (
-               // <div key={index} className='gallery-item-container'>
-               // </div>
-               <div class='card'>
-                  <img className='card-img-top' src={img.src} alt={img.alt} />
-                  {/* <div class='card-body'>
-                     <h5 class='card-title'>Card title</h5>
-                     <p className='small'>
-                        <small>{img.desc}</small>
-                     </p>
-                  </div> */}
-                  <div class='card-footer'>
-                     <IoLogoNodejs />
-                     {/* <IoLogoPython /> */}
-                     <IoLogoReact />
-                     <SiMongodb />
-                     <IoLogoFirebase />
-                     {/* <SiApollographql /> */}
-                     {/* <SiGraphql /> */}
-                     <IoLogoCss3 />
-                     <IoLogoHtml5 />
-                     <SiFigma />
-                     {/* <SiAwsamplify /> */}
-                     {/* <small class='text-body-secondary white'>
-                     </small> */}
+               <div className='col'>
+                  <div className='card'>
+                     <img className='card-img' src={img.src} alt={img.alt} />
+                     <div className='card-img-overlay d-flex text-justify'>
+                        <div className='align-self-center'>
+                           <h5 className='card-title fs-5'>{img.title}</h5>
+                           <p className='card-text'>
+                              <SkillIcons />
+                           </p>
+                        </div>
+                     </div>
                   </div>
                </div>
             ))}
          </div>
-      </>
+      </div>
    );
 }

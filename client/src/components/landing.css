@@ -7,21 +7,9 @@
    align-items: center;
 }
 
-/* .text {
-   margin-bottom: 13px;
-} */
-
 .bio-hr {
-   /* margin: 13px 0px 13px 0px; */
-   /* margin: 23px 0px 23px 0px; */
-   margin: 1.3em 0em 1.3em 0em;
    color: white;
    border: 0.1rem solid white;
-}
-
-.text {
-   font-size: large;
-   color: white;
 }
 
 .circle-image {
@@ -66,10 +54,6 @@
    color: #00ff87;
 }
 
-.hr-bar {
-   display: none;
-}
-
 @media (width < 420px) {
    .icons-list {
       font-size: xx-large;
@@ -81,10 +65,6 @@
       height: 50vmin;
    }
 
-   .hr-bar {
-      display: flex;
-   }
-
    .two-col-content {
       display: flex;
       flex-direction: column-reverse;
@@ -93,8 +73,4 @@
       row-gap: 2rem;
       text-align: center;
    }
-   /* 
-   .icons-list {
-      margin-top: 1.3rem;
-   } */
 }
