@@ -1,47 +1,66 @@
 import React from 'react';
+import profPic from '../assets/profPic2.png';
+import aboutPic from '../assets/AboutPic.jpg';
+import gfpSlovenia from '../assets/gfp-slovenia.jpeg';
+import gfp from '../assets/gfp3+5.jpeg';
+import molly from '../assets/Molly.jpeg';
 import './contact.css';
 
 export default function Contact() {
    return (
-      <div className='mx-5 px-md-5 mt-5 mt-md-0 contact-form'>
-         <div className='row mb-2 text-white'>
-            <h4>Get in Touch!</h4>
-         </div>
-         <div className='row mb-2'>
-            <div className='col-sm-12 col-md-6 mb-2'>
-               <input
-                  type='email'
-                  className='form-control'
-                  id='exampleFormControlInput1'
-                  placeholder='Your Name'
-               />
+      <>
+         <div className='two-col-content px-4'>
+            <div className='bio-info'>
+               <div className='text-white'>
+                  <div className='contact-form text-center text-md-end'>
+                     <div className='row mb-2 text-white'>
+                        <h3>Contact</h3>
+                     </div>
+                     <div className='row mb-2'>
+                        <div className='col-sm-12 col-md-6 mb-2'>
+                           <input
+                              type='email'
+                              className='form-control'
+                              id='exampleFormControlInput1'
+                              placeholder='Your Name'
+                           />
+                        </div>
+                        <div className='col-sm-12 col-md-6 mb-2'>
+                           <input
+                              type='email'
+                              className='form-control'
+                              id='exampleFormControlInput1'
+                              placeholder='Your Email'
+                           />
+                        </div>
+                     </div>
+                     <div className='row mb-2'>
+                        <div className='col mb-2'>
+                           <textarea
+                              className='form-control'
+                              id='exampleFormControlTextarea1'
+                              rows='3'
+                              placeholder='Your Message'
+                           ></textarea>
+                        </div>
+                     </div>
+                     <div className='row'>
+                        <div className='col'>
+                           <button type='submit' className='btn btn-success submitBtn'>
+                              Submit
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div className='col-sm-12 col-md-6 mb-2'>
-               <input
-                  type='email'
-                  className='form-control'
-                  id='exampleFormControlInput1'
-                  placeholder='Your Email'
-               />
+            <div className='profile-picture'>
+               <span className='circle-image'>
+                  {/* <img alt='profPic' src={profPic} /> */}
+                  <img alt='aboutPic' src={molly} />
+               </span>
             </div>
          </div>
-         <div className='row mb-2'>
-            <div className='col mb-2'>
-               <textarea
-                  className='form-control'
-                  id='exampleFormControlTextarea1'
-                  rows='3'
-                  placeholder='Your Message'
-               ></textarea>
-            </div>
-         </div>
-         <div className='row'>
-            <div className='col'>
-               <button type='submit' className='btn btn-success btn-sm submitBtn'>
-                  Submit
-               </button>
-            </div>
-         </div>
-      </div>
+      </>
    );
 }
