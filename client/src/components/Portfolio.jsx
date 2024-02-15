@@ -27,9 +27,9 @@ const images = [
 export default function Portfolio() {
    return (
       <div className='portfolio-content'>
-         <div className='row g-1 row-cols-1 row-cols-md-3 g-md-1 px-1 mx-5 my-5 mx-md-5 px-md-5'>
+         <div className='row g-1 row-cols-2 row-cols-md-3 g-md-'>
             {images.map((img, index) => (
-               <div className='col'>
+               <div key={index} className='col'>
                   <div className='card'>
                      <img className='card-img' src={img.src} alt={img.alt} />
                      <div className='card-img-overlay d-flex text-justify'>

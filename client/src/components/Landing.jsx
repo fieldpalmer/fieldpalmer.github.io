@@ -11,6 +11,9 @@ export default function Landing() {
                <div className='text-white'>
                   <h1 className='my-name'>Field Palmer</h1>
                   <p>Web Design & Development</p>
+                  <p>
+                     <code>README.md</code>
+                  </p>
                </div>
                <hr className='bio-hr' />
                <IconsList />
