@@ -7,19 +7,30 @@ import { SlSocialSpotify } from 'react-icons/sl';
 export default function IconsList() {
    return (
       <h1 className='icons-list'>
-         {/* <FaBeer /> */}
-         <a href='https://linkedin.com' target='_blank' rel='noreferrer'>
+         <a
+            href='https://www.linkedin.com/in/fieldpalmer/'
+            target='_blank'
+            rel='noreferrer'
+         >
             <SlSocialLinkedin />
          </a>
-         <a href='https://github.com' target='_blank' rel='noreferrer'>
+         <a href='https://github.com/fieldpalmer' target='_blank' rel='noreferrer'>
             <SlSocialGithub />
          </a>
-         <a href='https://drive.google.com' target='_blank' rel='noreferrer'>
+         <a
+            href='https://drive.google.com/file/d/1rhXDE2oJK6N-NZBW0szDUvWmJsYRE_4r/view?usp=sharing'
+            target='_blank'
+            rel='noreferrer'
+         >
             <SlUser />
          </a>
-         {/* <a href='https://spotfiy.com' target='_blank' rel='noreferrer'>
+         <a
+            href='https://open.spotify.com/user/129959859?si=9ef3ef216cb14e34'
+            target='_blank'
+            rel='noreferrer'
+         >
             <SlSocialSpotify />
-         </a> */}
+         </a>
       </h1>
    );
 }

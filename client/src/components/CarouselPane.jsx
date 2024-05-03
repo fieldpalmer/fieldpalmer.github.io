@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import SkillIcons from './SkillIcons';
+// import { Link } from "react-router-dom";
 
 export default function CarouselPane({ src, title, desc, link }) {
    return (
@@ -11,7 +10,6 @@ export default function CarouselPane({ src, title, desc, link }) {
                   <h1 className='card-title'>{title}</h1>
                   <hr className='d-md-none bg-white' />
                   <p className='card-text'>{desc}</p>
-                  {/* <SkillIcons/> */}
                   <hr className='bg-white' />
                   <p className='card-text'>
                      <code>See more here</code>

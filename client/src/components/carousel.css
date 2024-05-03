@@ -1,17 +1,22 @@
+/* .container {
+   height: 41vh;
+   justify-content: center;
+   align-items: center;
+} */
+
 .carousel-indicators {
    position: fixed;
-   /* top: 0; */
    bottom: 0;
 }
 
 .carousel-control-prev {
    position: fixed;
-   left: 0;
+   left: -33px;
 }
 
 .carousel-control-next {
    position: fixed;
-   right: 0;
+   right: -33px;
 }
 
 @media (width < 420px) {

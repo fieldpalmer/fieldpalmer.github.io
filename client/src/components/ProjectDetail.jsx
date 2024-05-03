@@ -25,8 +25,8 @@ export default function ProjectDetail(alt, src) {
                THEY NEEDED] so I provided it using [THESE METHODS AND TECHNOLOGIES].
             </p>
             <div className='button-group'>
-               <button class='button-46'>Code</button>
-               <button class='button-46'>Demo</button>
+               <button className='button-46'>Code</button>
+               <button className='button-46'>Demo</button>
             </div>
          </div>
       </div>
