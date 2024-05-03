@@ -1,6 +1,7 @@
 import React from 'react';
 import profPic from '../assets/profPic.png';
 import IconsList from './IconsList';
+// import ReadMeModal from './ReadMeModal';
 import './landing.css';
 
 export default function Landing() {
@@ -10,10 +11,8 @@ export default function Landing() {
             <div className='bio-info'>
                <div className='text-white'>
                   <h1 className='my-name'>Field Palmer</h1>
-                  <p>Web Design & Development</p>
-                  <p>
-                     <code>README.md</code>
-                  </p>
+                  <p>Web Development & Software Engineering</p>
+                  {/* <ReadMeModal /> */}
                </div>
                <hr className='bio-hr' />
                <IconsList />

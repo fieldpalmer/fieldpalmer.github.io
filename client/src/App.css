@@ -46,20 +46,6 @@ p {
    pointer-events: none;
 }
 
-/* @keyframes updown {
-   0% {
-      transform: translateY(-13%);
-   }
-
-   50% {
-      transform: translateY(13%);
-   }
-
-   100% {
-      transform: translateY(-13%);
-   }
-} */
-
 @-webkit-keyframes GradientWave {
    0% {
       background-position: 0% 51%;
