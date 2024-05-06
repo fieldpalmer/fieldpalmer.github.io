@@ -4,7 +4,7 @@ import IconsList from './IconsList';
 
 export default function Landing() {
    return (
-      <div className='two-col-content my-1'>
+      <div className='two-col-content my-2'>
          <div className='bio-info'>
             <div className='text-white'>
                <h1 className='my-name'>Field Palmer</h1>

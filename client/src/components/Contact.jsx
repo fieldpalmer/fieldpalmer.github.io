@@ -40,7 +40,7 @@ export default function Contact() {
                </div>
             </div>
             {/* submit button row */}
-            <div className='row'>
+            <div className='row mt-2'>
                <div className='col'>
                   <button type='submit' className='btn btn-success submitBtn'>
                      Submit
