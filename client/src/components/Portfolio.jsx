@@ -1,45 +1,41 @@
 import React from 'react';
+import { Card, Image } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
+// import SkillIcons from './SkillIcons';
+import data_and_dbs from '../assets/data_and_dbs.png';
+import design_dev from '../assets/design_dev.png';
+import systems from '../assets/systems.png';
 import './portfolio.css';
-import SkillIcons from './SkillIcons';
 
 const images = [
    {
-      src: 'https://placehold.co/200',
-      alt: 'gallery image',
-      title: 'Full-Stack Development',
+      src: design_dev,
+      alt: 'design and development image',
+      title: 'Design & Development',
       desc: 'Description of project and technologies used maybe some icons'
    },
    {
-      src: 'https://placehold.co/200',
-      alt: 'gallery image',
-      title: 'User Interface Design',
+      src: data_and_dbs,
+      alt: 'data and dashboards image',
+      title: 'Dashboards & Databases',
       desc: 'Description of project and technologies used maybe some icons'
    },
    {
-      src: 'https://placehold.co/200',
-      alt: 'gallery image',
-      title: 'Systems Engineering',
+      src: systems,
+      alt: 'systems image',
+      title: 'API & Systems Engineering',
       desc: 'Description of project and technologies used maybe some icons'
    }
 ];
 
 export default function Portfolio() {
    return (
-      <div className='portfolio-content'>
-         <div className='row g-1 row-cols-2 row-cols-md-3 g-md-'>
-            {images.map((img, index) => (
-               <div key={index} className='col'>
-                  <div className='card'>
-                     <img className='card-img' src={img.src} alt={img.alt} />
-                     <div className='card-img-overlay d-flex text-justify'>
-                        <div className='align-self-center'>
-                           <h5 className='card-title fs-5'>{img.title}</h5>
-                           <p className='card-text'>
-                              <SkillIcons />
-                           </p>
-                        </div>
-                     </div>
+      <div className='portfolio-content text-center'>
+         <div className='row'>
+            {images.map((image, i) => (
+               <div key={i} className='col-md-4 col-12'>
+                  <div className='profile-picture'>
+                     <Image src={image.src} alt={image.alt} className='circle-image' />
                   </div>
                </div>
             ))}
