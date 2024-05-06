@@ -1,9 +1,9 @@
 import React from 'react';
 import Landing from './Landing';
-// import Portfolio from './Portfolio';
+import Portfolio from './Portfolio';
 import Contact from './Contact';
-import CarouselPane from './CarouselPane';
-import { windows } from '../assets/projects';
+// import CarouselPane from './CarouselPane';
+// import { windows } from '../assets/projects';
 import './carousel.css';
 
 export default function Carousel() {
@@ -31,7 +31,7 @@ export default function Carousel() {
                   data-bs-slide-to='2'
                   aria-label='Slide 3'
                ></button>
-               <button
+               {/* <button
                   type='button'
                   data-bs-target='#glassPaneCarousel'
                   data-bs-slide-to='3'
@@ -42,16 +42,16 @@ export default function Carousel() {
                   data-bs-target='#glassPaneCarousel'
                   data-bs-slide-to='4'
                   aria-label='Slide 5'
-               ></button>
+               ></button> */}
             </div>
             <div className='carousel-inner'>
                <div className='carousel-item active'>
                   <Landing />
                </div>
-               {/* <div className='carousel-item'>
+               <div className='carousel-item'>
                   <Portfolio />
-               </div> */}
-               {windows.map((w, i) => (
+               </div>
+               {/* {windows.map((w, i) => (
                   <div key={i} className='carousel-item'>
                      <CarouselPane
                         src={w.src}
@@ -60,7 +60,7 @@ export default function Carousel() {
                         link={w.link}
                      />
                   </div>
-               ))}
+               ))} */}
                <div className='carousel-item'>
                   <Contact />
                </div>

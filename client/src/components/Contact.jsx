@@ -1,8 +1,4 @@
 import React from 'react';
-import profPic from '../assets/profPic2.png';
-import aboutPic from '../assets/AboutPic.jpg';
-import gfpSlovenia from '../assets/gfp-slovenia.jpeg';
-import gfp from '../assets/gfp3+5.jpeg';
 import molly from '../assets/Molly.jpeg';
 import './contact.css';
 
