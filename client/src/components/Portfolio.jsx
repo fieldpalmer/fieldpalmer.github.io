@@ -27,7 +27,7 @@ const images = [
 
 export default function Portfolio() {
    return (
-      <div className='portfolio-content text-center my-1'>
+      <div className='portfolio-content text-center my-2'>
          <div className='row'>
             {images.map((image, i) => (
                <div key={i} className='col-md-4 col-12'>
