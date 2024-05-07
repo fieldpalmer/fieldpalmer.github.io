@@ -1,6 +1,5 @@
 import React from 'react';
 import molly from '../assets/Molly2.JPEG';
-import './contact.css';
 
 export default function Contact() {
    return (
@@ -9,6 +8,7 @@ export default function Contact() {
          <div className='contact-form text-center text-md-end'>
             {/* text area contact row */}
             <div className='row mb-2'>
+               <hr className='d-md-none' />
                <div className='col'>
                   <textarea
                      className='form-control'
@@ -25,7 +25,7 @@ export default function Contact() {
                   <input
                      type='email'
                      className='form-control'
-                     id='exampleFormControlInput1'
+                     id='formControlNameInput'
                      placeholder='Your Name'
                   />
                </div>
@@ -34,13 +34,14 @@ export default function Contact() {
                   <input
                      type='email'
                      className='form-control'
-                     id='exampleFormControlInput1'
+                     id='formControlEmailInput'
                      placeholder='Your Email'
                   />
                </div>
             </div>
             {/* submit button row */}
             <div className='row mt-2'>
+               <hr className='d-md-none' />
                <div className='col'>
                   <button type='submit' className='btn btn-success submitBtn'>
                      Submit

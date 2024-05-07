@@ -1,9 +1,0 @@
-.submitBtn {
-   background-color: #00ff87;
-   color: #180025;
-}
-@media (width < 420px) {
-   .contact-form {
-      text-align: left;
-   }
-}

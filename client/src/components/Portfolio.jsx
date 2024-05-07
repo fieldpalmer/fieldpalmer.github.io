@@ -33,6 +33,7 @@ export default function Portfolio() {
                <div key={i} className='col-md-4 col-12'>
                   <div className='circle-image mx-3'>
                      <img src={image.src} alt={image.alt} />
+                     <p class='circle-text'>Design & Development</p>
                   </div>
                </div>
             ))}
