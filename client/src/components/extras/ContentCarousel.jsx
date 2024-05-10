@@ -3,7 +3,6 @@ import { Carousel } from 'react-bootstrap';
 import Landing from './Landing';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
-import './carousel.css';
 
 const ContentCarousel = () => {
    const [index, setIndex] = useState(0);
