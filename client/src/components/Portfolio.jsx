@@ -2,7 +2,6 @@ import React from 'react';
 import data_and_dbs from '../assets/data_and_dbs.png';
 import design_dev from '../assets/design_dev.png';
 import systems from '../assets/systems.png';
-import './portfolio.css';
 
 const images = [
    {
