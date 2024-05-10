@@ -1,6 +1,6 @@
 import React from 'react';
-import Landing from './Landing';
-import Portfolio from './Portfolio';
+import Landing from '../Landing';
+import Portfolio from '../Portfolio';
 import Contact from './Contact';
 // import CarouselPane from './CarouselPane';
 // import { windows } from '../assets/projects';
