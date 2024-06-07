@@ -1,27 +1,23 @@
 import React, { useState } from 'react';
 import Landing from './components/Landing';
 import Portfolio from './components/Portfolio';
-import IconsList from './components/IconsList';
 import { FaRotateRight } from 'react-icons/fa6';
 import { FaRotateLeft } from 'react-icons/fa6';
 import './app.css';
 
 export default function App() {
-   const [showLanding, setShowLanding] = useState(true);
+   const [showFront, setShowFront] = useState(true);
 
    const handleArrowClick = () => {
-      setShowLanding(!showLanding);
+      setShowFront(!showFront);
    };
 
    return (
       <main className='App'>
-         <h2 id='logo-name' className='logo-name text-center text-white'>
-            Field Palmer
-         </h2>
          <section className='container p-sm-2 p-md-5'>
-            {showLanding ? <Landing /> : <Portfolio />}
+            {showFront ? <Landing /> : <Portfolio />}
             <div className='arrow-container'>
-               {showLanding ? (
+               {showFront ? (
                   <FaRotateRight
                      className='arrow arrow-right'
                      onClick={handleArrowClick}
@@ -34,7 +30,6 @@ export default function App() {
                )}
             </div>
          </section>
-         <IconsList className='icon-footer' />
       </main>
    );
 }

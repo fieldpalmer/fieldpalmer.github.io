@@ -22,24 +22,11 @@ hr {
    overflow-x: hidden;
 }
 
-.logo-name {
-   /* font-size: 2.5rem; */
-   color: white;
-   font-weight: 700;
-   text-align: center;
-   margin: 0;
-   position: fixed;
-   top: 0;
-   /* left: 0; */
-   padding: 1rem;
-}
-
 .menu-logo {
    position: fixed;
    top: 0;
    right: 0;
    padding: 1rem;
-   /* font-weight: 700; */
 }
 
 .menu-logo h2:hover {
@@ -78,28 +65,29 @@ hr {
 
 .arrow-right {
    position: fixed;
-   bottom: 1rem;
+   bottom: 3px;
+   right: 3px;
 }
 
 .arrow-left {
    position: fixed;
-   bottom: 1rem;
+   bottom: 7px;
+   right: 7px;
 }
 
 .icons-list {
    display: flex;
-   justify-content: flex-end;
+   justify-content: space-around;
    gap: 13px;
-   position: fixed;
-   bottom: 0;
-   /* left: 0; */
+   /* position: fixed; */
+   /* bottom: 0; */
    /* padding-left: 1rem; */
-   padding-bottom: 1rem;
+   /* padding-bottom: 1rem; */
 }
 
 .icons-list a {
    text-align: center;
-   border-radius: 50%;
+   /* border-radius: 50%; */
    color: white;
    transition: 0.5s;
 }
@@ -120,9 +108,11 @@ hr {
    border-right: 1px solid rgba(255, 255, 255, 0.1);
    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
    backdrop-filter: blur(25px);
-   border-radius: 10px;
+   /* border-radius: 10px; */
    z-index: 1;
    overflow: hidden;
+   width: 7in;
+   height: 4in;
 }
 
 .container:before {
@@ -219,11 +209,13 @@ hr {
    }
 }
 
-@media (width < 420px) {
+@media (width < 500px) {
    .container {
-      text-align: center;
-      height: 88vmax;
-      max-width: 88vmin;
+      text-align: left;
+      /* height: 84vmax; */
+      /* max-width: 80vmin; */
+      height: 5in;
+      width: 3in;
       overflow-y: scroll;
    }
 
