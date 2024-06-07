@@ -1,24 +1,24 @@
 import React from 'react';
 import profPic from '../assets/profPic.png';
+import IconsList from './IconsList';
 
 export default function Landing() {
    return (
       <div className='two-col-content my-2'>
-         <div className='bio-info'>
-            <div className='text-white'>
-               <h2 className='my-name'>Welcome!</h2>
-               <hr />
-               <p>
-                  I'm Field. I'm a web developer with a decade of experience building
-                  front-ends, dashboards, and databases for praesentium tempore error
-                  voluptatibus illum soluta debitis placeat qui!.
-               </p>
-            </div>
-         </div>
          <div className='profile-picture'>
             <span className='circle-image'>
                <img alt='profPic' src={profPic} />
             </span>
+         </div>
+         <div className='bio-info'>
+            <div className='text-white'>
+               <h1 className='my-name'>FIELD PALMER</h1>
+               <hr />
+               {/* <p>Full Stack Developer</p> */}
+               <small>Full-Stack Javascript Developer</small>
+               <hr />
+               <IconsList className='icon-footer' />
+            </div>
          </div>
       </div>
    );
