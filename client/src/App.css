@@ -51,9 +51,9 @@ hr {
 }
 
 .arrow {
-   color: white;
-   font-size: 1.3rem;
-   animation: bounce 4s infinite;
+   color: rgba(255, 255, 255, 0.689);
+   font-size: 1.5rem;
+   animation: bounce 3s infinite;
 }
 
 .arrow:hover {
@@ -65,14 +65,15 @@ hr {
 
 .arrow-right {
    position: fixed;
-   bottom: 3px;
-   right: 3px;
+   bottom: 7px;
+   right: 7px;
 }
 
 .arrow-left {
    position: fixed;
-   bottom: 7px;
-   right: 7px;
+   top: 7px;
+   left: 7px;
+   scale: -1;
 }
 
 .icons-list {
