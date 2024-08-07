@@ -1,7 +1,7 @@
 import React from 'react';
 // import { SlUser } from 'react-icons/sl';
-import { GrDocumentUser } from 'react-icons/gr';
-import { FaWordpressSimple } from 'react-icons/fa';
+// import { GrDocumentUser } from 'react-icons/gr';
+// import { FaWordpressSimple } from 'react-icons/fa';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { VscGithub } from 'react-icons/vsc';
 import { SlSocialSpotify } from 'react-icons/sl';
