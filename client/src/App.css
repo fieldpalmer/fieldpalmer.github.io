@@ -166,10 +166,10 @@ hr {
    font-size: 2.3rem;
    margin: 1rem;
 }
-/* .circle-image img:hover {
-   -webkit-filter: brightness(100%);
-   filter: brightness(100%);
-} */
+.skill-icon:hover {
+   -webkit-filter: brightness(88%);
+   filter: brightness(88%);
+}
 
 @-webkit-keyframes GradientWave {
    0% {

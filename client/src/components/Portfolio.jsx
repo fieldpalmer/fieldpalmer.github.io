@@ -14,22 +14,22 @@ export default function Portfolio() {
          <Row>
             <Col>
                <div className='text-white two-col-content'>
-                  <Tab.Container id='tabContent' activeKey='first'>
+                  <Tab.Container id='tabContent' defaultActiveKey='skills'>
                      <Row>
                         <Col sm={12} md={2}>
                            <Nav variant='underline' className='card-nav' justify>
                               <Nav.Item>
-                                 <Nav.Link className='tab-name' eventKey='second'>
+                                 <Nav.Link className='tab-name' eventKey='skills'>
                                     Skills
                                  </Nav.Link>
                               </Nav.Item>
                               <Nav.Item>
-                                 <Nav.Link className='tab-name' eventKey='third'>
+                                 <Nav.Link className='tab-name' eventKey='samples'>
                                     Samples
                                  </Nav.Link>
                               </Nav.Item>
                               <Nav.Item>
-                                 <Nav.Link className='tab-name' eventKey='fourth'>
+                                 <Nav.Link className='tab-name' eventKey='contact'>
                                     Contact
                                  </Nav.Link>
                               </Nav.Item>
@@ -38,10 +38,10 @@ export default function Portfolio() {
                         </Col>
                         <Col sm={12} md={10} id='tab-content'>
                            <Tab.Content>
-                              <Tab.Pane eventKey='first'>
+                              <Tab.Pane eventKey='skills'>
                                  <Skills />
                               </Tab.Pane>
-                              <Tab.Pane eventKey='second'>
+                              <Tab.Pane eventKey='samples'>
                                  {' '}
                                  Lorem ipsum dolor sit amet consectetur adipisicing
                                  elit. Veritatis illum consequatur voluptates eaque nam
@@ -49,7 +49,7 @@ export default function Portfolio() {
                                  delectus veritatis voluptate illum repellat inventore
                                  unde ipsum cumque iusto.
                               </Tab.Pane>
-                              <Tab.Pane eventKey='third'>
+                              <Tab.Pane eventKey='contact'>
                                  {' '}
                                  Lorem ipsum dolor sit amet consectetur adipisicing
                                  elit. Veritatis illum consequatur voluptates eaque nam
