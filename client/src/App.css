@@ -162,6 +162,10 @@ hr {
    border-left: 0.18rem solid rgba(255, 255, 255, 0.224);
 }
 
+.skill-icon {
+   font-size: 2.3rem;
+   margin: 1rem;
+}
 /* .circle-image img:hover {
    -webkit-filter: brightness(100%);
    filter: brightness(100%);
@@ -243,5 +247,10 @@ hr {
 
    #tab-content {
       border-left: none;
+   }
+
+   .skill-icon {
+      font-size: xx-large;
+      margin: 1rem;
    }
 }
