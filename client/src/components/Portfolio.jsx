@@ -1,55 +1,77 @@
 import React, { useState } from 'react';
 import { Modal, Button, Col, Row, Nav, Tab } from 'react-bootstrap';
-import systems from '../assets/systems.png';
-import mollyPic from '../assets/Molly2.JPEG';
-import IconsList from './IconsList';
+import Skills from './Skills';
 
 export default function Portfolio() {
-   const [show, setShow] = useState(false);
-   const handleClose = () => setShow(false);
-   const handleShow = () => setShow(true);
-
    return (
-      <div className='text-white two-col-content'>
-         <Tab.Container defaultActiveKey='first'>
-            <Col sm={2}>
-               <Nav variant='pills' className='flex-column'>
-                  <Nav.Item>
-                     <Nav.Link eventKey='first'>About</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                     <Nav.Link eventKey='second'>Portfolio</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                     <Nav.Link eventKey='third'>Contact</Nav.Link>
-                  </Nav.Item>
-               </Nav>
+      <section>
+         <Row>
+            <Col>
+               <h1 className='my-name text-white'>FIELD PALMER</h1>
+               <hr />
             </Col>
-            <Col sm={10}>
-               <Tab.Content>
-                  <Tab.Pane eventKey='first'>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-                     illum consequatur voluptates eaque nam accusantium maxime neque
-                     eligendi voluptate. Ipsam, delectus veritatis voluptate illum
-                     repellat inventore unde ipsum cumque iusto.
-                  </Tab.Pane>
-                  <Tab.Pane eventKey='second'>
-                     {' '}
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-                     illum consequatur voluptates eaque nam accusantium maxime neque
-                     eligendi voluptate. Ipsam, delectus veritatis voluptate illum
-                     repellat inventore unde ipsum cumque iusto.
-                  </Tab.Pane>
-                  <Tab.Pane eventKey='third'>
-                     {' '}
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-                     illum consequatur voluptates eaque nam accusantium maxime neque
-                     eligendi voluptate. Ipsam, delectus veritatis voluptate illum
-                     repellat inventore unde ipsum cumque iusto.
-                  </Tab.Pane>
-               </Tab.Content>
+         </Row>
+         <Row>
+            <Col>
+               <div className='text-white two-col-content'>
+                  <Tab.Container id='tabContent' activeKey='first'>
+                     <Row>
+                        <Col sm={12} md={2}>
+                           <Nav variant='underline' className='card-nav' justify>
+                              <Nav.Item>
+                                 <Nav.Link className='tab-name' eventKey='second'>
+                                    Skills
+                                 </Nav.Link>
+                              </Nav.Item>
+                              <Nav.Item>
+                                 <Nav.Link className='tab-name' eventKey='third'>
+                                    Samples
+                                 </Nav.Link>
+                              </Nav.Item>
+                              <Nav.Item>
+                                 <Nav.Link className='tab-name' eventKey='fourth'>
+                                    Contact
+                                 </Nav.Link>
+                              </Nav.Item>
+                           </Nav>
+                           <hr className='d-md-none' />
+                        </Col>
+                        <Col sm={12} md={10} id='tab-content'>
+                           <Tab.Content>
+                              <Tab.Pane eventKey='first'>
+                                 <Skills />
+                              </Tab.Pane>
+                              <Tab.Pane eventKey='second'>
+                                 {' '}
+                                 Lorem ipsum dolor sit amet consectetur adipisicing
+                                 elit. Veritatis illum consequatur voluptates eaque nam
+                                 accusantium maxime neque eligendi voluptate. Ipsam,
+                                 delectus veritatis voluptate illum repellat inventore
+                                 unde ipsum cumque iusto.
+                              </Tab.Pane>
+                              <Tab.Pane eventKey='third'>
+                                 {' '}
+                                 Lorem ipsum dolor sit amet consectetur adipisicing
+                                 elit. Veritatis illum consequatur voluptates eaque nam
+                                 accusantium maxime neque eligendi voluptate. Ipsam,
+                                 delectus veritatis voluptate illum repellat inventore
+                                 unde ipsum cumque iusto.
+                              </Tab.Pane>
+                              <Tab.Pane eventKey='fourth'>
+                                 {' '}
+                                 Lorem ipsum dolor sit amet consectetur adipisicing
+                                 elit. Veritatis illum consequatur voluptates eaque nam
+                                 accusantium maxime neque eligendi voluptate. Ipsam,
+                                 delectus veritatis voluptate illum repellat inventore
+                                 unde ipsum cumque iusto.
+                              </Tab.Pane>
+                           </Tab.Content>
+                        </Col>
+                     </Row>
+                  </Tab.Container>
+               </div>
             </Col>
-         </Tab.Container>
-      </div>
+         </Row>
+      </section>
    );
 }

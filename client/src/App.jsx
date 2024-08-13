@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Landing from './components/Landing';
 import Portfolio from './components/Portfolio';
-// import { FaRotateRight } from 'react-icons/fa6';
-// import { FaRotateLeft } from 'react-icons/fa6';
-import { LuTriangleRight } from 'react-icons/lu';
+import { SlArrowLeftCircle } from 'react-icons/sl';
+import { SlArrowRightCircle } from 'react-icons/sl';
 import './app.css';
 
 export default function App() {
@@ -19,12 +18,12 @@ export default function App() {
             {showFront ? <Landing /> : <Portfolio />}
             <div className='arrow-container'>
                {showFront ? (
-                  <LuTriangleRight
+                  <SlArrowRightCircle
                      className='arrow arrow-right'
                      onClick={handleArrowClick}
                   />
                ) : (
-                  <LuTriangleRight
+                  <SlArrowLeftCircle
                      className='arrow arrow-left'
                      onClick={handleArrowClick}
                   />
