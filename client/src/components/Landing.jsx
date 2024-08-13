@@ -14,7 +14,7 @@ export default function Landing() {
             <div className='text-white'>
                <h1 className='my-name'>FIELD PALMER</h1>
                <hr />
-               <small>Full-Stack Javascript Developer</small>
+               <small>Full-Stack Developer</small>
                <hr />
                <IconsList className='icon-footer' />
             </div>
