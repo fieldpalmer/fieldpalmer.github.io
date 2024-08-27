@@ -6,15 +6,14 @@ export default function Contact() {
    return (
       <Row>
          <Col sm={12} className='mx-2'>
-            <h4>Reach out!</h4>
             <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, totam
-               quam? Omnis illo optio molestiae. Perspiciatis reprehenderit, unde eos
-               optio placeat eaque voluptatibus quas, sed quidem excepturi ab
-               necessitatibus possimus.
+               I’m always excited to connect with fellow professionals, potential
+               collaborators, and those interested in my work. Whether you have a
+               project in mind, want to discuss an opportunity, or simply want to say
+               hello, feel free to reach out. I’ll get back to you as soon as possible!
             </p>
             <hr />
-            <IconsList />
+            <IconsList className='mb-0' />
             {/* <Form>
                <Form.Group>
                   <Form.Control type='text' placeholder='Enter your name' />
