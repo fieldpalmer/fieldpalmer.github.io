@@ -167,8 +167,8 @@ hr {
    margin: 1rem;
 }
 .skill-icon:hover {
-   -webkit-filter: brightness(88%);
-   filter: brightness(88%);
+   -webkit-filter: brightness(50%);
+   filter: brightness(50%);
 }
 
 @-webkit-keyframes GradientWave {

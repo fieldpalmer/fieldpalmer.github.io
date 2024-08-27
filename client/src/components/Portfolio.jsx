@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Modal, Button, Col, Row, Nav, Tab } from 'react-bootstrap';
 import Skills from './Skills';
+import Samples from './Samples';
+import Contact from './Contact';
 
 export default function Portfolio() {
    return (
@@ -42,28 +44,10 @@ export default function Portfolio() {
                                  <Skills />
                               </Tab.Pane>
                               <Tab.Pane eventKey='samples'>
-                                 {' '}
-                                 Lorem ipsum dolor sit amet consectetur adipisicing
-                                 elit. Veritatis illum consequatur voluptates eaque nam
-                                 accusantium maxime neque eligendi voluptate. Ipsam,
-                                 delectus veritatis voluptate illum repellat inventore
-                                 unde ipsum cumque iusto.
+                                 <Samples />
                               </Tab.Pane>
                               <Tab.Pane eventKey='contact'>
-                                 {' '}
-                                 Lorem ipsum dolor sit amet consectetur adipisicing
-                                 elit. Veritatis illum consequatur voluptates eaque nam
-                                 accusantium maxime neque eligendi voluptate. Ipsam,
-                                 delectus veritatis voluptate illum repellat inventore
-                                 unde ipsum cumque iusto.
-                              </Tab.Pane>
-                              <Tab.Pane eventKey='fourth'>
-                                 {' '}
-                                 Lorem ipsum dolor sit amet consectetur adipisicing
-                                 elit. Veritatis illum consequatur voluptates eaque nam
-                                 accusantium maxime neque eligendi voluptate. Ipsam,
-                                 delectus veritatis voluptate illum repellat inventore
-                                 unde ipsum cumque iusto.
+                                 <Contact />
                               </Tab.Pane>
                            </Tab.Content>
                         </Col>
