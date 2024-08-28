@@ -7,7 +7,7 @@ import { VscGithub } from 'react-icons/vsc';
 import { SlSocialSpotify } from 'react-icons/sl';
 import { MdOutlineEmail } from 'react-icons/md';
 
-import pdf from '../assets/Field-Palmer-Resume.pdf';
+// import pdf from '../assets/Field-Palmer-Resume.pdf';
 
 export default function IconsList() {
    return (
@@ -35,7 +35,7 @@ export default function IconsList() {
          >
             <SlSocialSpotify />
          </a>
-         <a href='mailto:gilbertfieldpalmer@gmail.com' target='_blank' rel='noreferrer'>
+         <a href='mailto:gfp3.digital@gmail.com' target='_blank' rel='noreferrer'>
             <MdOutlineEmail />
          </a>
       </h2>
