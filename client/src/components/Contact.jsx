@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button, Form } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import IconsList from './IconsList';
 
 export default function Contact() {
@@ -14,18 +14,6 @@ export default function Contact() {
             </p>
             <hr />
             <IconsList className='mb-0' />
-            {/* <Form>
-               <Form.Group>
-                  <Form.Control type='text' placeholder='Enter your name' />
-               </Form.Group>
-
-               <Form.Group>
-                  <Form.Control type='number' placeholder='Write your message' />
-               </Form.Group>
-               <Button className='btn btn-block' type='submit'>
-                  Send
-               </Button>
-            </Form> */}
          </Col>
       </Row>
    );

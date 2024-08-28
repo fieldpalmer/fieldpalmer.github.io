@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Button, Col, Row, Nav, Tab } from 'react-bootstrap';
+import { Col, Row, Nav, Tab } from 'react-bootstrap';
 import Skills from './Skills';
 import Samples from './Samples';
 import Contact from './Contact';
