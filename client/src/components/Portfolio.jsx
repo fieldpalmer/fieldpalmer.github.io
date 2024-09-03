@@ -20,6 +20,11 @@ export default function Portfolio() {
                      <Row>
                         <Col sm={12} md={2}>
                            <Nav variant='underline' className='card-nav' justify>
+                              {/* <Nav.Item>
+                                 <Nav.Link className='tab-name' eventKey='skills'>
+                                    About
+                                 </Nav.Link>
+                              </Nav.Item> */}
                               <Nav.Item>
                                  <Nav.Link className='tab-name' eventKey='skills'>
                                     Skills
@@ -40,6 +45,7 @@ export default function Portfolio() {
                         </Col>
                         <Col sm={12} md={10} id='tab-content'>
                            <Tab.Content>
+                              {/* <Tab.Pane eventKey='skills'>"About me!"</Tab.Pane> */}
                               <Tab.Pane eventKey='skills'>
                                  <Skills />
                               </Tab.Pane>
