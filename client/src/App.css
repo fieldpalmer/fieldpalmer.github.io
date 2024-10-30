@@ -180,6 +180,15 @@ hr {
    background-color: rgba(255, 255, 255, 0.55);
 }
 
+.horizontal-scroll {
+   overflow-x: auto;
+   overflow-y: hidden;
+}
+
+.horizontal-scroll-content {
+   display: flex; /* Or inline-flex if you want to wrap items */
+}
+
 @-webkit-keyframes GradientWave {
    0% {
       background-position: 0% 51%;
