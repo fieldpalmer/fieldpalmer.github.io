@@ -3,6 +3,7 @@ import { Col, Row, Nav, Tab } from 'react-bootstrap';
 import Skills from './Skills';
 import Samples from './Samples';
 import Contact from './Contact';
+import Gallery from './Gallery';
 
 export default function Portfolio() {
    return (
@@ -31,10 +32,15 @@ export default function Portfolio() {
                                  </Nav.Link>
                               </Nav.Item>
                               <Nav.Item>
+                                 <Nav.Link className='tab-name' eventKey='gallery'>
+                                    Gallery
+                                 </Nav.Link>
+                              </Nav.Item>
+                              {/* <Nav.Item>
                                  <Nav.Link className='tab-name' eventKey='samples'>
                                     Samples
                                  </Nav.Link>
-                              </Nav.Item>
+                              </Nav.Item> */}
                               <Nav.Item>
                                  <Nav.Link className='tab-name' eventKey='contact'>
                                     Contact
@@ -49,9 +55,12 @@ export default function Portfolio() {
                               <Tab.Pane eventKey='skills'>
                                  <Skills />
                               </Tab.Pane>
-                              <Tab.Pane eventKey='samples'>
-                                 <Samples />
+                              <Tab.Pane eventKey='gallery'>
+                                 <Gallery />
                               </Tab.Pane>
+                              {/* <Tab.Pane eventKey='samples'>
+                                 <Samples />
+                              </Tab.Pane> */}
                               <Tab.Pane eventKey='contact'>
                                  <Contact />
                               </Tab.Pane>
