@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Landing from './components/Landing';
+import Landing from './components/Landing/Landing';
 import Portfolio from './components/Portfolio';
-import { SlArrowLeftCircle } from 'react-icons/sl';
-import { SlArrowRightCircle } from 'react-icons/sl';
-import './app.css';
+import { SlArrowLeftCircle, SlArrowRightCircle } from 'react-icons/sl';
+import './App.css';
 
 export default function App() {
    const [showFront, setShowFront] = useState(true);
@@ -14,10 +13,10 @@ export default function App() {
 
    return (
       <main className='App'>
-         <section className='container p-sm-2 p-md-5'>
+         <section className='container'>
             {showFront ? <Landing /> : <Portfolio />}
             <div className='arrow-container'>
-               {showFront ? (
+               {showFront === true ? (
                   <SlArrowRightCircle
                      className='arrow arrow-right'
                      onClick={handleArrowClick}

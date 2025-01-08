@@ -1,0 +1,19 @@
+.skill-icon {
+   max-height: 3rem;
+   margin: 0.5rem;
+   filter: grayscale(100%);
+}
+
+.skill-icon:hover {
+   -webkit-filter: brightness(60%);
+   filter: brightness(60%);
+}
+
+@media (width <= 768px) {
+   .skill-icon {
+      margin: 0.5rem;
+   }
+   #skillsContainer {
+      padding-top: 13px;
+   }
+}

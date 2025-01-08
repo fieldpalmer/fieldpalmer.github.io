@@ -1,0 +1,16 @@
+.icons-list {
+   display: flex;
+   justify-content: space-around;
+   gap: 13px;
+}
+
+.icons-list a {
+   text-align: center;
+   /* border-radius: 50%; */
+   color: white;
+   transition: 0.5s;
+}
+
+.icons-list a:hover {
+   color: #00ff87;
+}
