@@ -1,6 +1,7 @@
 import React from 'react';
-import profPic from '../assets/profPic.png';
-import IconsList from './IconsList';
+import profPic from '../../assets/images/profPic.png';
+import IconsList from '../IconsList/IconsList';
+import './landing.css';
 
 export default function Landing() {
    return (
@@ -14,7 +15,7 @@ export default function Landing() {
             <div className='text-white'>
                <h1 className='my-name'>FIELD PALMER</h1>
                <hr />
-               <small>Full-Stack JavaScript Developer</small>
+               <small>Solutions Engineer</small>
                <hr />
                <IconsList className='icon-footer' />
             </div>

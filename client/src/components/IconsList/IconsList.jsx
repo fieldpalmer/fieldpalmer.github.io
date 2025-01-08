@@ -1,13 +1,13 @@
 import React from 'react';
 // import { SlUser } from 'react-icons/sl';
-// import { GrDocumentUser } from 'react-icons/gr';
+import { GrDocumentUser } from 'react-icons/gr';
 // import { FaWordpressSimple } from 'react-icons/fa';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { VscGithub } from 'react-icons/vsc';
 import { SlSocialSpotify } from 'react-icons/sl';
-import { MdOutlineEmail } from 'react-icons/md';
-
-// import pdf from '../assets/Field-Palmer-Resume.pdf';
+// import { MdOutlineEmail } from 'react-icons/md';
+import './icons-list.css';
+import pdf from '../../assets/Field-Palmer-CV.pdf';
 
 export default function IconsList() {
    return (
@@ -22,12 +22,9 @@ export default function IconsList() {
          <a href='https://github.com/fieldpalmer' target='_blank' rel='noreferrer'>
             <VscGithub />
          </a>
-         {/* <a href={pdf} target='_blank' rel='noreferrer'>
+         <a href={pdf} target='_blank' rel='noreferrer'>
             <GrDocumentUser />
-         </a> */}
-         {/* <a href='gfp3.wordpress.com' target='_blank' rel='noreferrer'>
-            <FaWordpressSimple />
-         </a> */}
+         </a>
          <a
             href='https://open.spotify.com/user/129959859?si=9ef3ef216cb14e34'
             target='_blank'
@@ -35,9 +32,9 @@ export default function IconsList() {
          >
             <SlSocialSpotify />
          </a>
-         <a href='mailto:gfp3.digital@gmail.com' target='_blank' rel='noreferrer'>
+         {/* <a href='mailto:gfp3.digital@gmail.com' target='_blank' rel='noreferrer'>
             <MdOutlineEmail />
-         </a>
+         </a> */}
       </h2>
    );
 }

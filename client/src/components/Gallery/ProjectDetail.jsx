@@ -1,6 +1,4 @@
 import React from 'react';
-import profPic from '../assets/profPic.png';
-import { LiaArrowAltCircleLeft } from 'react-icons/lia';
 import { PiArrowLeftDuotone } from 'react-icons/pi';
 import './project-detail.css';
 
@@ -8,7 +6,6 @@ export default function ProjectDetail(alt, src) {
    return (
       <div className='project-detail'>
          <div className='project-image'>
-            {/* <img alt={alt} src={src} /> */}
             <h5>
                <button className='back-button'>
                   <PiArrowLeftDuotone />
