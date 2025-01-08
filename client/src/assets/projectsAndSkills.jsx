@@ -1,34 +1,44 @@
+// project images
 import Portfolio from './images/portfolio-sg.png';
 import LandingPage from './images/pwa-sg.png';
 import Shazamify from './images/shazamify-sg.png';
 import Dashboard from './images/dashboard-sg.png';
 import mevArt from './images/mevArt.png';
 import thriveSampson from './images/thriveSampson.png';
-import React from './images/react-logo.png';
-import HTML from './images/html5-logo.png';
-import CSS from './images/css-logo.png';
-import JS from './images/js-logo.png';
-import Solidity from './images/solidity-logo.png';
-import Gas from './images/gas-logo.png';
-import NPM from './images/npm-logo.png';
-import Git from './images/git-logo.png';
-import Firebase from './images/firebase-logo.png';
-import Web3 from './images/web3js.png';
-import Mongo from './images/mongo.svg';
-import Netlify from './images/netlify-logo.png';
-import IPFS from './images/ipfs-logo.png';
-import Vue from './images/vue-logo.png';
-import GraphQL from './images/graphql-logo.png';
-import Postman from './images/postman-logo.png';
-import Python from './images/python-logo.png';
-import Rust from './images/rust-logo.png';
-import NodeJS from './images/nodej-js.png';
-import Native from './images/react-native.png';
-import Tailwind from './images/tailwind-logo.png';
-import TS from './images/ts-logo.png';
-import GoogleAnalytics from './images/googleAnalytics.png';
-import GoogleAds from './images/googleAds.png';
-import WebDesign from './images/webDesign.png';
+// skill icons
+import { TbBrandReactNative, TbUxCircle } from 'react-icons/tb';
+import { BiLogoNetlify } from 'react-icons/bi';
+import {
+   FaReact,
+   FaNodeJs,
+   FaPython,
+   FaGithub,
+   FaAngular,
+   FaRust,
+   FaVuejs,
+   FaCss3Alt
+} from 'react-icons/fa';
+import { IoLogoFirebase } from 'react-icons/io5';
+import {
+   SiGraphql,
+   SiMongodb,
+   SiOpenai,
+   SiGoogleappsscript,
+   SiSolidity,
+   SiJavascript,
+   SiTypescript,
+   SiPostman,
+   SiWeb3Dotjs,
+   SiIpfs,
+   SiHtml5,
+   SiNpm,
+   SiTailwindcss,
+   SiGoogleads,
+   SiGoogleanalytics,
+   SiAwsamplify,
+   SiLinux,
+   SiKubernetes
+} from 'react-icons/si';
 
 export const getSkill = (names) => {
    let toReturn = [];
@@ -46,127 +56,152 @@ export const skills = [
    {
       name: 'JavaScript',
       url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-      img: JS
+      icon: <SiJavascript />
+   },
+   {
+      name: 'OpenAI',
+      url: 'https://platform.openai.com/docs/overview',
+      icon: <SiOpenai />
    },
    {
       name: 'TypeScript',
       url: 'https://www.typescriptlang.org/',
-      img: TS
+      icon: <SiTypescript />
    },
    {
       name: 'NodeJS',
       url: 'https://nodejs.org/en/',
-      img: NodeJS
+      icon: <FaNodeJs />
    },
    {
       name: 'Firebase',
       url: 'https://firebase.google.com/',
-      img: Firebase
+      icon: <IoLogoFirebase />
    },
    {
       name: 'React',
       url: 'https://reactjs.org/',
-      img: React
+      icon: <FaReact />
+   },
+   {
+      name: 'Angular',
+      url: 'https://angular.dev',
+      icon: <FaAngular />
    },
    {
       name: 'Postman',
       url: 'https://www.postman.com/',
-      img: Postman
+      icon: <SiPostman />
    },
    {
       name: 'Netlify',
       url: 'https://netlify.com/',
-      img: Netlify
+      icon: <BiLogoNetlify />
    },
    {
       name: 'Google Apps Script',
       url: 'https://developers.google.com/apps-script',
-      img: Gas
+      icon: <SiGoogleappsscript />
    },
    {
       name: 'Vue.js',
       url: 'https://vuejs.org/',
-      img: Vue
+      icon: <FaVuejs />
    },
    {
       name: 'web3js',
       url: 'https://web3js.readthedocs.io/en/v1.7.4/',
-      img: Web3
+      icon: <SiWeb3Dotjs />
    },
    {
       name: 'Solidity',
       url: 'https://soliditylang.org/',
-      img: Solidity
+      icon: <SiSolidity />
    },
    {
       name: 'Rust',
       url: 'https://www.rust-lang.org/',
-      img: Rust
+      icon: <FaRust />
    },
    {
       name: 'MongoDB',
       url: 'https://www.mongodb.com/',
-      img: Mongo
+      icon: <SiMongodb />
    },
    {
       name: 'GraphQL',
       url: 'https://graphql.org/',
-      img: GraphQL
+      icon: <SiGraphql />
    },
    {
       name: 'Python',
       url: 'https://www.python.org/',
-      img: Python
+      icon: <FaPython />
    },
    {
       name: 'IPFS',
       url: 'https://ipfs.io/',
-      img: IPFS
+      icon: <SiIpfs />
    },
    {
       name: 'HTML',
       url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-      img: HTML
+      icon: <SiHtml5 />
    },
    {
       name: 'CSS',
       url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-      img: CSS
+      icon: <FaCss3Alt />
    },
    {
       name: 'React Native',
       url: 'https://reactnative.dev/',
-      img: Native
+      icon: <TbBrandReactNative />
    },
    {
       name: 'NPM',
       url: 'https://www.npmjs.com/',
-      img: NPM
+      icon: <SiNpm />
    },
    {
       name: 'Tailwind',
       url: 'https://tailwindcss.com/',
-      img: Tailwind
+      icon: <SiTailwindcss />
    },
    {
-      name: 'Git',
-      url: 'https://git-scm.com/',
-      img: Git
+      name: 'Github',
+      url: 'https://github.com/',
+      icon: <FaGithub />
    },
    {
       name: 'Google Ads',
       url: 'https://ads.google.com/home/',
-      img: GoogleAds
+      icon: <SiGoogleads />
    },
    {
       name: 'Google Analytics',
       url: 'https://developers.google.com/analytics',
-      img: GoogleAnalytics
+      icon: <SiGoogleanalytics />
    },
    {
       name: 'UX/UI Design',
       url: 'https://atomicdesign.bradfrost.com/table-of-contents/',
-      img: WebDesign
+      icon: <TbUxCircle />
+   },
+   {
+      name: 'AWS Amplify',
+      url: 'https://aws.amazon.com/amplify/',
+      icon: <SiAwsamplify />
+   },
+   {
+      name: 'Linux',
+      url: 'https://www.linux.org',
+      icon: <SiLinux />
+   },
+   {
+      name: 'Kubernetes',
+      url: 'https://kubernetes.io',
+      icon: <SiKubernetes />
    }
 ];
 

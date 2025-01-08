@@ -1,12 +1,17 @@
 .skill-icon {
-   max-height: 3rem;
-   margin: 0.5rem;
-   filter: grayscale(100%);
+   min-height: 5rem;
+   margin: 0.88rem;
+   font-size: xx-large;
+   /* filter: grayscale(100%); */
 }
 
 .skill-icon:hover {
    -webkit-filter: brightness(60%);
    filter: brightness(60%);
+}
+
+.skill-icon-link {
+   text-decoration: none;
 }
 
 @media (width <= 768px) {
