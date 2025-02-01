@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { projects } from '../../assets/projectsAndSkills';
-import { GalleryCard } from './GalleryCard';
-import './gallery.css';
+import { projects } from '../../assets/projects';
 
 export default function Gallery() {
    const [isMobile, setIsMobile] = useState(false);
@@ -24,9 +22,17 @@ export default function Gallery() {
    // Show 8 items on mobile, 12 on larger screens
    const displayedItems = isMobile ? projects.slice(0, 8) : projects.slice(0, 12);
 
+   const GalleryCard = ({ name, description, image, url, github, technologies }) => {
+      return (
+         <div className='gallery-card'>
+            <p className='gallery-card-title'>{name}</p>
+         </div>
+      );
+   };
+
    return (
-      <div className='portfolio-container'>
-         <Row className='gallery-container'>
+      <div className='portfolio-container' id='gallery-container'>
+         <Row>
             {displayedItems.map((p, i) => {
                return (
                   <Col key={p.name + i} xs={6} md={3} className='mb-2'>

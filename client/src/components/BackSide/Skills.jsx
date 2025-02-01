@@ -1,28 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import { skills } from '../../assets/projectsAndSkills';
-import './skills.css';
+import { skills } from '../../assets/skills';
 
 export default function Skills() {
    const [isMobile, setIsMobile] = useState(false);
 
    useEffect(() => {
-      // Function to check screen size
       const updateScreenSize = () => {
          setIsMobile(window.matchMedia('(max-width: 768px)').matches);
       };
 
-      // Add event listener to track screen size changes
-      updateScreenSize(); // Initial check
+      updateScreenSize();
       window.addEventListener('resize', updateScreenSize);
 
-      // Clean up the event listener on unmount
       return () => window.removeEventListener('resize', updateScreenSize);
    }, []);
 
    const columnsPerRow = isMobile ? 4 : 6; // 4 columns for mobile, 6 for larger screens
    const rows = isMobile ? 6 : 5; // 6 rows for mobile, 5 for larger screens
-   const displayedSkills = skills.slice(0, rows * columnsPerRow); // Display only the required number of items
+   const displayedSkills = skills.slice(0, rows * columnsPerRow);
 
    // Split the skills into rows for rendering
    const skillRows = [];
@@ -37,7 +33,7 @@ export default function Skills() {
    );
 
    return (
-      <div className='portfolio-container' id='skillsContainer'>
+      <div className='portfolio-container' id='skills-container'>
          {skillRows.map((row, rowIndex) => (
             <Row key={rowIndex}>
                {row.map((skill, index) => (
