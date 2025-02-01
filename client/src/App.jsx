@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
-import Landing from './components/Landing/Landing';
-import Portfolio from './components/Portfolio';
+import FrontSide from './components/FrontSide/FrontSide';
+import BackSide from './components/BackSide/BackSide';
 import { SlArrowLeftCircle, SlArrowRightCircle } from 'react-icons/sl';
 import './App.css';
 
 export default function App() {
-   const [showFront, setShowFront] = useState(true);
+   const [cardFlip, setCardFlip] = useState(true);
 
-   const handleArrowClick = () => {
-      setShowFront(!showFront);
+   const handleCardFlip = () => {
+      setCardFlip(!cardFlip);
    };
 
    return (
       <main className='App'>
          <section className='container'>
-            {showFront ? <Landing /> : <Portfolio />}
+            {cardFlip ? <FrontSide /> : <BackSide />}
             <div className='arrow-container'>
-               {showFront === true ? (
+               {cardFlip === true ? (
                   <SlArrowRightCircle
                      className='arrow arrow-right'
-                     onClick={handleArrowClick}
+                     onClick={handleCardFlip}
                   />
                ) : (
                   <SlArrowLeftCircle
                      className='arrow arrow-left'
-                     onClick={handleArrowClick}
+                     onClick={handleCardFlip}
                   />
                )}
             </div>

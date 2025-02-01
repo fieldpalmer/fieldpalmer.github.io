@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Col, Row, Nav, Tab } from 'react-bootstrap';
-import Skills from './Skills/Skills';
-import Contact from './Contact/Contact';
-import Gallery from './Gallery/Gallery';
+import Skills from './Skills';
+import About from './About';
+import Contact from './Contact';
+import Gallery from './Gallery';
+import './back-side.css';
 
 export default function Portfolio() {
    return (
@@ -16,7 +18,6 @@ export default function Portfolio() {
          <Row id='portfolio-content' className='text-white two-col-content'>
             <Tab.Container id='tabContent' defaultActiveKey='about'>
                <Row>
-                  {/* tab pane navigation */}
                   <Col sm={12} md={2} id='portfolio-content-nav'>
                      <Nav variant='underline' className='card-nav' justify>
                         <Nav.Item>
@@ -46,7 +47,7 @@ export default function Portfolio() {
                   <Col sm={12} md={10} id='tab-content'>
                      <Tab.Content>
                         <Tab.Pane eventKey='about'>
-                           <h1>About</h1>
+                           <About />
                         </Tab.Pane>
                         <Tab.Pane eventKey='skills'>
                            <Skills />

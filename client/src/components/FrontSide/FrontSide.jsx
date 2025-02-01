@@ -1,9 +1,9 @@
 import React from 'react';
 import profPic from '../../assets/images/profPic.png';
-import IconsList from '../IconsList/IconsList';
-import './landing.css';
+import IconsList from '../../assets/IconsList/IconsList';
+import './front-side.css';
 
-export default function Landing() {
+export default function FrontSide() {
    return (
       <div className='two-col-content my-2'>
          <div className='profile-picture'>
@@ -14,8 +14,8 @@ export default function Landing() {
          <div className='bio-info'>
             <div className='text-white'>
                <h1 className='my-name'>FIELD PALMER</h1>
-               <hr />
-               <small>Solutions Engineer</small>
+               {/* <hr /> */}
+               {/* <small>Solutions Engineer</small> */}
                <hr />
                <IconsList className='icon-footer' />
             </div>
