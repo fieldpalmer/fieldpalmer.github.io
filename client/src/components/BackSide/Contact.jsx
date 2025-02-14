@@ -29,6 +29,12 @@ export default function Contact() {
          .then(
             () => {
                console.log('SUCCESS!');
+               setFormData((prevData) => ({
+                  ...prevData,
+                  user_name: 'Message Sent Successfully',
+                  user_email: 'Thank You!',
+                  user_message: 'I will get back in touch ASAP'
+               }));
             },
             (error) => {
                console.log('FAILED...', error.text);
@@ -38,7 +44,7 @@ export default function Contact() {
 
    return (
       <div className='portfolio-container' id='contact-container'>
-         <h4>Get In Touch</h4>
+         {/* <h4>Get In Touch</h4> */}
          <form onSubmit={sendEmail} ref={form}>
             <Row>
                <Col sm={6}>
@@ -57,7 +63,7 @@ export default function Contact() {
                      type='email'
                      className='form-control mb-2'
                      name='user_email'
-                     placeholder='Your email'
+                     placeholder='Your email address'
                      value={formData.user_email}
                      onChange={handleChange}
                      required

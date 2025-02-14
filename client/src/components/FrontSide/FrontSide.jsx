@@ -14,8 +14,8 @@ export default function FrontSide() {
          <div className='bio-info'>
             <div className='text-white'>
                <h1 className='my-name'>FIELD PALMER</h1>
-               {/* <hr /> */}
-               {/* <small>Solutions Engineer</small> */}
+               <hr />
+               <small>Solutions Engineer</small>
                <hr />
                <IconsList className='icon-footer' />
             </div>

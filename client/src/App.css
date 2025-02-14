@@ -163,7 +163,7 @@ hr {
       text-align: left;
       height: 5in;
       width: 3in;
-      overflow-y: scroll;
+      overflow-y: none;
    }
 
    .icons-list {
@@ -210,6 +210,9 @@ hr {
       position: inherit;
       margin-top: 6rem;
    }
+}
+.bio-info {
+   text-align: center;
 }
 
 #contact-btn {
