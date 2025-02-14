@@ -19,6 +19,16 @@
    max-height: 3in;
    max-width: 5in;
    padding-top: 13px;
+   /* overflow-y: hidden; */
+   overflow-x: scroll;
+}
+
+/* #about-container {
+   overflow-y: auto;
+} */
+
+::-webkit-scrollbar {
+   display: none;
 }
 
 .skill-icon {
@@ -36,9 +46,9 @@
    text-decoration: none;
 }
 
-.gallery-card-title {
+/* .gallery-card-title {
    font-size: medium;
-}
+} */
 
 .gallery-card {
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -1,41 +1,47 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 import { projects } from '../../assets/projects';
+import { Link } from 'react-router-dom';
+import { MdOutlineLink } from 'react-icons/md';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaGlobe } from 'react-icons/fa';
+import { FaLink } from 'react-icons/fa6';
+import { GoProjectSymlink } from 'react-icons/go';
+import { LuExternalLink } from 'react-icons/lu';
 
 export default function Gallery() {
-   const [isMobile, setIsMobile] = useState(false);
-
-   useEffect(() => {
-      // Function to check screen size
-      const updateScreenSize = () => {
-         setIsMobile(window.matchMedia('(max-width: 768px)').matches);
-      };
-
-      // Add event listener to track screen size changes
-      updateScreenSize(); // Initial check
-      window.addEventListener('resize', updateScreenSize);
-
-      // Clean up the event listener on unmount
-      return () => window.removeEventListener('resize', updateScreenSize);
-   }, []);
-
-   // Show 8 items on mobile, 12 on larger screens
-   const displayedItems = isMobile ? projects.slice(0, 8) : projects.slice(0, 12);
-
    const GalleryCard = ({ name, description, image, url, github, technologies }) => {
       return (
-         <div className='gallery-card'>
-            <p className='gallery-card-title'>{name}</p>
-         </div>
+         <Row>
+            <Col xs={5}>
+               <Image src={image} thumbnail />
+            </Col>
+            <Col xs={7} className='mx-0 px-0'>
+               {/* <div className='gallery-card'> */}
+               <strong>{name}</strong>
+               <br />
+               <a href={github} style={{ textDecoration: 'none' }}>
+                  <FaGithub />
+               </a>
+               &nbsp;
+               <a href={url} style={{ textDecoration: 'none' }}>
+                  <LuExternalLink />
+               </a>
+               {/* &nbsp;|{technologies}  */}
+               {/* <small>{url}</small> */}
+               {/* </div> */}
+            </Col>
+         </Row>
       );
    };
 
    return (
       <div className='portfolio-container' id='gallery-container'>
          <Row>
-            {displayedItems.map((p, i) => {
+            {projects.map((p, i) => {
                return (
-                  <Col key={p.name + i} xs={6} md={3} className='mb-2'>
+                  <Col key={p.name + i} xs={12} md={6} className='mb-2'>
                      <GalleryCard
                         name={p.name}
                         description={p.description}
