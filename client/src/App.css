@@ -284,7 +284,6 @@ hr {
    display: flex;
    flex-wrap: wrap;
    overflow-y: auto;
-   padding: 10px;
 }
 
 .skill-item {
@@ -296,8 +295,35 @@ hr {
 }
 
 .skill-icon {
-   font-size: xx-large;
+   font-size: 2rem;
    transition: filter 0.1s ease-in-out;
+}
+
+.skills-column {
+   display: flex;
+   flex-direction: column;
+   row-gap: 5px;
+}
+
+.skill-row {
+   align-items: center;
+   min-width: 33%;
+   height: 5rem;
+   background: rgba(255, 255, 255, 0.05);
+   border-radius: 3px;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.skill-details {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   padding-right: 0;
+}
+
+.skill-details small {
+   font-size: 0.8rem;
+   opacity: 0.7;
 }
 
 .skill-icon-link {

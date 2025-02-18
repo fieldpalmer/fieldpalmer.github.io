@@ -9,6 +9,7 @@ import {
    Button
 } from 'react-bootstrap';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
+import TooltipSkill from '../TooltipSkill';
 
 export default function GalleryCard({
    name,
@@ -20,14 +21,7 @@ export default function GalleryCard({
    technologies
 }) {
    const [showModal, setShowModal] = useState(false);
-
    const handleClose = () => setShowModal(false);
-
-   const TooltipSkill = ({ id, children, skill }) => (
-      <OverlayTrigger overlay={<Tooltip id={id}>{skill}</Tooltip>}>
-         <span>{children}</span>
-      </OverlayTrigger>
-   );
 
    return (
       <>
