@@ -37,7 +37,7 @@ export default function Gallery() {
                   ))}
                </Form.Select>
             </Col>
-            <Col xs={3} className='px-0 gx-0'>
+            <Col xs={3} className='gx-0'>
                <h2>
                   &nbsp;
                   <BsGrid3X3Gap
@@ -56,13 +56,21 @@ export default function Gallery() {
             {view === 'icons'
                ? /** Icons View */
                  filteredProjects.map((p, i) => {
-                    const { name, image, url, github, technologies } = p;
+                    const {
+                       name,
+                       one_liner,
+                       description,
+                       image,
+                       url,
+                       github,
+                       technologies
+                    } = p;
                     return (
                        <Col key={name + i} xs={6} md={4} className='g-1'>
                           <GalleryIcon
                              name={name}
-                             //   one_liner={one_liner}
-                             //   description={description}
+                             one_liner={one_liner}
+                             description={description}
                              image={image}
                              url={url}
                              github={github}
