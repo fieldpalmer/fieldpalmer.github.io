@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
-
+import IconsList from '../IconsList';
 export default function Contact() {
    const [formData, setFormData] = useState({
       user_name: '',
@@ -43,14 +43,13 @@ export default function Contact() {
    };
 
    return (
-      <div className='portfolio-container' id='contact-container'>
-         {/* <h4>Get In Touch</h4> */}
+      <>
          <form onSubmit={sendEmail} ref={form}>
             <Row>
                <Col sm={6}>
                   <input
                      type='text'
-                     className='form-control mb-2'
+                     className='form-control mb-1 mb-sm-3'
                      name='user_name'
                      placeholder='Your name'
                      value={formData.user_name}
@@ -61,7 +60,7 @@ export default function Contact() {
                <Col sm={6}>
                   <input
                      type='email'
-                     className='form-control mb-2'
+                     className='form-control mb-1 mb-sm-3'
                      name='user_email'
                      placeholder='Your email address'
                      value={formData.user_email}
@@ -73,7 +72,7 @@ export default function Contact() {
             <Row>
                <Col sm={12}>
                   <textarea
-                     className='form-control mb-2'
+                     className='form-control mb-1 mb-sm-3'
                      name='user_message'
                      rows='4'
                      placeholder='Write your message here'
@@ -81,12 +80,14 @@ export default function Contact() {
                      onChange={handleChange}
                      required
                   />
-                  <button type='submit' id='contact-btn' className='btn'>
+                  <button type='submit' className='contact-btn btn mb-1 mb-sm-3'>
                      Submit
                   </button>
+                  {/* <hr /> */}
+                  <IconsList />
                </Col>
             </Row>
          </form>
-      </div>
+      </>
    );
 }
