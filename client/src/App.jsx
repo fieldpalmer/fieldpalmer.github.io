@@ -13,19 +13,13 @@ export default function App() {
 
    return (
       <main className='App'>
-         <section className='container'>
-            {cardFlip ? <FrontSide /> : <BackSide />}
-            <div className='arrow-container'>
+         <section className='glass-pane'>
+            <div className='glass-pane-content'>
+               {cardFlip ? <FrontSide /> : <BackSide />}
                {cardFlip === true ? (
-                  <SlArrowRightCircle
-                     className='arrow arrow-right'
-                     onClick={handleCardFlip}
-                  />
+                  <SlArrowRightCircle className='arrow' onClick={handleCardFlip} />
                ) : (
-                  <SlArrowLeftCircle
-                     className='arrow arrow-left'
-                     onClick={handleCardFlip}
-                  />
+                  <SlArrowLeftCircle className='arrow' onClick={handleCardFlip} />
                )}
             </div>
          </section>

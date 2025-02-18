@@ -20,9 +20,11 @@ export const getSkill = (names) => {
 
 export const projects = [
    {
-      name: 'Data Dashboard',
-      description:
+      name: 'DataDashboard',
+      one_liner:
          'React and Syncfusion allow us to fluidly display data visualizations.',
+      description:
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
       image: Dashboard,
       url: 'https://datadashdemo.web.app/',
       github: 'https://github.com/fieldpalmer/data-dashboard',
@@ -36,9 +38,10 @@ export const projects = [
       ])
    },
    {
-      name: 'Streaming App',
+      name: 'StreamingApp',
+      one_liner: 'Spotify Clone using ShazamCore API.',
       description:
-         'Users can stream free clips of thousands of songs thanks to ShazamCore API.',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
       image: Shazamify,
       url: 'https://shazamify.netlify.app/',
       github: 'https://github.com/fieldpalmer/social-music-app',
@@ -52,36 +55,40 @@ export const projects = [
       ])
    },
    {
-      name: 'Landing Page',
+      name: 'LandingPage',
+      one_liner: 'A fully responsive and customizable landing page for tech products.',
       description:
-         'A fully responsive web app built with React and Tailwind to highlight a business or product.',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
       image: LandingPage,
       url: 'https://pwawebapp.netlify.app/',
       github: 'https://github.com/fieldpalmer/responsive-web-app',
       technologies: getSkill(['react', 'tailwind', 'nodejs', 'netlify'])
    },
    {
-      name: 'M.E.V. Art',
+      name: 'MEV.Art',
+      one_liner: 'An online art gallery and eCommerce portal for local artist.',
       description:
-         'An online art gallery built with Squarespace and integrated with Google Analytics and Ads.',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
       image: mevArt,
       url: 'https://markviser.com',
       github: '',
       technologies: getSkill(['ux/ui design', 'google analytics', 'google ads'])
    },
    {
-      name: 'Thrive Sampson',
+      name: 'ThriveSampson',
+      one_liner: 'An information portal for local physical therapy clinic.',
       description:
-         'An information portal uilt with Squarespace and integrated with Google Ads, Analytics, and Calendar',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
       image: thriveSampson,
       url: 'https://thrivesampson.com',
       github: '',
       technologies: getSkill(['ux/ui design', 'google analytics', 'google ads'])
    },
    {
-      name: 'Faction Architecture',
+      name: 'FactionArc',
+      one_liner: 'Landing page for local architecture studio.',
       description:
-         'An online art gallery built with Squarespace and integrated with Google Analytics and Ads.',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
       image: mevArt,
       url: 'https://markviser.com',
       github: '',
@@ -89,17 +96,21 @@ export const projects = [
    },
    {
       name: 'CSV Cleaner',
+      one_liner: 'An information portal for local physical therapy clinic.',
       description:
-         'An information portal uilt with Squarespace and integrated with Google Ads, Analytics, and Calendar',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
+
       image: thriveSampson,
       url: 'https://thrivesampson.com',
       github: '',
       technologies: getSkill(['ux/ui design', 'google analytics', 'google ads'])
    },
    {
-      name: 'Social Network',
+      name: 'SocialNetwork',
+      one_liner: 'lorem ipsum dolor sit ameit amatus bunt alebit wacundus secondi',
       description:
-         'An online art gallery built with Squarespace and integrated with Google Analytics and Ads.',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
+
       image: mevArt,
       url: 'https://markviser.com',
       github: '',
@@ -107,8 +118,10 @@ export const projects = [
    },
    {
       name: 'Match Maker',
+      one_liner: 'An information portal for local physical therapy clinic',
       description:
-         'An information portal uilt with Squarespace and integrated with Google Ads, Analytics, and Calendar',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
+
       image: thriveSampson,
       url: 'https://thrivesampson.com',
       github: '',
@@ -116,17 +129,20 @@ export const projects = [
    },
    {
       name: 'AI Chat Bot',
+      one_liner: 'lorem ipsum dolor sit ameit amatus bunt alebit wacundus secondi',
       description:
-         'An online art gallery built with Squarespace and integrated with Google Analytics and Ads.',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
+
       image: mevArt,
       url: 'https://markviser.com',
       github: '',
       technologies: getSkill(['ux/ui design', 'google analytics', 'google ads'])
    },
    {
-      name: 'Chrome Plug-In',
+      name: 'Web Plug-In',
+      one_liner: 'An information portal for local physical therapy clinic',
       description:
-         'An information portal uilt with Squarespace and integrated with Google Ads, Analytics, and Calendar',
+         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
       image: thriveSampson,
       url: 'https://thrivesampson.com',
       github: '',
@@ -134,8 +150,9 @@ export const projects = [
    },
    {
       name: 'Auth Portal',
+      one_liner: 'An information portal for local physical therapy clinic',
       description:
-         'An information portal uilt with Squarespace and integrated with Google Ads, Analytics, and Calendar',
+         '   Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, porro animi magnam quasi alias repellendus pariatur minus cupiditate obcaecati amet culpa blanditiis itaque laboriosam rerum nobis possimus dicta aperiam accusamus?',
       image: thriveSampson,
       url: 'https://thrivesampson.com',
       github: '',

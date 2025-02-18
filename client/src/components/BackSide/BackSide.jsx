@@ -4,63 +4,51 @@ import Skills from './Skills';
 import About from './About';
 import Contact from './Contact';
 import Gallery from './Gallery';
-import './back-side.css';
 
 export default function Portfolio() {
    return (
       <>
-         <Row id='portfolio-header'>
+         <Row className='backside-header mx-0 px-0'>
             <Col>
-               <h1 className='text-white'>FIELD PALMER</h1>
+               <h1>FIELD PALMER</h1>
                <hr />
             </Col>
          </Row>
-         <Row id='portfolio-content' className='text-white two-col-content'>
-            <Tab.Container id='tabContent' defaultActiveKey='about'>
-               <Row>
-                  <Col sm={12} md={2} id='portfolio-content-nav'>
-                     <Nav variant='underline' className='card-nav' justify>
-                        <Nav.Item>
-                           <Nav.Link className='tab-name' eventKey='about'>
-                              About
-                           </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                           <Nav.Link className='tab-name' eventKey='skills'>
-                              Skills
-                           </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                           <Nav.Link className='tab-name' eventKey='gallery'>
-                              Gallery
-                           </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                           <Nav.Link className='tab-name' eventKey='contact'>
-                              Contact
-                           </Nav.Link>
-                        </Nav.Item>
-                     </Nav>
-                     <hr className='d-md-none' />
-                  </Col>
-                  {/* tab pane content */}
-                  <Col sm={12} md={10} id='tab-content'>
-                     <Tab.Content>
-                        <Tab.Pane eventKey='about'>
-                           <About />
-                        </Tab.Pane>
-                        <Tab.Pane eventKey='skills'>
-                           <Skills />
-                        </Tab.Pane>
-                        <Tab.Pane eventKey='gallery'>
-                           <Gallery />
-                        </Tab.Pane>
-                        <Tab.Pane eventKey='contact'>
-                           <Contact />
-                        </Tab.Pane>
-                     </Tab.Content>
-                  </Col>
-               </Row>
+         <Row className='mx-0 px-0'>
+            <Tab.Container defaultActiveKey='about'>
+               <Col sm={12} md={2} className='backside-nav'>
+                  <Nav variant='underline' justify>
+                     <Nav.Item>
+                        <Nav.Link eventKey='about'>About</Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link eventKey='gallery'>Gallery</Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link eventKey='skills'>Skills</Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link eventKey='contact'>Contact</Nav.Link>
+                     </Nav.Item>
+                  </Nav>
+                  <hr className='d-md-none' />
+               </Col>
+               <Col sm={12} md={10}>
+                  <Tab.Content className='backside-content'>
+                     <Tab.Pane eventKey='about' className='p-1 px-md-3 pt-md-2'>
+                        <About />
+                     </Tab.Pane>
+                     <Tab.Pane eventKey='gallery' className='px-3 pt-2 px-md-4 pt-md-2'>
+                        <Gallery />
+                     </Tab.Pane>
+                     <Tab.Pane eventKey='skills' className='px-3 pt-2 px-md-4 pt-md-2'>
+                        <Skills />
+                     </Tab.Pane>
+                     <Tab.Pane eventKey='contact' className='px-1 pt-2 px-md-3'>
+                        <Contact />
+                     </Tab.Pane>
+                  </Tab.Content>
+               </Col>
             </Tab.Container>
          </Row>
       </>

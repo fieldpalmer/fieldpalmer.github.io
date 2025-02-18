@@ -37,151 +37,169 @@ export const skills = [
    {
       name: 'JavaScript',
       url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-      icon: <SiJavascript />
-   },
-   {
-      name: 'OpenAI',
-      url: 'https://platform.openai.com/docs/overview',
-      icon: <SiOpenai />
+      icon: <SiJavascript />,
+      category: 'Frontend'
    },
    {
       name: 'TypeScript',
       url: 'https://www.typescriptlang.org/',
-      icon: <SiTypescript />
-   },
-   {
-      name: 'NodeJS',
-      url: 'https://nodejs.org/en/',
-      icon: <FaNodeJs />
-   },
-   {
-      name: 'Firebase',
-      url: 'https://firebase.google.com/',
-      icon: <IoLogoFirebase />
+      icon: <SiTypescript />,
+      category: 'Frontend'
    },
    {
       name: 'React',
       url: 'https://reactjs.org/',
-      icon: <FaReact />
-   },
-   {
-      name: 'Angular',
-      url: 'https://angular.dev',
-      icon: <FaAngular />
-   },
-   {
-      name: 'Postman',
-      url: 'https://www.postman.com/',
-      icon: <SiPostman />
-   },
-   {
-      name: 'Netlify',
-      url: 'https://netlify.com/',
-      icon: <BiLogoNetlify />
-   },
-   {
-      name: 'Google Apps Script',
-      url: 'https://developers.google.com/apps-script',
-      icon: <SiGoogleappsscript />
+      icon: <FaReact />,
+      category: 'Frontend'
    },
    {
       name: 'Vue.js',
       url: 'https://vuejs.org/',
-      icon: <FaVuejs />
+      icon: <FaVuejs />,
+      category: 'Frontend'
    },
    {
-      name: 'web3js',
-      url: 'https://web3js.readthedocs.io/en/v1.7.4/',
-      icon: <SiWeb3Dotjs />
-   },
-   {
-      name: 'Solidity',
-      url: 'https://soliditylang.org/',
-      icon: <SiSolidity />
-   },
-   {
-      name: 'Rust',
-      url: 'https://www.rust-lang.org/',
-      icon: <FaRust />
-   },
-   {
-      name: 'MongoDB',
-      url: 'https://www.mongodb.com/',
-      icon: <SiMongodb />
-   },
-   {
-      name: 'GraphQL',
-      url: 'https://graphql.org/',
-      icon: <SiGraphql />
-   },
-   {
-      name: 'Python',
-      url: 'https://www.python.org/',
-      icon: <FaPython />
-   },
-   {
-      name: 'IPFS',
-      url: 'https://ipfs.io/',
-      icon: <SiIpfs />
-   },
-   {
-      name: 'HTML',
-      url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-      icon: <SiHtml5 />
+      name: 'Angular',
+      url: 'https://angular.dev',
+      icon: <FaAngular />,
+      category: 'Frontend'
    },
    {
       name: 'CSS',
       url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-      icon: <FaCss3Alt />
+      icon: <FaCss3Alt />,
+      category: 'Frontend'
    },
    {
-      name: 'React Native',
-      url: 'https://reactnative.dev/',
-      icon: <TbBrandReactNative />
-   },
-   {
-      name: 'NPM',
-      url: 'https://www.npmjs.com/',
-      icon: <SiNpm />
+      name: 'HTML',
+      url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+      icon: <SiHtml5 />,
+      category: 'Frontend'
    },
    {
       name: 'Tailwind',
       url: 'https://tailwindcss.com/',
-      icon: <SiTailwindcss />
+      icon: <SiTailwindcss />,
+      category: 'Frontend'
    },
    {
-      name: 'Github',
-      url: 'https://github.com/',
-      icon: <FaGithub />
+      name: 'React Native',
+      url: 'https://reactnative.dev/',
+      icon: <TbBrandReactNative />,
+      category: 'Mobile'
    },
    {
-      name: 'Google Ads',
-      url: 'https://ads.google.com/home/',
-      icon: <SiGoogleads />
+      name: 'NodeJS',
+      url: 'https://nodejs.org/en/',
+      icon: <FaNodeJs />,
+      category: 'Backend'
    },
    {
-      name: 'Google Analytics',
-      url: 'https://developers.google.com/analytics',
-      icon: <SiGoogleanalytics />
+      name: 'Python',
+      url: 'https://www.python.org/',
+      icon: <FaPython />,
+      category: 'Backend'
    },
    {
-      name: 'UX/UI Design',
-      url: 'https://atomicdesign.bradfrost.com/table-of-contents/',
-      icon: <TbUxCircle />
+      name: 'Rust',
+      url: 'https://www.rust-lang.org/',
+      icon: <FaRust />,
+      category: 'Backend'
+   },
+   {
+      name: 'MongoDB',
+      url: 'https://www.mongodb.com/',
+      icon: <SiMongodb />,
+      category: 'Database'
+   },
+   {
+      name: 'GraphQL',
+      url: 'https://graphql.org/',
+      icon: <SiGraphql />,
+      category: 'Backend'
+   },
+   {
+      name: 'Firebase',
+      url: 'https://firebase.google.com/',
+      icon: <IoLogoFirebase />,
+      category: 'Database'
+   },
+   {
+      name: 'Postman',
+      url: 'https://www.postman.com/',
+      icon: <SiPostman />,
+      category: 'Tools'
+   },
+   {
+      name: 'Google Apps Script',
+      url: 'https://developers.google.com/apps-script',
+      icon: <SiGoogleappsscript />,
+      category: 'Tools'
    },
    {
       name: 'AWS Amplify',
       url: 'https://aws.amazon.com/amplify/',
-      icon: <SiAwsamplify />
+      icon: <SiAwsamplify />,
+      category: 'Cloud'
    },
    {
       name: 'Linux',
       url: 'https://www.linux.org',
-      icon: <SiLinux />
+      icon: <SiLinux />,
+      category: 'Cloud'
    },
    {
       name: 'Kubernetes',
       url: 'https://kubernetes.io',
-      icon: <SiKubernetes />
+      icon: <SiKubernetes />,
+      category: 'Cloud'
+   },
+   {
+      name: 'Solidity',
+      url: 'https://soliditylang.org/',
+      icon: <SiSolidity />,
+      category: 'Blockchain'
+   },
+   {
+      name: 'web3js',
+      url: 'https://web3js.readthedocs.io/en/v1.7.4/',
+      icon: <SiWeb3Dotjs />,
+      category: 'Blockchain'
+   },
+   {
+      name: 'IPFS',
+      url: 'https://ipfs.io/',
+      icon: <SiIpfs />,
+      category: 'Blockchain'
+   },
+   {
+      name: 'Netlify',
+      url: 'https://netlify.com/',
+      icon: <BiLogoNetlify />,
+      category: 'DevOps'
+   },
+   {
+      name: 'Github',
+      url: 'https://github.com/',
+      icon: <FaGithub />,
+      category: 'DevOps'
+   },
+   {
+      name: 'UX/UI Design',
+      url: 'https://atomicdesign.bradfrost.com/table-of-contents/',
+      icon: <TbUxCircle />,
+      category: 'Design'
+   },
+   {
+      name: 'Google Ads',
+      url: 'https://ads.google.com/home/',
+      icon: <SiGoogleads />,
+      category: 'Marketing'
+   },
+   {
+      name: 'Google Analytics',
+      url: 'https://developers.google.com/analytics',
+      icon: <SiGoogleanalytics />,
+      category: 'Marketing'
    }
 ];

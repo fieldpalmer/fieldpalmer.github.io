@@ -4,7 +4,7 @@ import React from 'react';
 export default function CarouselPane({ src, title, desc, link }) {
    return (
       <>
-         <div className='two-col-content px-5 mx-sm-3 mx-md-5'>
+         <div className='glass-pane-content px-5 mx-sm-3 mx-md-5'>
             <div className='bio-info'>
                <div className='text-white'>
                   <h1 className='card-title'>{title}</h1>
