@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
-import TooltipSkill from '../TooltipSkill';
+import TooltipSkill from '../../../TooltipSkill';
 import { Row, OverlayTrigger, Tooltip, Modal, Button } from 'react-bootstrap';
 
 export default function GalleryIcon({

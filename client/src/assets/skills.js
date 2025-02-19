@@ -16,7 +16,7 @@ import { IoLogoFirebase } from 'react-icons/io5';
 import {
    SiGraphql,
    SiMongodb,
-   SiOpenai,
+   // SiOpenai,
    SiGoogleappsscript,
    SiSolidity,
    SiJavascript,
@@ -25,7 +25,7 @@ import {
    SiWeb3Dotjs,
    SiIpfs,
    SiHtml5,
-   SiNpm,
+   // SiNpm,
    SiTailwindcss,
    SiGoogleads,
    SiGoogleanalytics,

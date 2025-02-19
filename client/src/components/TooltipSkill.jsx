@@ -1,10 +1,10 @@
 import React from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
-export default function TooltipSkill({ id, children, skill }) {
+export default function TolltipLink({ className, tip, id, icon }) {
    return (
-      <OverlayTrigger overlay={<Tooltip id={id}>{skill}</Tooltip>}>
-         <span>{children}</span>
+      <OverlayTrigger overlay={<Tooltip id={id}>{tip}</Tooltip>}>
+         <span className={className}>{icon}&nbsp;</span>
       </OverlayTrigger>
    );
 }

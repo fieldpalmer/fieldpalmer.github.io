@@ -3,7 +3,8 @@ import { Col, Row, Nav, Tab } from 'react-bootstrap';
 import Skills from './Skills';
 import About from './About';
 import Contact from './Contact';
-import Gallery from './Gallery';
+// import Gallery from './Gallery/Gallery';
+import GitHubGallery from './Gallery/GitHubGallery';
 
 export default function Portfolio() {
    return (
@@ -39,7 +40,8 @@ export default function Portfolio() {
                         <About />
                      </Tab.Pane>
                      <Tab.Pane eventKey='gallery' className='px-3 pt-2 px-md-4 pt-md-2'>
-                        <Gallery />
+                        {/* <Gallery /> */}
+                        <GitHubGallery />
                      </Tab.Pane>
                      <Tab.Pane eventKey='skills' className='px-3 pt-2 px-md-4 pt-md-2'>
                         <Skills />
