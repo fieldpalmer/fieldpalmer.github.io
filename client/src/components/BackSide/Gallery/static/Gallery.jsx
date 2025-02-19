@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
-import { projects } from '../../assets/projects';
+import { projects } from '../../../../assets/projects.js';
 import GalleryCard from './GalleryCard';
 import GalleryIcon from './GalleryIcon';
 import { FaList } from 'react-icons/fa';
