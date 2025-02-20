@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
-import { FaGithub, FaGlobe } from 'react-icons/fa';
-import TooltipLink from '../../TooltipLink';
 import TooltipSkill from '../../TooltipSkill';
 import GalleryModal from './GalleryModal';
 import { skills } from '../../../assets/skills';
 
 export default function GitHubGalleryCard({
+   index,
    name,
    description,
+   dateCreated,
    visibility,
    size,
    language,
@@ -43,42 +43,40 @@ export default function GitHubGalleryCard({
                <Image src={socialImage} className='gallery-image img-thumbnail' />
             </Col>
             <Col xs={7} className='px-0'>
-               <h6 className='my-1'>{name}</h6>
-               <p className='project-desc d-none d-md-block small mb-2'>
+               <code className='mt-1 d-none d-md-block'>{name}</code>
+               <p className='project-desc d-none d-md-block small mb-0'>
                   {description}
                </p>
-               {topics.split(', ').map((skill, index) => (
-                  <TooltipSkill
-                     className={'gallery-skill'}
-                     tip={skill}
-                     id={skill + '-tooltip-' + index}
-                     icon={findSkillIcon(skill, skills)}
-                  />
-               ))}
-               {repoUrl && (
-                  <TooltipLink
-                     link={repoUrl}
-                     className={'gallery-link'}
-                     tip={'Repo Link'}
-                     id={'gh-tooltip'}
-                     icon={<FaGithub />}
-                  />
-               )}
-               {homepage && (
-                  <TooltipLink
-                     link={homepage}
-                     className={'gallery-link'}
-                     tip={'Live Demo'}
-                     id={'homepage-tooltip'}
-                     icon={<FaGlobe />}
-                  />
-               )}
+               <em className='my-0 d-md-none'>
+                  project_00{JSON.stringify(index + 1)}
+                  <br />
+               </em>
+
+               <span className='px-1'>
+                  {topics
+                     .split(', ')
+                     .slice(0, 3)
+                     .map((skill, index) => (
+                        <TooltipSkill
+                           key={index}
+                           tip={skill}
+                           id={skill + '-tooltip-' + index}
+                           icon={findSkillIcon(skill, skills)}
+                        />
+                     ))}
+                  {topics.split(', ').length > 3 && (
+                     <span style={{ fontSize: '0.7rem' }}>
+                        +{topics.split(', ').length - 3} more
+                     </span>
+                  )}
+               </span>
             </Col>
          </Row>
 
          <GalleryModal
             name={name}
             description={description}
+            dateCreate={dateCreated}
             visibility={visibility}
             size={size}
             language={language}

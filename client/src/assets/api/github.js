@@ -12,8 +12,10 @@ export const fetchGitHubRepos = async () => {
       });
 
       const repos = response.data.map((repo) => ({
+         id: repo.id,
          name: repo.name,
          owner: repo.owner.login,
+         dateCreated: repo.created_at,
          description: repo.description || 'No description',
          visibility: repo.private ? 'Private' : 'Public',
          stars: repo.stargazers_count,
