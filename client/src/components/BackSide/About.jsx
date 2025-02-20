@@ -3,7 +3,9 @@ import React from 'react';
 export default function About() {
    return (
       <>
-         <h4>Hello!</h4>
+         <h4>
+            <code>Hello!</code>
+         </h4>
          <p className='small'>
             I'm a solutions engineer passionate about crafting seamless full-stack web
             applications, transforming complex data into clear insights, and building

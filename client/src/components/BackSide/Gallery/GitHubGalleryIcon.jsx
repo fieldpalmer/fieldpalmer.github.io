@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import { FaGithub, FaGlobe } from 'react-icons/fa';
-import TooltipLink from '../../TooltipLink';
-import TooltipSkill from '../../TooltipSkill';
-import { Row, Col } from 'react-bootstrap';
 import GalleryModal from './GalleryModal';
-import { skills } from '../../../assets/skills';
+// import { skills } from '../../../assets/skills';
 
 export default function GitHubGalleryIcon({
+   index,
    name,
    description,
    visibility,
@@ -16,6 +13,7 @@ export default function GitHubGalleryIcon({
    license,
    openIssues,
    lastPush,
+   dateCreated,
    branches,
    commits,
    homepage,
@@ -26,54 +24,36 @@ export default function GitHubGalleryIcon({
    const [showModal, setShowModal] = useState(false);
    const handleClose = () => setShowModal(false);
 
-   const findSkillIcon = (skillName, skills) => {
-      const skill = skills.find(
-         (s) => s.name.toLowerCase() === skillName.toLowerCase()
-      );
-      return skill ? skill.icon : 'x';
-   };
-
    return (
       <>
-         <Row
+         <div
             className='gallery-icon-view'
-            style={{ backgroundImage: `url(${socialImage})` }}
+            style={{ background: `transparent` }}
             onClick={() => setShowModal(true)}
          >
-            <Col className='gallery-overlay'>
-               <small>{name}</small>
+            <div className='gallery-overlay'>
+               {/* <small>{name}</small> */}
+               <code className='px-1'>project_00{JSON.stringify(index + 1)}</code>
                <hr className='my-0 py-0 mx-1' />
-
-               {topics.split(', ').map((skill, index) => (
-                  <TooltipSkill
-                     tip={skill}
-                     id={skill + '-tooltip-' + index}
-                     icon={findSkillIcon(skill, skills)}
-                  />
-               ))}
-
-               <div>
-                  {repoUrl && (
-                     <TooltipLink
-                        link={repoUrl}
-                        className='gallery-link'
-                        tip='Repo Link'
-                        id='gh-tooltip'
-                        icon={<FaGithub />}
-                     />
-                  )}
-                  {homepage && (
-                     <TooltipLink
-                        link={homepage}
-                        className='gallery-link'
-                        tip='Live Demo'
-                        id='homepage-tooltip'
-                        icon={<FaGlobe />}
-                     />
-                  )}
-               </div>
-            </Col>
-         </Row>
+               <span style={{ fontSize: '0.8rem' }}>
+                  <small className='px-1'>
+                     {new Date(dateCreated).toLocaleDateString('en-US', {
+                        month: '2-digit',
+                        year: 'numeric'
+                     })}
+                  </small>{' '}
+                  -
+                  <small className='px-1'>
+                     {new Date(lastPush).toLocaleDateString('en-US', {
+                        month: '2-digit',
+                        year: 'numeric'
+                     })}
+                  </small>
+                  <br />
+                  <span className='px-1'>{'size: ' + size + 'KB'}</span>
+               </span>
+            </div>
+         </div>
 
          <GalleryModal
             name={name}

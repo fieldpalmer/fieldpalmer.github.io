@@ -22,6 +22,15 @@ export default function GalleryModal({
    setShowModal,
    handleClose
 }) {
+   const findSkillIcon = (skillName, skills) => {
+      const skill = skills.find(
+         (s) =>
+            s.name.replace(/[()-. ]/g, '').toLowerCase() ===
+            skillName.replace(/[()-_. ]/g, '').toLowerCase()
+      );
+      return skill ? skill.icon : 'x';
+   };
+
    return (
       <Modal show={showModal} onHide={handleClose} centered className='gallery-modal'>
          <Modal.Header closeButton>
@@ -34,14 +43,13 @@ export default function GalleryModal({
             <small>{readmePreview}</small>
             <hr />
             {/* <h6>Tech Stack:</h6> */}
-            {/* {topics.split(', ').map((skill, index) => (
-                              <TooltipLink
-                                 link={skill} // need to be skill.link
-                                 className={'gallery-skill'}
-                                 tip={skill}
-                                 id={skill + '-tooltip-' + index}
-                                 icon={skill} // needs to be skill.icon
-                              />
+            {/* {topics.map((skill, index) => (
+                                    <TooltipSkill
+                                       key={index}
+                                       tip={skill}
+                                       id={skill + '-tooltip-' + index}
+                                       icon={findSkillIcon(skill, skills)}
+                                    />
                            ))} */}
             <em>{topics}</em>
             <hr />
