@@ -9,7 +9,7 @@ import {
    Button
 } from 'react-bootstrap';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
-import TooltipSkill from '../../../TooltipSkill';
+import TooltipSkill from '../../components/TooltipSkill';
 
 export default function GalleryCard({
    name,

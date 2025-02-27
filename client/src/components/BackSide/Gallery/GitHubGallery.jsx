@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
-import GitHubGalleryIcon from './GitHubGalleryIcon';
-import GitHubGalleryCard from './GitHubGalleryCard';
+// import GitHubGalleryIcon from './GitHubGalleryIcon';
+// import GitHubGalleryCard from './GitHubGalleryCard';
+import GalleryList from './GalleryList.jsx';
+import GalleryIcons from './GalleryIcons.jsx';
 import { FaList } from 'react-icons/fa';
 import { BsGrid3X3Gap } from 'react-icons/bs';
 import {
@@ -133,7 +135,7 @@ export default function Gallery() {
             {view === 'icons'
                ? filteredRepos.map((repo, index) => (
                     <Col key={repo.name + index} xs={6} md={4} className='g-1'>
-                       <GitHubGalleryIcon
+                       <GalleryIcons
                           index={index}
                           name={repo.name}
                           owner={repo.owner}
@@ -159,7 +161,7 @@ export default function Gallery() {
                  ))
                : filteredRepos.map((repo, index) => (
                     <Col key={repo.name + index} xs={12} className='mb-2'>
-                       <GitHubGalleryCard
+                       <GalleryList
                           index={index}
                           name={repo.name}
                           owner={repo.owner}

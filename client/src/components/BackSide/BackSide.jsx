@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row, Nav, Tab } from 'react-bootstrap';
-import Skills from './Skills';
+import Skills from './Skills/Skills';
 import About from './About';
 import Contact from './Contact';
 // import Gallery from './Gallery/Gallery';
