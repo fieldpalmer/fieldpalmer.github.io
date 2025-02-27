@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import TooltipSkill from '../../TooltipSkill';
-import GalleryModal from './GalleryModal';
+import GalleryModal from '../components/BackSide/Gallery/GalleryModal';
 import { skills } from '../../../assets/skills';
 
 export default function GitHubGalleryCard({

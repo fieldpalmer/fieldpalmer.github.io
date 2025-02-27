@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import GalleryModal from './GalleryModal';
 // import { skills } from '../../../assets/skills';
 
-export default function GitHubGalleryIcon({
+export default function GalleryIcons({
    index,
    name,
    description,
