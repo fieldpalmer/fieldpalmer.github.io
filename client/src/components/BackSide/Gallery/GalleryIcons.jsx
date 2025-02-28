@@ -36,7 +36,8 @@ export default function GalleryIcons({
                <code className='px-1'>project_00{JSON.stringify(index + 1)}</code>
                <hr className='my-0 py-0 mx-1' />
                <span style={{ fontSize: '0.8rem' }}>
-                  <small className='px-1'>
+                  <small>{name}</small>
+                  {/* <small className='px-1'>
                      {new Date(dateCreated).toLocaleDateString('en-US', {
                         month: '2-digit',
                         year: 'numeric'
@@ -48,9 +49,9 @@ export default function GalleryIcons({
                         month: '2-digit',
                         year: 'numeric'
                      })}
-                  </small>
+                  </small> */}
                   <br />
-                  <span className='px-1'>{'size: ' + size + 'KB'}</span>
+                  <span className='px-1'>{'size: ' + size + ' KB'}</span>
                </span>
             </div>
          </div>

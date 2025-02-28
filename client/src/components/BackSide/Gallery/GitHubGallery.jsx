@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
-// import GitHubGalleryIcon from './GitHubGalleryIcon';
-// import GitHubGalleryCard from './GitHubGalleryCard';
 import GalleryList from './GalleryList.jsx';
 import GalleryIcons from './GalleryIcons.jsx';
 import { FaList } from 'react-icons/fa';
 import { BsGrid3X3Gap } from 'react-icons/bs';
-import {
-   fetchGitHubRepos,
-   fetchBranchesAndCommits
-} from '../../../assets/api/github.js';
+import { fetchGitHubRepos, fetchBranchesAndCommits } from '../../../assets/api/github.js';
 
 export default function Gallery() {
    const [view, setView] = useState('icons');
@@ -41,16 +36,11 @@ export default function Gallery() {
       getRepos();
    }, []);
 
-   const allSkills = [
-      'All Repos',
-      ...new Set(repos.flatMap((repo) => repo.topics.split(', ')))
-   ];
+   const allSkills = ['All Repos', ...new Set(repos.flatMap((repo) => repo.topics.split(', ')))];
 
    let filteredRepos =
       selectedSkill === 'All Repos'
-         ? repos.filter(
-              (repo) => repo.visibility !== 'Private' && repo.owner === 'fieldpalmer'
-           )
+         ? repos.filter((repo) => repo.visibility !== 'Private' && repo.owner === 'fieldpalmer')
          : repos.filter(
               (repo) =>
                  repo.visibility !== 'Private' &&

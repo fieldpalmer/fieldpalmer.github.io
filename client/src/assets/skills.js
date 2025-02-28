@@ -1,6 +1,6 @@
 // skill icons
 // import { projects } from './projects';
-import { TbBrandReactNative, TbUxCircle } from 'react-icons/tb';
+import { TbBrandReactNative, TbSeo, TbUxCircle } from 'react-icons/tb';
 import { BiLogoNetlify } from 'react-icons/bi';
 import { GiCheckMark } from 'react-icons/gi';
 import {
@@ -12,9 +12,12 @@ import {
    FaRust,
    FaVuejs,
    FaCss3Alt,
-   FaJava
+   FaJava,
+   FaSync,
+   FaStore
 } from 'react-icons/fa';
 import { IoLogoFirebase } from 'react-icons/io5';
+import { AiOutlineLayout } from 'react-icons/ai';
 import {
    SiGraphql,
    SiMongodb,
@@ -73,7 +76,10 @@ import {
    SiJquery,
    SiSequelize,
    SiStripe,
-   SiNextdotjs
+   SiNextdotjs,
+   // SiAdobe,
+   SiNodedotjs,
+   SiMongoose
 } from 'react-icons/si';
 
 export const skills = [
@@ -214,8 +220,7 @@ export const skills = [
       url: 'https://www.rust-lang.org/',
       icon: <FaRust />,
       category: 'Backend',
-      one_liner:
-         'memory-safe systems language that prioritizes performance and reliability.',
+      one_liner: 'memory-safe systems language that prioritizes performance and reliability.',
       description:
          'Rust ensures thread and memory safety without a garbage collector, making it ideal for systems programming, game engines, and performance-critical code. It aims to prevent entire classes of bugs at compile time.',
       first_learned: 2021,
@@ -239,8 +244,7 @@ export const skills = [
       url: 'https://graphql.org/',
       icon: <SiGraphql />,
       category: 'Backend',
-      one_liner:
-         'query language for APIs that allows fetching exactly the data needed.',
+      one_liner: 'query language for APIs that allows fetching exactly the data needed.',
       description:
          'GraphQL, developed by Facebook, provides a single endpoint to query or mutate data. Clients can request only the fields they need, reducing over-fetching and under-fetching commonly encountered with REST APIs.',
       first_learned: 2023,
@@ -288,8 +292,7 @@ export const skills = [
       url: 'https://aws.amazon.com/amplify/',
       icon: <SiAwsamplify />,
       category: 'Cloud',
-      one_liner:
-         'set of tools to build, deploy, and host serverless web and mobile apps.',
+      one_liner: 'set of tools to build, deploy, and host serverless web and mobile apps.',
       description:
          'AWS Amplify simplifies cloud-based development by providing authentication, storage, APIs, and hosting out-of-the-box. It integrates closely with AWS services to streamline full-stack development.',
       first_learned: 2022,
@@ -301,8 +304,7 @@ export const skills = [
       url: 'https://www.linux.org',
       icon: <SiLinux />,
       category: 'Cloud',
-      one_liner:
-         'An open-source OS kernel powering servers, desktops, and embedded systems.',
+      one_liner: 'An open-source OS kernel powering servers, desktops, and embedded systems.',
       description:
          'Linux forms the backbone of much of the internet, offering stability, security, and flexibility. Its open-source nature fosters a vast community and a wide range of distributions for diverse needs.',
       first_learned: 2024,
@@ -314,8 +316,7 @@ export const skills = [
       url: 'https://kubernetes.io',
       icon: <SiKubernetes />,
       category: 'Cloud',
-      one_liner:
-         'container orchestration platform for automating app deployment and scaling.',
+      one_liner: 'container orchestration platform for automating app deployment and scaling.',
       description:
          'Kubernetes manages containerized applications across clusters of hosts. It provides features like load balancing, self-healing, and rolling updates, making it essential for cloud-native development.',
       first_learned: 2024,
@@ -327,8 +328,7 @@ export const skills = [
       url: 'https://soliditylang.org/',
       icon: <SiSolidity />,
       category: 'Blockchain',
-      one_liner:
-         'contract-oriented language for writing Ethereum-based smart contracts.',
+      one_liner: 'contract-oriented language for writing Ethereum-based smart contracts.',
       description:
          'Solidity compiles to EVM bytecode and allows developers to create decentralized applications (dApps) on the Ethereum network, handling transactions, tokens, and complex logic on the blockchain.',
       first_learned: 2021,
@@ -364,8 +364,7 @@ export const skills = [
       url: 'https://netlify.com/',
       icon: <BiLogoNetlify />,
       category: 'DevOps',
-      one_liner:
-         'platform for deploying and hosting static sites and serverless functions.',
+      one_liner: 'platform for deploying and hosting static sites and serverless functions.',
       description:
          'Netlify simplifies continuous deployment and hosting for modern web projects. With features like form handling, split testing, and serverless functions, it’s a popular choice for JAMstack architectures.',
       first_learned: 2022,
@@ -389,8 +388,7 @@ export const skills = [
       url: 'https://atomicdesign.bradfrost.com/table-of-contents/',
       icon: <TbUxCircle />,
       category: 'Design',
-      one_liner:
-         'Crafting intuitive interfaces that enhance user satisfaction and usability.',
+      one_liner: 'Crafting intuitive interfaces that enhance user satisfaction and usability.',
       description:
          'UX/UI Design focuses on understanding user needs and translating them into cohesive, visually appealing interfaces. It combines user research, wireframing, prototyping, and visual design principles.',
       first_learned: 2019,
@@ -402,8 +400,7 @@ export const skills = [
       url: 'https://ads.google.com/home/',
       icon: <SiGoogleads />,
       category: 'Marketing',
-      one_liner:
-         'platform for creating and managing pay-per-click advertising campaigns.',
+      one_liner: 'platform for creating and managing pay-per-click advertising campaigns.',
       description:
          'Google Ads helps businesses reach potential customers through targeted search, display, and video ads. Its robust analytics and bidding tools optimize ad spend and measure campaign performance.',
       first_learned: 2016,
@@ -535,8 +532,7 @@ export const skills = [
       url: 'https://www.heroku.com',
       icon: <SiHeroku />,
       category: 'Cloud',
-      one_liner:
-         'Platform-as-a-Service (PaaS) for deploying and managing applications.',
+      one_liner: 'Platform-as-a-Service (PaaS) for deploying and managing applications.',
       description:
          'Heroku simplifies app deployment with a fully managed platform, supporting multiple programming languages and seamless scaling.',
       first_learned: 2018,
@@ -548,8 +544,7 @@ export const skills = [
       url: 'https://www.docker.com',
       icon: <SiDocker />,
       category: 'DevOps',
-      one_liner:
-         'Containerization platform for building, shipping, and running applications.',
+      one_liner: 'Containerization platform for building, shipping, and running applications.',
       description:
          'Docker packages applications and dependencies into lightweight, portable containers, ensuring consistency across different environments.',
       first_learned: 2022,
@@ -657,8 +652,7 @@ export const skills = [
       url: 'https://www.java.com',
       icon: <FaJava />,
       category: 'Backend',
-      one_liner:
-         'Versatile object-oriented programming language used across industries.',
+      one_liner: 'Versatile object-oriented programming language used across industries.',
       description:
          'Java is a widely used, platform-independent language known for its security, scalability, and performance in web, mobile, and enterprise applications.',
       first_learned: 2021,
@@ -928,5 +922,89 @@ export const skills = [
       first_learned: 2022,
       years_experience: 3,
       projectCount: 0
+   },
+   {
+      name: 'SEO',
+      url: 'https://moz.com/learn/seo',
+      icon: <TbSeo />,
+      category: 'Marketing',
+      one_liner: 'Optimizing websites to rank higher in search results.',
+      description:
+         'SEO (Search Engine Optimization) involves improving website content, structure, and performance to increase visibility in search engines like Google and Bing. It includes keyword research, link building, and technical optimizations.',
+      first_learned: 2017,
+      years_experience: 7,
+      projectCount: 10
+   },
+   {
+      name: 'Web Design',
+      url: 'https://www.smashingmagazine.com/category/web-design/',
+      icon: <AiOutlineLayout />,
+      category: 'Design',
+      one_liner: 'Creating visually appealing and user-friendly websites.',
+      description:
+         'Web design encompasses layout, color schemes, typography, and user experience (UX). It involves tools like Figma, Adobe XD, and principles of responsive design to build aesthetically pleasing and functional sites.',
+      first_learned: 2015,
+      years_experience: 9,
+      projectCount: 15
+   },
+   {
+      name: 'E-commerce',
+      url: 'https://www.shopify.com/',
+      icon: <FaStore />,
+      category: 'Business',
+      one_liner: 'Online platforms for selling products and services.',
+      description:
+         'E-commerce involves building online stores using platforms like Shopify, WooCommerce, or custom solutions. It integrates payment gateways, product management, and customer experience optimization.',
+      first_learned: 2019,
+      years_experience: 5,
+      projectCount: 7
+   },
+   {
+      name: 'Concurrently',
+      url: 'https://www.npmjs.com/package/concurrently',
+      icon: <SiNodedotjs />,
+      category: 'Development',
+      one_liner: 'Run multiple commands simultaneously in Node.js.',
+      description:
+         'Concurrently is an npm package that enables running multiple processes at once in the terminal, useful for running frontend and backend servers in development environments.',
+      first_learned: 2020,
+      years_experience: 4,
+      projectCount: 3
+   },
+   {
+      name: 'Mongoose',
+      url: 'https://mongoosejs.com/',
+      icon: <SiMongoose />,
+      category: 'Database',
+      one_liner: 'Elegant MongoDB object modeling for Node.js.',
+      description:
+         'Mongoose is an ODM (Object-Document Mapper) that provides a schema-based solution for MongoDB, making it easier to validate, query, and manage relationships in a Node.js application.',
+      first_learned: 2020,
+      years_experience: 4,
+      projectCount: 6
+   },
+   {
+      name: 'React Router',
+      url: 'https://reactrouter.com/',
+      icon: <SiReactrouter />,
+      category: 'Frontend',
+      one_liner: 'Declarative routing for React applications.',
+      description:
+         'React Router is a powerful library for handling navigation in React apps. It provides dynamic routing, URL parameters, and seamless page transitions for SPAs.',
+      first_learned: 2021,
+      years_experience: 3,
+      projectCount: 8
+   },
+   {
+      name: 'Syncfusion',
+      url: 'https://www.syncfusion.com/',
+      icon: <FaSync />,
+      category: 'UI Components',
+      one_liner: 'Enterprise UI components for modern web apps.',
+      description:
+         'Syncfusion provides a suite of high-performance UI components, including data grids, charts, and dashboards, for frameworks like React, Angular, and Vue.',
+      first_learned: 2022,
+      years_experience: 2,
+      projectCount: 2
    }
 ];
