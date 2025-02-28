@@ -39,3 +39,4 @@ yarn.lock
 # Optional IDE or editor directories
 .vscode/
 .idea/
+client/build/ # Add to .gitignore
