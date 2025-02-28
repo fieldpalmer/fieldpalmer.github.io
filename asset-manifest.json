@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b4509697.css",
+    "main.js": "/static/js/main.61e68948.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/shazamify-sg.png": "/static/media/shazamify-sg.5425e30c02be3f04e551.png",
+    "static/media/pwa-sg.png": "/static/media/pwa-sg.e16e695efe1ed7748e18.png",
+    "static/media/portfolio-sg.png": "/static/media/portfolio-sg.de05797be18ce1d6a9de.png",
+    "static/media/thriveSampson.png": "/static/media/thriveSampson.cf6ca18c6bf77ca54920.png",
+    "static/media/mevArt.png": "/static/media/mevArt.9b49238ae8db8bebd683.png",
+    "static/media/hi.png": "/static/media/hi.177b92020b808e4341c6.png",
+    "static/media/dashboard-sg.png": "/static/media/dashboard-sg.584002462284d8478934.png",
+    "static/media/python-logo.png": "/static/media/python-logo.15a5cabe79820db8855a.png",
+    "static/media/netlify-logo.png": "/static/media/netlify-logo.603ef81c872f9df8c343.png",
+    "static/media/gas-logo.png": "/static/media/gas-logo.1506a20437a5f87ef0e4.png",
+    "static/media/CompCert_Functional_JS.png": "/static/media/CompCert_Functional_JS.8bcd0e6fbdf0cf296ebf.png",
+    "static/media/CompCert_ML2.png": "/static/media/CompCert_ML2.e10a5d2b5699875b685f.png",
+    "static/media/CompCert_ML1.png": "/static/media/CompCert_ML1.f77b12c7d7ebf8e1a55a.png",
+    "static/media/CompCert_Cybersecurity.png": "/static/media/CompCert_Cybersecurity.b5dbee4ab9837abe9700.png",
+    "static/media/CompCert_Data_Viz.png": "/static/media/CompCert_Data_Viz.29dc34887aee6a7fe567.png",
+    "static/media/graphql-logo.png": "/static/media/graphql-logo.0fed447ce4ed74374bdb.png",
+    "static/media/tailwind-logo.png": "/static/media/tailwind-logo.9c2e5bcf4f97d73e438e.png",
+    "static/media/html5-logo.png": "/static/media/html5-logo.59a2b57ff9f570656c9d.png",
+    "static/media/react-native.png": "/static/media/react-native.b746b4e2a0310ec8cb18.png",
+    "static/media/react-logo.png": "/static/media/react-logo.d1d003618737e62bb2df.png",
+    "static/media/rust-logo.png": "/static/media/rust-logo.c513561307cd6835cd7c.png",
+    "static/media/css-logo.png": "/static/media/css-logo.56232e401c146d04371f.png",
+    "static/media/js-logo.png": "/static/media/js-logo.940765f470ddd506af04.png",
+    "static/media/nodej-js.png": "/static/media/nodej-js.c26d3e42ae2c5e65f1ee.png",
+    "static/media/web3js.png": "/static/media/web3js.045007abf451e75768da.png",
+    "static/media/firebase-logo.png": "/static/media/firebase-logo.6ea3b0b39b97b0e49515.png",
+    "static/media/mongo.svg": "/static/media/mongo.67761c18dd27879104c98bfc4930d459.svg",
+    "index.html": "/index.html",
+    "main.b4509697.css.map": "/static/css/main.b4509697.css.map",
+    "main.61e68948.js.map": "/static/js/main.61e68948.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4509697.css",
+    "static/js/main.61e68948.js"
+  ]
+}
