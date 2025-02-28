@@ -1,0 +1,515 @@
+/* =================== Global Styles =================== */
+::-webkit-scrollbar {
+   display: none;
+}
+
+p {
+   font-size: calc(13px + 0.33vw);
+}
+
+hr {
+   color: white;
+   border: 0.1rem solid white;
+}
+
+code {
+   /* color: whitesmoke; */
+   color: #00ff87;
+}
+
+.App {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
+   background-size: 800%;
+   animation: GradientWave 13s ease infinite;
+   overflow: hidden;
+   color: white;
+}
+
+/* ================== Links & Navigation =================== */
+.nav-link,
+.icons-list a,
+.gallery-link {
+   color: white;
+   transition: color 0.5s ease-in-out;
+   text-align: center;
+   text-decoration: none;
+}
+
+.nav-link.active,
+.nav-link:active {
+   color: #00ff87 !important;
+   /* font-weight: bold; */
+}
+
+.nav-link:hover,
+.icons-list a:hover,
+.gallery-link:hover {
+   color: #00ff87 !important;
+}
+
+/* =================== Glass Pane =================== */
+.glass-pane {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* background: rgba(255, 255, 255, 0.1); */
+   background: rgba(20, 20, 30, 0.33);
+   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.25);
+   backdrop-filter: blur(25px);
+   z-index: 1;
+   overflow: hidden;
+   width: 7in;
+   height: 4in;
+}
+
+.glass-pane:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -40%;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.05);
+   transform: skewX(-13deg);
+   pointer-events: none;
+}
+
+.glass-pane-content {
+   display: flex;
+   flex-direction: row;
+   gap: 3rem;
+   text-align: left;
+   justify-content: center;
+   align-items: center;
+}
+
+/* =================== Card Flip Arrow =================== */
+.arrow {
+   color: rgba(255, 255, 255, 0.689);
+   font-size: 1.5rem;
+   position: absolute;
+   bottom: 7px;
+   right: 7px;
+   z-index: 10;
+   transition: color 0.3s ease-in-out;
+}
+
+.arrow:hover {
+   color: #00ff87;
+   cursor: pointer;
+}
+
+/* =================== Images =================== */
+.circle-image {
+   display: inline-block;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 18svw;
+   height: 18svw;
+   border: 0.33rem solid rgba(255, 255, 255, 0.8);
+   filter: brightness(80%);
+   transition: filter 0.5s ease-in-out;
+}
+
+.circle-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.circle-image:hover {
+   filter: brightness(100%);
+}
+
+.img-thumbnail {
+   border: none !important;
+   padding: 0 !important;
+   border-radius: 0;
+}
+
+/* =================== Icons List =================== */
+.icons-list {
+   display: flex;
+   justify-content: space-around;
+   gap: 13px;
+}
+
+/* =================== Backside =================== */
+.backside-content {
+   max-height: 3in;
+   max-width: 5.2in;
+   overflow-y: scroll;
+}
+
+/* =================== Gallery =================== */
+.gallery-row-item {
+   background: rgba(20, 20, 30, 0.45);
+   color: white;
+   border-radius: 3px;
+   border: 1px solid rgba(255, 255, 255, 0.55);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+   transition: transform 0.1s ease-in-out;
+   overflow-x: auto;
+}
+
+.gallery-icon-view {
+   width: 100%;
+   height: 5rem;
+   background-size: cover;
+   background-position: center;
+   cursor: pointer;
+   border-radius: 3px;
+   /* border: 2px solid rgba(255, 255, 255, 0.23);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+}
+
+.gallery-overlay {
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.33);
+   text-align: center;
+   border-radius: 3px;
+   border: 1px solid rgba(255, 255, 255, 0.55);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-row-item:hover {
+   transform: scale(1.005);
+}
+
+.gallery-image {
+   filter: brightness(77%);
+   transition: filter 0.3s ease-in-out;
+}
+
+.gallery-row-item:hover .gallery-image {
+   filter: brightness(100%);
+}
+
+.filter-dropdown {
+   width: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   color: white;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   border-radius: 1px;
+   transition: 0.3s ease-in-out;
+}
+
+.filter-dropdown:focus {
+   border-color: #00ff87;
+   box-shadow: 0 0 5px rgba(0, 255, 135, 0.5);
+   outline: none;
+}
+
+.project-links {
+   text-align: right;
+   color: white;
+}
+
+/* =================== Modal Styles =================== */
+.gallery-modal .modal-content {
+   background: rgba(20, 20, 30, 0.95);
+   color: white;
+   border-radius: 15px;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-modal .modal-header {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gallery-modal .modal-title {
+   color: #00ff87;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+.gallery-modal .modal-body {
+   text-align: left;
+   line-height: 1.6;
+   font-size: 1rem;
+}
+
+.gallery-modal .modal-body img {
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-modal .modal-footer {
+   border-top: 1px solid rgba(255, 255, 255, 0.2);
+   display: flex;
+   justify-content: space-between;
+}
+
+.gallery-modal .btn-close {
+   filter: brightness(75%);
+}
+
+.gallery-modal .btn-close:hover {
+   filter: brightness(100%);
+}
+
+.gallery-modal .btn-secondary {
+   background-color: rgba(255, 255, 255, 0.3);
+   border: 1px solid white;
+   color: white;
+   transition: 0.3s ease-in-out;
+}
+
+.gallery-modal .btn-secondary:hover {
+   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.gallery-modal .btn-primary {
+   background-color: #00ff87;
+   border: none;
+   color: black;
+   font-weight: bold;
+   transition: 0.3s ease-in-out;
+}
+
+.gallery-modal .btn-primary:hover {
+   background-color: #00ffaa;
+}
+
+.modal-skill-icon {
+   font-size: x-large;
+}
+
+.gallery-modal-skill-icons {
+   text-align: center;
+}
+
+/* =================== Skills Page =================== */
+.skills-container {
+   display: flex;
+   flex-wrap: wrap;
+   overflow-y: auto;
+}
+
+.skill-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50px;
+   height: 50px;
+   overflow: auto;
+}
+
+.skills-overlay {
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.33);
+   text-align: center;
+   border-radius: 3px;
+   border: 1px solid rgba(255, 255, 255, 0.55);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+   overflow-x: auto;
+   white-space: nowrap;
+}
+
+.skill-icon {
+   font-size: 2rem;
+   transition: filter 0.1s ease-in-out;
+}
+
+.skills-column {
+   display: flex;
+   flex-direction: column;
+   row-gap: 5px;
+}
+
+.skill-row {
+   align-items: center;
+   min-width: 33%;
+   height: 5rem;
+   background: rgba(255, 255, 255, 0.05);
+   border-radius: 3px;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.skill-details {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   padding-right: 0;
+}
+
+.skill-details small {
+   font-size: 0.8rem;
+   opacity: 0.7;
+}
+
+.skill-icon-link {
+   text-decoration: none;
+}
+
+.toggle-icon {
+   cursor: pointer;
+   transition: color 0.3s ease-in-out;
+}
+
+.skill-icon:hover,
+.toggle-icon:hover {
+   filter: brightness(60%);
+}
+
+.toggle-icon.active {
+   color: #00ffaa;
+   font-weight: bold;
+}
+
+/* =================== Contact Page =================== */
+
+.form-control {
+   background-color: transparent;
+   color: white;
+}
+
+.form-control::placeholder {
+   color: rgba(255, 255, 255, 0.88);
+}
+
+.form-control:focus {
+   border-color: #00ff87; /* Neon glow effect on focus */
+   box-shadow: 0 0 5px rgba(0, 255, 135, 0.5);
+   outline: none;
+}
+
+.contact-btn {
+   background-color: rgba(255, 255, 255, 0.3);
+   border: 1px solid white;
+   width: 33%;
+   color: white;
+}
+
+.contact-btn:hover {
+   background-color: #00ff88cc;
+   border: 1px solid white;
+}
+
+/* =================== Animations =================== */
+
+@keyframes GradientWave {
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
+}
+
+@keyframes bounce {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-5px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+/* =================== Responsive Styles =================== */
+
+@media (max-width: 768px) {
+   p {
+      font-size: calc(13px + 0.33vw);
+   }
+
+   .glass-pane {
+      text-align: left;
+      height: 5in;
+      width: 3in;
+   }
+
+   .glass-pane-content {
+      flex-direction: column-reverse;
+      row-gap: 2rem;
+   }
+
+   .icons-list {
+      font-size: xx-large;
+   }
+
+   .circle-image {
+      width: 50vmin;
+      height: 50vmin;
+   }
+
+   .backside-content {
+      position: inherit;
+      margin-top: 6rem;
+   }
+
+   .backside-nav {
+      position: absolute;
+      left: 0;
+      top: 5rem;
+      z-index: 1;
+   }
+
+   .backside-header {
+      text-align: left;
+      width: 100%;
+      padding-left: 1rem;
+      padding-top: 1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+
+   .contact-btn {
+      width: 100%;
+   }
+
+   .gallery-row-item {
+      white-space: nowrap;
+   }
+
+   .gallery-overlay {
+      overflow-x: auto;
+      white-space: nowrap;
+   }
+}
+
+@media (min-width: 769px) {
+   .backside-header {
+      text-align: left;
+      width: 100%;
+      padding-left: 1rem;
+      padding-top: 0.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+   }
+
+   .backside-nav {
+      position: fixed;
+      height: 100%;
+      left: 0;
+      top: 5rem;
+      padding-left: 1rem;
+      padding-top: 0.5rem;
+      border-right: 0.18rem solid rgba(255, 255, 255, 0.224);
+   }
+
+   .tab-content {
+      position: fixed;
+      top: 5rem;
+      left: 7rem;
+      width: 100%;
+      display: flex;
+   }
+}
