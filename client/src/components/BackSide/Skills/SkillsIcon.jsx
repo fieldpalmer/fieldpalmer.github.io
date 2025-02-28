@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Modal, Button } from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
 
 export default function SkillsIcon({
    name,
@@ -23,19 +23,14 @@ export default function SkillsIcon({
             style={{ background: `transparent` }}
             onClick={() => setShowModal(true)}
          >
-            <div className='gallery-overlay'>
+            <div className='skills-overlay'>
                <h2>{icon}</h2>
                <hr className='my-0 py-0 mx-1' />
                <code className='px-1'>{name}</code>
             </div>
          </div>
          {/* modal */}
-         <Modal
-            show={showModal}
-            onHide={handleClose}
-            centered
-            className='gallery-modal'
-         >
+         <Modal show={showModal} onHide={handleClose} centered className='gallery-modal'>
             <Modal.Header closeButton onClick={() => handleClose()}>
                <Modal.Title>
                   {icon}&nbsp;&nbsp;{name}
@@ -53,12 +48,7 @@ export default function SkillsIcon({
                   Close
                </Button>
                {url && (
-                  <Button
-                     variant='primary'
-                     href={url}
-                     target='_blank'
-                     rel='noopener noreferrer'
-                  >
+                  <Button variant='primary' href={url} target='_blank' rel='noopener noreferrer'>
                      {name} Home Page
                   </Button>
                )}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
-// import TooltipLink from '../../TooltipLink';
+// import MarkdownView from 'react-showdown';
+import TooltipSkill from '../../TooltipSkill';
+import { skills } from '../../../assets/skills';
 
 export default function GalleryModal({
    name,
@@ -40,23 +42,25 @@ export default function GalleryModal({
             <strong>{description}</strong>
             <hr />
             <img src={socialImage} alt={name} className='img-fluid mb-3' />
-            <small>{readmePreview}</small>
+            {/* <small>
+               <MarkdownView markdown={readmePreview} />
+            </small> */}
             <hr />
-            {/* <h6>Tech Stack:</h6> */}
-            {/* {topics.map((skill, index) => (
-                                    <TooltipSkill
-                                       key={index}
-                                       tip={skill}
-                                       id={skill + '-tooltip-' + index}
-                                       icon={findSkillIcon(skill, skills)}
-                                    />
-                           ))} */}
-            <em>{topics}</em>
+            <h1 className='gallery-modal-skill-icons'>
+               {topics.split(', ').map((skill, index) => (
+                  <TooltipSkill
+                     key={index}
+                     tip={skill}
+                     id={skill + '-tooltip-' + index}
+                     icon={findSkillIcon(skill, skills)}
+                  />
+               ))}
+            </h1>
             <hr />
             <ul>
                <li>Branches: {branches}</li>
                <li>Commits: {commits}</li>
-               <li>Size: {size}</li>
+               <li>Size: {size} KB</li>
                <li>Last Push: {new Date(lastPush).toLocaleDateString()}</li>
                <li>Open Issues: {openIssues}</li>
             </ul>
@@ -66,21 +70,11 @@ export default function GalleryModal({
                Close
             </Button>
             {homepage ? (
-               <Button
-                  variant='primary'
-                  href={homepage}
-                  target='_blank'
-                  rel='noopener noreferrer'
-               >
+               <Button variant='primary' href={homepage} target='_blank' rel='noopener noreferrer'>
                   View Project
                </Button>
             ) : (
-               <Button
-                  variant='primary'
-                  href={repoUrl}
-                  target='_blank'
-                  rel='noopener noreferrer'
-               >
+               <Button variant='primary' href={repoUrl} target='_blank' rel='noopener noreferrer'>
                   View Project
                </Button>
             )}

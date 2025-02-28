@@ -13,8 +13,8 @@ export const fetchGitHubRepos = async () => {
 
       const repos = response.data.map((repo) => ({
          id: repo.id,
-         name: repo.name,
-         owner: repo.owner.login,
+         name: repo.name || 'Unknown Repo',
+         owner: repo.owner?.login || 'Unknown Owner', // Ensure owner exists
          dateCreated: repo.created_at,
          description: repo.description || 'No description',
          visibility: repo.private ? 'Private' : 'Public',
@@ -28,47 +28,20 @@ export const fetchGitHubRepos = async () => {
          openIssues: repo.open_issues_count,
          defaultBranch: repo.default_branch,
          lastPush: repo.pushed_at,
-         branches: repo.branches || 0, // Placeholder (we fetch later)
-         commits: repo.commits || 0, // Placeholder (we fetch later)
+         branches: repo.branches || 0,
+         commits: repo.commits || 0,
          homepage: repo.homepage || 'No Website',
          repoUrl: repo.html_url,
-         socialImage: `https://opengraph.githubassets.com/1/${repo.owner.login}/${repo.name}`,
-         readmePreview: 'Loading...' // Placeholder for README preview
+         socialImage:
+            repo.owner?.login && repo.name
+               ? `https://opengraph.githubassets.com/1/${repo.owner.login}/${repo.name}`
+               : 'https://via.placeholder.com/150' // Fallback image to prevent broken requests
       }));
 
-      // Fetch README previews in parallel
-      const reposWithReadme = await Promise.all(
-         repos.map(async (repo) => {
-            const readmePreview = await fetchReadmePreview(repo.owner, repo.name);
-            return { ...repo, readmePreview };
-         })
-      );
-
-      return reposWithReadme;
+      return repos;
    } catch (error) {
       console.error('Error fetching repositories:', error);
       return [];
-   }
-};
-
-export const fetchReadmePreview = async (owner, repo) => {
-   try {
-      const response = await axios.get(
-         `https://api.github.com/repos/${owner}/${repo}/readme`,
-         {
-            headers: {
-               Authorization: `token ${GITHUB_TOKEN}`,
-               Accept: 'application/vnd.github.v3+json'
-            }
-         }
-      );
-
-      const decodedReadme = atob(response.data.content); // Decode Base64 content
-      const lines = decodedReadme.split('\n').slice(0, 5).join('\n'); // Get first 5 lines
-      return lines || 'No README content available.';
-   } catch (error) {
-      console.error(`Error fetching README for ${repo}:`, error);
-      return 'README not found.';
    }
 };
 

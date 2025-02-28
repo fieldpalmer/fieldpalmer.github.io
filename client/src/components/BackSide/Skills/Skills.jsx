@@ -17,9 +17,7 @@ export default function Skills() {
 
    const getSkillCount = (skillName) => {
       return projects.filter((project) =>
-         project.technologies.some(
-            (tech) => tech.name.toLowerCase() === skillName.toLowerCase()
-         )
+         project.technologies.some((tech) => tech.name.toLowerCase() === skillName.toLowerCase())
       ).length;
    };
 
