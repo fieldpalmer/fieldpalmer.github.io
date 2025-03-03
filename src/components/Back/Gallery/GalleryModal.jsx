@@ -46,7 +46,7 @@ export default function GalleryModal({
             <hr />
             <h1 className='gallery-modal-skill-icons'>
                {topics.split(', ').map((skill, index) => (
-                  <TooltipSkill
+                  <ToolTipSkill
                      key={index}
                      tip={skill}
                      id={skill + '-tooltip-' + index}

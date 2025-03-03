@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import FrontSide from './components/FrontSide/FrontSide';
-import BackSide from './components/BackSide/BackSide';
+import FrontSide from './components/Front/Front-Side';
+import BackSide from './components/Back/Back-Side';
 import { SlArrowLeftCircle, SlArrowRightCircle } from 'react-icons/sl';
 import './App.css';
 
