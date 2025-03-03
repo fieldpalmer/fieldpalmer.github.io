@@ -11,7 +11,7 @@ export default function FrontSide() {
          <div>
             <h1>FIELD PALMER</h1>
             <hr />
-            <small>Solutions Engineer</small>
+            <small>Full-Stack Developer + Solutions Engineer</small>
             <hr />
             <IconsList />
          </div>

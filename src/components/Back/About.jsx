@@ -7,19 +7,18 @@ export default function About() {
             <code>Hello!</code>
          </h4>
          <p className='small'>
-            I'm a solutions engineer passionate about crafting seamless full-stack web applications,
-            transforming complex data into clear insights, and building automated systems that drive
-            efficiency.
+            I’m a developer who enjoys building smooth, efficient web applications and turning
+            complex data into clear, actionable insights. I also love automating the tedious
+            stuff—because tech should make life easier.
          </p>
          <p className='small'>
-            With a keen eye for user experience and a data-driven mindset, I thrive in fast-paced
-            environments where I can bridge the gap between raw information and impactful, intuitive
-            solutions.
+            With a focus on user experience and data-driven decision-making, I like creating tools
+            that feel intuitive and help people work smarter. I thrive in fast-moving environments
+            where I can solve real problems with well-designed solutions.
          </p>
          <p className='small'>
-            Whether it's engineering scalable architectures, visualizing trends, or optimizing
-            workflows, I love tackling challenges that push the boundaries of technology and
-            creativity.
+            Whether it's designing scalable systems, visualizing trends, or fine-tuning workflows,
+            I’m always looking for ways to push technology forward in meaningful ways.
          </p>
       </>
    );

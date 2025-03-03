@@ -430,8 +430,8 @@ code {
 
    .glass-pane {
       text-align: left;
-      height: 5in;
-      width: 3in;
+      height: 75vh;
+      width: 88vw;
    }
 
    .glass-pane-content {
@@ -448,11 +448,6 @@ code {
       height: 50vmin;
    }
 
-   .backside-content {
-      position: inherit;
-      margin-top: 6rem;
-   }
-
    .backside-nav {
       position: absolute;
       left: 0;
@@ -461,13 +456,18 @@ code {
    }
 
    .backside-header {
-      text-align: left;
       width: 100%;
-      padding-left: 1rem;
       padding-top: 1rem;
       position: absolute;
       top: 0;
       left: 0;
+   }
+
+   .backside-content {
+      max-height: 50vh;
+      margin-top: 5rem;
+      max-width: 100%;
+      overflow-y: scroll;
    }
 
    .contact-btn {

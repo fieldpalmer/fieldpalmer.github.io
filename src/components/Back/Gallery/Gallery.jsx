@@ -64,7 +64,7 @@ export default function Gallery() {
    return (
       <>
          <Row>
-            <Col xs={4} md={5} className='gx-0'>
+            <Col xs={5} md={5} className='gx-0'>
                <Form.Select
                   size='sm'
                   onChange={(e) => setSelectedSkill(e.target.value)}
@@ -78,7 +78,7 @@ export default function Gallery() {
                   ))}
                </Form.Select>
             </Col>
-            <Col xs={4} md={5} className='gx-1'>
+            <Col xs={5} md={5} className='gx-1'>
                <Form.Select
                   size='sm'
                   onChange={(e) => setSortOption(e.target.value)}
@@ -92,8 +92,8 @@ export default function Gallery() {
                   <option>Issue Count</option>
                </Form.Select>
             </Col>
-            <Col xs={4} md={2} className='gx-0'>
-               <h4>
+            <Col xs={2} md={2} className='gx-0'>
+               <h5>
                   &nbsp;
                   <BsGrid3X3Gap
                      className={`toggle-icon ${view === 'icons' ? 'active' : ''}`}
@@ -104,7 +104,7 @@ export default function Gallery() {
                      className={`toggle-icon ${view === 'list' ? 'active' : ''}`}
                      onClick={() => setView('list')}
                   />
-               </h4>
+               </h5>
             </Col>
          </Row>
          <Row>

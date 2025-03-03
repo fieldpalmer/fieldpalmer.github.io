@@ -9,11 +9,11 @@ import SkillsList from './SkillsList';
 
 export default function Skills() {
    const [view, setView] = useState('icons');
-   const [selectedCategory, setSelectedCategory] = useState('Skills');
+   const [selectedCategory, setSelectedCategory] = useState('All Skills:');
    const [updatedSkills, setUpdatedSkills] = useState(skills);
    const [sortOption, setSortOption] = useState('Experience');
 
-   const categories = ['Skills', ...new Set(skills.map((skill) => skill.category))];
+   const categories = ['All Skills:', ...new Set(skills.map((skill) => skill.category))];
 
    const getSkillCount = (skillName) => {
       return projects.filter((project) =>
@@ -30,7 +30,7 @@ export default function Skills() {
    }, []);
 
    let filteredSkills =
-      selectedCategory === 'Skills'
+      selectedCategory === 'All Skills:'
          ? updatedSkills
          : updatedSkills.filter((skill) => skill.category === selectedCategory);
 
@@ -54,7 +54,7 @@ export default function Skills() {
    return (
       <>
          <Row>
-            <Col xs={4} md={5} className='gx-0'>
+            <Col xs={5} md={5} className='gx-0'>
                <Form.Select
                   size='sm'
                   onChange={(e) => setSelectedCategory(e.target.value)}
@@ -66,12 +66,8 @@ export default function Skills() {
                      </option>
                   ))}
                </Form.Select>
-               {/* add sort by */}
-               {/* name */}
-               {/* projectCount */}
-               {/* years_experience */}
             </Col>
-            <Col xs={4} md={5} className='gx-1'>
+            <Col xs={5} md={5} className='gx-1'>
                <Form.Select
                   size='sm'
                   onChange={(e) => setSortOption(e.target.value)}
@@ -83,8 +79,8 @@ export default function Skills() {
                   <option>Project Count</option>
                </Form.Select>
             </Col>
-            <Col xs={4} md={2} className='gx-0'>
-               <h4>
+            <Col xs={2} md={2} className='gx-0'>
+               <h5>
                   &nbsp;
                   <BsGrid3X3Gap
                      className={`toggle-icon ${view === 'icons' ? 'active' : ''}`}
@@ -95,11 +91,10 @@ export default function Skills() {
                      className={`toggle-icon ${view === 'list' ? 'active' : ''}`}
                      onClick={() => setView('list')}
                   />
-               </h4>
+               </h5>
             </Col>
          </Row>
          <Row>
-            {/* Conditionally Render View */}
             {view === 'icons'
                ? filteredSkills.map((s, i) => {
                     const {

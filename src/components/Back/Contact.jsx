@@ -50,7 +50,7 @@ export default function Contact() {
                <Col sm={6}>
                   <input
                      type='text'
-                     className='form-control mb-1 mb-sm-3'
+                     className='form-control mb-2'
                      name='user_name'
                      placeholder='Your name'
                      value={formData.user_name}
@@ -61,7 +61,7 @@ export default function Contact() {
                <Col sm={6}>
                   <input
                      type='email'
-                     className='form-control mb-1 mb-sm-3'
+                     className='form-control mb-2'
                      name='user_email'
                      placeholder='Your email address'
                      value={formData.user_email}
@@ -73,9 +73,9 @@ export default function Contact() {
             <Row>
                <Col sm={12}>
                   <textarea
-                     className='form-control mb-1 mb-sm-3'
+                     className='form-control mb-2'
                      name='user_message'
-                     rows='4'
+                     rows='6'
                      placeholder='Write your message here'
                      value={formData.user_message}
                      onChange={handleChange}
@@ -84,8 +84,6 @@ export default function Contact() {
                   <button type='submit' className='contact-btn btn mb-1 mb-sm-3'>
                      Submit
                   </button>
-                  {/* <hr /> */}
-                  <IconsList />
                </Col>
             </Row>
          </form>
