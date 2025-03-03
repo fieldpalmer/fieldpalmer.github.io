@@ -3,9 +3,9 @@ import React from 'react';
 export default function About() {
    return (
       <>
-         <h4>
+         {/* <h4>
             <code>Hello!</code>
-         </h4>
+         </h4> */}
          <p className='small'>
             I’m a developer who enjoys building smooth, efficient web applications and turning
             complex data into clear, actionable insights. I also love automating the tedious
