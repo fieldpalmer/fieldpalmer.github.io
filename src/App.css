@@ -2,17 +2,13 @@
 body {
      /* background-color: #000000; */
      background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
-     background-size: 800%;
+     background-size: 600%;
      animation: GradientWave 13s ease infinite;
-     overflow: hidden;
+     /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
      display: none;
-}
-
-p {
-     font-size: calc(13px + 0.33vw);
 }
 
 hr {
