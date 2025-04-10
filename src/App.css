@@ -1,4 +1,12 @@
 /* =================== Global Styles =================== */
+body {
+     /* background-color: #000000; */
+     background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
+     background-size: 800%;
+     animation: GradientWave 13s ease infinite;
+     overflow: hidden;
+}
+
 ::-webkit-scrollbar {
      display: none;
 }
@@ -22,10 +30,10 @@ code {
      display: flex;
      align-items: center;
      justify-content: center;
-     background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
+     /* background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
      background-size: 800%;
      animation: GradientWave 13s ease infinite;
-     overflow: hidden;
+     overflow: hidden; */
      color: white;
 }
 
