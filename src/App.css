@@ -17,7 +17,6 @@ hr {
 }
 
 code {
-     /* color: whitesmoke; */
      color: #00ff87;
 }
 
@@ -26,10 +25,6 @@ code {
      display: flex;
      align-items: center;
      justify-content: center;
-     /* background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
-     background-size: 800%;
-     animation: GradientWave 13s ease infinite;
-     overflow: hidden; */
      color: white;
 }
 
