@@ -8,7 +8,7 @@ const FrontSide = () => {
                <div className='circle-image'>
                     <img alt='profPic' src={profPic} />
                </div>
-               <div>
+               <div className='text-sm-center text-md-start'>
                     <h1>FIELD PALMER</h1>
                     <hr />
                     <small>Full-Stack Developer + Automation Engineer</small>
