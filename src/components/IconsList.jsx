@@ -1,7 +1,8 @@
 import React from 'react';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { VscGithub } from 'react-icons/vsc';
-import { PiReadCvLogoFill } from 'react-icons/pi';
+import { TbFileCv } from 'react-icons/tb';
+import { SiSpotify } from 'react-icons/si';
 import pdf from '../assets/pdf/Field-Palmer-CV.pdf';
 
 export default function IconsList() {
@@ -14,7 +15,10 @@ export default function IconsList() {
                     <VscGithub />
                </a>
                <a href={pdf} target='_blank' rel='noreferrer'>
-                    <PiReadCvLogoFill />
+                    <TbFileCv />
+               </a>
+               <a href='https://open.spotify.com/user/129959859' target='_blank' rel='noreferrer'>
+                    <SiSpotify />
                </a>
           </h2>
      );

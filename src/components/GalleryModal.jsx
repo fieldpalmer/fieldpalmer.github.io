@@ -1,8 +1,8 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 // import MarkdownView from 'react-showdown';
-import ToolTipSkill from '../../ToolTipSkill';
-import { skills } from '../../../assets/api/skills';
+import ToolTipSkill from './ToolTipSkill';
+import { skills } from '../assets/api/skills';
 
 export default function GalleryModal({
      name,
@@ -34,9 +34,6 @@ export default function GalleryModal({
                     <strong>{description}</strong>
                     <hr />
                     <img src={socialImage} alt={name} className='img-fluid mb-3' />
-                    {/* <small>
-               <MarkdownView markdown={readmePreview} />
-            </small> */}
                     <hr />
                     <h1 className='gallery-modal-skill-icons'>
                          {topics.split(', ').map((skill, index) => (

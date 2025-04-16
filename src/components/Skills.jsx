@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import { coreStack, dataTools, otherSkills } from '../../../assets/api/skills';
+import { coreStack, dataTools, otherSkills } from '../assets/api/skills';
 import SkillsModal from './SkillsModal';
 
 export default function Skills() {
@@ -25,7 +25,7 @@ export default function Skills() {
      return (
           <>
                <Row>
-                    {renderSkills('My Go-To Stack:', coreStack)}
+                    {renderSkills('My Go-To Stack These Days:', coreStack)}
                     {renderSkills('Automation & Analysis Tools:', dataTools)}
                     {renderSkills("Other Stuff I'm Dangerous With:", otherSkills)}
                </Row>

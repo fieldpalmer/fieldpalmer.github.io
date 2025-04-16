@@ -7,14 +7,13 @@ export default function About() {
                     <strong>Hello!</strong>
                </p>
                <p>
-                    Here is my <strong>digital business card.</strong>
+                    This is my <strong>digital business card.</strong>
                </p>
                <p>
-                    I’m a full-stack developer with a genuine passion for <strong>creative and efficient solutions.</strong>
+                    I have a genuine passion for <strong>creative and efficient solutions.</strong>
                </p>
                <p>
-                    I deliver <strong>elegant tools and systems</strong> that automate repetitive tasks and simplify complex
-                    processes.
+                    I create <strong>tools and systems</strong> that automate the repetitive and simplify the complex.
                </p>
                <p>
                     <strong>Always learning. Always building.</strong>
