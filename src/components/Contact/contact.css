@@ -1,0 +1,119 @@
+/* =================== Contact Form =================== */
+.contact-container {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 2rem;
+}
+
+.contact-title {
+     font-size: 2rem;
+     margin-bottom: 0.5rem;
+     color: #00ff87;
+     text-align: center;
+}
+
+.contact-subtitle {
+     text-align: center;
+     margin-bottom: 2rem;
+     opacity: 0.8;
+}
+
+.contact-form {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+}
+
+.form-row {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1.5rem;
+}
+
+.form-group {
+     position: relative;
+}
+
+.form-control {
+     background: rgba(0, 0, 0, 0.2);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     border-radius: 8px;
+     padding: 1rem;
+     color: white;
+     width: 100%;
+     transition: all 0.3s ease;
+}
+
+.form-control:focus {
+     background: rgba(0, 0, 0, 0.3);
+     border-color: #00ff87;
+     box-shadow: 0 0 0 2px rgba(0, 255, 135, 0.1);
+     outline: none;
+}
+
+.form-control::placeholder {
+     color: rgba(255, 255, 255, 0.5);
+}
+
+textarea.form-control {
+     resize: vertical;
+}
+
+.contact-btn {
+     background: #00ff87;
+     color: #000;
+     border: none;
+     padding: 1rem 2rem;
+     border-radius: 8px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     align-self: center;
+     margin-top: 1rem;
+     width: 100%;
+}
+
+.contact-btn:hover {
+     background: #00e676;
+     transform: translateY(-2px);
+     box-shadow: 0 4px 12px rgba(0, 255, 135, 0.2);
+}
+
+.contact-btn:active {
+     transform: translateY(0);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+     .contact-container {
+          padding: 1rem;
+          max-width: 100%;
+     }
+
+     .form-row {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+     }
+
+     .contact-title {
+          font-size: 1.5rem;
+     }
+
+     .contact-subtitle {
+          font-size: 0.9rem;
+          margin-bottom: 1.5rem;
+     }
+
+     .form-control {
+          padding: 0.8rem;
+     }
+
+     textarea.form-control {
+          min-height: 150px;
+     }
+
+     .contact-btn {
+          width: 100%;
+          max-width: 200px;
+     }
+}

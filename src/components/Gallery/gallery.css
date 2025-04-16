@@ -1,0 +1,137 @@
+/* =================== Gallery =================== */
+.project-list-item {
+     border: 1px solid rgba(255, 255, 255, 0.55);
+     border-radius: 3px;
+     background: rgba(0, 0, 0, 0.33);
+     color: white;
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+     flex-direction: row;
+     margin: 0.5rem;
+     padding: 1rem;
+}
+
+.project-list-item:hover {
+     background: #ffffff11;
+     transform: translateX(3px);
+     box-shadow: 0 4px 12px rgba(0, 255, 120, 0.1);
+}
+
+.gallery-modal .modal-content {
+     background: rgba(20, 20, 30, 0.95);
+     color: white;
+     border-radius: 15px;
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-modal .modal-header {
+     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gallery-modal .modal-title {
+     color: #00ff87;
+     font-weight: bold;
+     font-size: 1.5rem;
+}
+
+.gallery-modal .modal-body {
+     text-align: left;
+     line-height: 1.6;
+     font-size: 1rem;
+}
+
+.gallery-modal .modal-body img {
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-modal .modal-footer {
+     border-top: 1px solid rgba(255, 255, 255, 0.2);
+     display: flex;
+     justify-content: space-between;
+}
+
+.gallery-modal .btn-close {
+     filter: brightness(75%);
+}
+
+.gallery-modal .btn-close:hover {
+     filter: brightness(100%);
+}
+
+.gallery-modal .btn-secondary {
+     background-color: rgba(255, 255, 255, 0.3);
+     border: 1px solid white;
+     color: white;
+     transition: 0.3s ease-in-out;
+}
+
+.gallery-modal .btn-secondary:hover {
+     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.gallery-modal .btn-primary {
+     background-color: #00ff87;
+     border: none;
+     color: black;
+     font-weight: bold;
+     transition: 0.3s ease-in-out;
+}
+
+.gallery-modal .btn-primary:hover {
+     background-color: #00ffaa;
+}
+
+.modal-skill-icon {
+     font-size: x-large;
+}
+
+.gallery-modal-skill-icons {
+     text-align: center;
+}
+
+@media (max-width: 768px) {
+     .project-list-item {
+          flex-direction: column;
+          padding: 0.75rem;
+          margin: 0.75rem;
+          border-radius: 8px;
+     }
+
+     .project-list-item .card-img {
+          width: 100% !important;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+     }
+
+     .project-list-item .card-body {
+          padding: 0.5rem;
+     }
+
+     .project-list-item .card-title {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+     }
+
+     .project-list-item .skill-icons {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          margin-bottom: 0.5rem;
+     }
+
+     .project-list-item .d-flex {
+          flex-direction: column;
+          gap: 0.5rem;
+     }
+
+     .project-list-item .d-flex a {
+          display: block;
+          text-align: center;
+          padding: 0.25rem;
+          background: rgba(0, 255, 135, 0.1);
+          border-radius: 4px;
+     }
+}

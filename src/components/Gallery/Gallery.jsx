@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
-import { fetchGitHubRepos } from '../assets/api/github.js';
+import { fetchGitHubRepos } from '../../assets/api/github.js';
 import GalleryModal from './GalleryModal.jsx';
 // import { FaGithub } from 'react-icons/fa';
 // import { FiExternalLink, FiMoreHorizontal } from 'react-icons/fi';
 import { FiMoreHorizontal } from 'react-icons/fi';
-import { skills } from '../assets/api/skills.jsx';
-import ToolTipSkill from './ToolTipSkill.jsx';
+import { skills } from '../../assets/api/skills.jsx';
+import ToolTipSkill from '../ToolTipSkill.jsx';
+import './gallery.css';
 
 export default function Gallery() {
      const [repos, setRepos] = useState([]);
@@ -27,7 +28,6 @@ export default function Gallery() {
                setRepos(repoData);
                setLoading(false);
           };
-
           getRepos();
      }, []);
 
@@ -35,15 +35,15 @@ export default function Gallery() {
 
      return (
           <>
-               <Row className='gy-2'>
+               <Row className='gy-1'>
                     {repos.map((repo, index) => (
                          <Col key={repo.name + index} xs={12}>
-                              <Card className='flex-row project-list-item' onClick={() => setActiveRepo(repo)}>
+                              <Card className='project-list-item' onClick={() => setActiveRepo(repo)}>
                                    {repo.socialImage && (
                                         <Card.Img
                                              src={repo.socialImage}
                                              alt={`${repo.name} thumbnail`}
-                                             className='p-4'
+                                             className='p-2'
                                              style={{ width: '200px', objectFit: 'fill' }}
                                         />
                                    )}
@@ -64,9 +64,16 @@ export default function Gallery() {
                                                                  icon={findSkillIcon(skill, skills)}
                                                             />
                                                        ))}
+                                                  <span
+                                                       onClick={() => setActiveRepo(repo)}
+                                                       style={{ cursor: 'pointer', color: '#00ffaa' }}
+                                                       title='More Info'
+                                                  >
+                                                       <FiMoreHorizontal />
+                                                  </span>
                                              </div>
                                         </div>
-                                        <div className='d-flex gap-3 align-items-center'>
+                                        <div className='d-flex gap-3'>
                                              {repo.repoUrl && (
                                                   <a
                                                        href={repo.repoUrl}
@@ -89,13 +96,6 @@ export default function Gallery() {
                                                        <small>Demo</small>
                                                   </a>
                                              )}
-                                             <span
-                                                  onClick={() => setActiveRepo(repo)}
-                                                  style={{ cursor: 'pointer', color: '#00ffaa' }}
-                                                  title='More Info'
-                                             >
-                                                  <FiMoreHorizontal />
-                                             </span>
                                         </div>
                                    </Card.Body>
                               </Card>

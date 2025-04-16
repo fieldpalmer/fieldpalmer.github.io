@@ -1,9 +1,9 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 // import MarkdownView from 'react-showdown';
-import ToolTipSkill from './ToolTipSkill';
-import { skills } from '../assets/api/skills';
-
+import ToolTipSkill from '../ToolTipSkill';
+import { skills } from '../../assets/api/skills';
+import './gallery.css';
 export default function GalleryModal({
      name,
      description,

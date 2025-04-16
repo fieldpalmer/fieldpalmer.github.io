@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import { coreStack, dataTools, otherSkills } from '../assets/api/skills';
+import { coreStack, dataTools, otherSkills } from '../../assets/api/skills';
 import SkillsModal from './SkillsModal';
+import './skills.css';
 
 export default function Skills() {
      const [activeSkill, setActiveSkill] = useState(null);

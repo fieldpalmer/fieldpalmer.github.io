@@ -4,7 +4,7 @@ export default function About() {
      return (
           <>
                <p>
-                    <strong>Hello!</strong>
+                    <strong>Hello,</strong>
                </p>
                <p>
                     This is my <strong>digital business card.</strong>
@@ -17,6 +17,9 @@ export default function About() {
                </p>
                <p>
                     <strong>Always learning. Always building.</strong>
+               </p>
+               <p>
+                    If you think there's something we could work on together, <strong>please reach out.</strong>
                </p>
           </>
      );

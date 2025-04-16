@@ -1,0 +1,99 @@
+/* =================== Skills Section =================== */
+.skills-section {
+     padding: 1rem;
+}
+
+.skills-category {
+     margin-bottom: 2rem;
+}
+
+.skills-category h6 {
+     color: #00ff87;
+     margin-bottom: 1rem;
+     font-size: 1.1rem;
+}
+
+.skills-category h6 code {
+     background: transparent;
+     color: inherit;
+     padding: 0;
+}
+
+.skills-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+     gap: 1rem;
+     margin-bottom: 1.5rem;
+}
+
+.skills-overlay {
+     background: rgba(0, 0, 0, 0.2);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     border-radius: 8px;
+     padding: 1rem;
+     text-align: center;
+     cursor: pointer;
+     transition: all 0.3s ease;
+}
+
+.skills-overlay:hover {
+     background: rgba(0, 0, 0, 0.3);
+     border-color: #00ff87;
+     transform: translateY(-3px);
+     box-shadow: 0 4px 12px rgba(0, 255, 135, 0.1);
+}
+
+.skills-overlay h2 {
+     margin: 0;
+     font-size: 2rem;
+}
+
+/* Skills Modal */
+.skills-modal .modal-content {
+     background: rgba(20, 20, 30, 0.95);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     border-radius: 8px;
+}
+
+.skills-modal .modal-header {
+     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-modal .modal-title {
+     color: #00ff87;
+     font-size: 1.5rem;
+}
+
+.skills-modal .modal-body {
+     padding: 1.5rem;
+}
+
+.skills-modal .skill-icon {
+     font-size: 3rem;
+     margin-bottom: 1rem;
+}
+
+.skills-modal .skill-description {
+     color: rgba(255, 255, 255, 0.8);
+     line-height: 1.6;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+     .skills-grid {
+          grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+          gap: 0.8rem;
+     }
+
+     .skills-overlay {
+          padding: 0.8rem;
+     }
+
+     .skills-overlay h2 {
+          font-size: 1.5rem;
+     }
+
+     .skills-category h6 {
+          font-size: 1rem;
+     }
+}

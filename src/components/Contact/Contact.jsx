@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
+import './contact.css';
 
 export default function Contact() {
      const [formData, setFormData] = useState({
@@ -44,6 +45,8 @@ export default function Contact() {
 
      return (
           <>
+               <h4 className='d-md-none'>Get In Touch!</h4>
+               <hr className='d-md-none' />
                <form onSubmit={sendEmail} ref={form}>
                     <Row>
                          <Col sm={6}>
@@ -74,7 +77,7 @@ export default function Contact() {
                               <textarea
                                    className='form-control mb-2'
                                    name='user_message'
-                                   rows='6'
+                                   rows='4'
                                    placeholder='Write your message here'
                                    value={formData.user_message}
                                    onChange={handleChange}
