@@ -25,7 +25,7 @@ const CardBack = ({ cardFlip, handleCardFlip }) => {
 
      const handleTouchEnd = () => {
           const swipeDistance = touchEndX.current - touchStartX.current;
-          const minSwipeDistance = 50; // minimum distance for a swipe
+          const minSwipeDistance = 100; // minimum distance for a swipe
 
           if (Math.abs(swipeDistance) < minSwipeDistance) return;
 

@@ -1035,16 +1035,16 @@ export const coreStack = [
                'Node.js uses the V8 JavaScript engine to execute code on the server, enabling developers to use a single language (JavaScript) for both client and server. Its event-driven, non-blocking I/O model excels at real-time applications.',
           first_learned: 2018
      },
-     {
-          name: 'Express',
-          url: 'https://expressjs.com/',
-          icon: <SiExpress />,
-          category: 'Backend',
-          one_liner: 'Minimal and flexible Node.js web framework',
-          description:
-               'Express.js is a fast, lightweight web framework for Node.js, providing routing, middleware, and HTTP utilities for building web applications and APIs.',
-          first_learned: 2018
-     },
+     // {
+     //      name: 'Express',
+     //      url: 'https://expressjs.com/',
+     //      icon: <SiExpress />,
+     //      category: 'Backend',
+     //      one_liner: 'Minimal and flexible Node.js web framework',
+     //      description:
+     //           'Express.js is a fast, lightweight web framework for Node.js, providing routing, middleware, and HTTP utilities for building web applications and APIs.',
+     //      first_learned: 2018
+     // },
      {
           name: 'TypeScript',
           url: 'https://www.typescriptlang.org/',
@@ -1065,16 +1065,16 @@ export const coreStack = [
                'React is a popular front-end JavaScript library developed by Meta (Facebook) for building user interfaces. It uses a component-based approach and a virtual DOM for high performance and easy reusability, making it ideal for modern single-page applications.',
           first_learned: 2018
      },
-     {
-          name: 'Vite',
-          url: 'https://vitejs.dev/',
-          icon: <SiVite />,
-          category: 'Frontend',
-          one_liner: 'Next-generation frontend build tool',
-          description:
-               'Vite is a fast, modern build tool for web development, offering instant server start, optimized bundling, and hot module replacement.',
-          first_learned: 2023
-     },
+     // {
+     //      name: 'Vite',
+     //      url: 'https://vitejs.dev/',
+     //      icon: <SiVite />,
+     //      category: 'Frontend',
+     //      one_liner: 'Next-generation frontend build tool',
+     //      description:
+     //           'Vite is a fast, modern build tool for web development, offering instant server start, optimized bundling, and hot module replacement.',
+     //      first_learned: 2023
+     // },
      {
           name: 'Firebase',
           url: 'https://firebase.google.com/',
@@ -1147,27 +1147,27 @@ export const dataTools = [
           description:
                'Looker Studio connects to various data sources, enabling users to visualize and share insights through customizable reports and dashboards.',
           first_learned: 2021
-     },
-     {
-          name: 'AWS Lambda',
-          url: 'https://aws.amazon.com/lambda',
-          icon: <SiAwslambda />,
-          category: 'Cloud',
-          one_liner: 'Serverless compute service that runs code on demand.',
-          description:
-               'AWS Lambda executes code in response to events without provisioning or managing servers, enabling cost-effective and scalable cloud functions.',
-          first_learned: 2022
-     },
-     {
-          name: 'Smartsheet',
-          url: 'https://www.smartsheet.com',
-          icon: <GiCheckMark />,
-          category: 'Productivity',
-          one_liner: 'Collaborative work management platform for teams and automation.',
-          description:
-               'Smartsheet combines spreadsheets, automation, and project management tools to help organizations track, manage, and execute work efficiently.',
-          first_learned: 2021
      }
+     // {
+     //      name: 'AWS Lambda',
+     //      url: 'https://aws.amazon.com/lambda',
+     //      icon: <SiAwslambda />,
+     //      category: 'Cloud',
+     //      one_liner: 'Serverless compute service that runs code on demand.',
+     //      description:
+     //           'AWS Lambda executes code in response to events without provisioning or managing servers, enabling cost-effective and scalable cloud functions.',
+     //      first_learned: 2022
+     // },
+     // {
+     //      name: 'Smartsheet',
+     //      url: 'https://www.smartsheet.com',
+     //      icon: <GiCheckMark />,
+     //      category: 'Productivity',
+     //      one_liner: 'Collaborative work management platform for teams and automation.',
+     //      description:
+     //           'Smartsheet combines spreadsheets, automation, and project management tools to help organizations track, manage, and execute work efficiently.',
+     //      first_learned: 2021
+     // }
 ];
 
 export const otherSkills = [
@@ -1211,26 +1211,26 @@ export const otherSkills = [
                'GraphQL, developed by Facebook, provides a single endpoint to query or mutate data. Clients can request only the fields they need, reducing over-fetching and under-fetching commonly encountered with REST APIs.',
           first_learned: 2023
      },
-     {
-          name: 'Lucidchart',
-          url: 'https://www.lucidchart.com',
-          icon: <SiLucid />,
-          category: 'Design',
-          one_liner: 'Cloud-based diagramming tool for visualizing ideas and processes.',
-          description:
-               'Lucidchart provides an intuitive platform for creating flowcharts, wireframes, and diagrams to enhance communication and workflow efficiency.',
-          first_learned: 2019
-     },
-     {
-          name: 'Figma',
-          url: 'https://www.figma.com',
-          icon: <SiFigma />,
-          category: 'Design',
-          one_liner: 'Collaborative design tool for UI/UX prototyping and wireframing.',
-          description:
-               'Figma allows teams to design, prototype, and collaborate on user interfaces in real-time, making it a powerful tool for web and mobile design.',
-          first_learned: 2024
-     },
+     // {
+     //      name: 'Lucidchart',
+     //      url: 'https://www.lucidchart.com',
+     //      icon: <SiLucid />,
+     //      category: 'Design',
+     //      one_liner: 'Cloud-based diagramming tool for visualizing ideas and processes.',
+     //      description:
+     //           'Lucidchart provides an intuitive platform for creating flowcharts, wireframes, and diagrams to enhance communication and workflow efficiency.',
+     //      first_learned: 2019
+     // },
+     // {
+     //      name: 'Figma',
+     //      url: 'https://www.figma.com',
+     //      icon: <SiFigma />,
+     //      category: 'Design',
+     //      one_liner: 'Collaborative design tool for UI/UX prototyping and wireframing.',
+     //      description:
+     //           'Figma allows teams to design, prototype, and collaborate on user interfaces in real-time, making it a powerful tool for web and mobile design.',
+     //      first_learned: 2024
+     // },
      {
           name: 'Linux',
           url: 'https://www.linux.org',
