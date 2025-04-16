@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Row, Col, Tab, Nav } from 'react-bootstrap';
 import { FiArrowDownLeft } from 'react-icons/fi';
 import About from '../About/About';
@@ -8,6 +8,36 @@ import Contact from '../Contact/Contact';
 import './cardback.css';
 
 const CardBack = ({ cardFlip, handleCardFlip }) => {
+     const [activeTab, setActiveTab] = useState('about');
+     const touchStartX = useRef(0);
+     const touchEndX = useRef(0);
+
+     const tabs = ['about', 'skills', 'projects', 'contact'];
+     const currentIndex = tabs.indexOf(activeTab);
+
+     const handleTouchStart = (e) => {
+          touchStartX.current = e.touches[0].clientX;
+     };
+
+     const handleTouchMove = (e) => {
+          touchEndX.current = e.touches[0].clientX;
+     };
+
+     const handleTouchEnd = () => {
+          const swipeDistance = touchEndX.current - touchStartX.current;
+          const minSwipeDistance = 50; // minimum distance for a swipe
+
+          if (Math.abs(swipeDistance) < minSwipeDistance) return;
+
+          if (swipeDistance > 0 && currentIndex > 0) {
+               // Swipe right - go to previous tab
+               setActiveTab(tabs[currentIndex - 1]);
+          } else if (swipeDistance < 0 && currentIndex < tabs.length - 1) {
+               // Swipe left - go to next tab
+               setActiveTab(tabs[currentIndex + 1]);
+          }
+     };
+
      return (
           <div className='card-face card-back' inert={cardFlip}>
                <div className='corner-click-area top-left' onClick={handleCardFlip}></div>
@@ -31,10 +61,10 @@ const CardBack = ({ cardFlip, handleCardFlip }) => {
                     <Col>
                          <h1>FIELD PALMER</h1>
                     </Col>
-                    <hr className='d-none d-md-block' />
+                    <hr />
                </Row>
                <Row>
-                    <Tab.Container defaultActiveKey='about'>
+                    <Tab.Container activeKey={activeTab} onSelect={setActiveTab}>
                          <Col sm={12} md={2} className='backside-nav'>
                               <Nav variant='underline' justify>
                                    <Nav.Item>
@@ -59,8 +89,15 @@ const CardBack = ({ cardFlip, handleCardFlip }) => {
                                    </Nav.Item>
                               </Nav>
                          </Col>
-                         <Col sm={12} md={10} className='px-0'>
-                              <Tab.Content className='backside-content px-3 pt-2 '>
+                         <Col
+                              sm={12}
+                              md={10}
+                              className='px-0'
+                              onTouchStart={handleTouchStart}
+                              onTouchMove={handleTouchMove}
+                              onTouchEnd={handleTouchEnd}
+                         >
+                              <Tab.Content className='backside-content px-3 pt-2'>
                                    <Tab.Pane eventKey='about'>
                                         <About />
                                    </Tab.Pane>
