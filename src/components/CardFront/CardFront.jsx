@@ -1,20 +1,20 @@
-// import React, { useState } from 'react';
 import { FiArrowDownRight } from 'react-icons/fi';
 import IconsList from '../IconsList';
-// import ReadmeModal from '../ReadmeModal';
 import profPic from '../../assets/images/profPic.png';
 import './cardfront.css';
 
 export default function CardFront({ cardFlip, handleCardFlip }) {
-     //  const [showReadme, setShowReadme] = useState(false);
-
      return (
-          <div className='card-face card-front' aria-hidden={!cardFlip}>
+          <div className='card-face card-front' inert={!cardFlip}>
+               <div className='corner-click-area top-left' onClick={handleCardFlip}></div>
+               <div className='corner-click-area top-right' onClick={handleCardFlip}></div>
+               <div className='corner-click-area bottom-left' onClick={handleCardFlip}></div>
+               <div className='corner-click-area bottom-right' onClick={handleCardFlip}></div>
                <FiArrowDownRight
                     className='arrow arrow-right'
                     onClick={handleCardFlip}
                     role='button'
-                    tabIndex='0'
+                    tabIndex={!cardFlip ? '0' : '-1'}
                     title='Flip to back'
                     aria-label='Flip to back'
                     onKeyDown={(e) => {
@@ -23,11 +23,6 @@ export default function CardFront({ cardFlip, handleCardFlip }) {
                          }
                     }}
                />
-               {/* <code id='readme' onClick={() => setShowReadme(true)} style={{ cursor: 'pointer' }}>
-                    README.md
-               </code>
-               <ReadmeModal showModal={showReadme} handleClose={() => setShowReadme(false)} handleCardFlip={handleCardFlip} /> */}
-
                <div className='circle-image'>
                     <img alt='profPic' src={profPic} />
                </div>

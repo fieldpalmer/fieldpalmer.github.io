@@ -6,14 +6,19 @@ import Skills from '../Skills/Skills';
 import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
 import './cardback.css';
+
 const CardBack = ({ cardFlip, handleCardFlip }) => {
      return (
-          <div className='card-face card-back' aria-hidden={cardFlip}>
+          <div className='card-face card-back' inert={cardFlip}>
+               <div className='corner-click-area top-left' onClick={handleCardFlip}></div>
+               <div className='corner-click-area top-right' onClick={handleCardFlip}></div>
+               <div className='corner-click-area bottom-left' onClick={handleCardFlip}></div>
+               <div className='corner-click-area bottom-right' onClick={handleCardFlip}></div>
                <FiArrowDownLeft
                     className='arrow arrow-left'
                     onClick={handleCardFlip}
                     role='button'
-                    tabIndex='0'
+                    tabIndex={cardFlip ? '0' : '-1'}
                     title='Flip to front'
                     aria-label='Flip to front'
                     onKeyDown={(e) => {
