@@ -103,7 +103,6 @@
           height: auto;
           object-fit: cover;
           border-radius: 8px;
-          margin-bottom: 1rem;
      }
 
      .project-list-item .card-body {
@@ -119,19 +118,6 @@
           display: flex;
           flex-wrap: wrap;
           gap: 0.5rem;
-          margin-bottom: 0.5rem;
-     }
-
-     .project-list-item .d-flex {
-          flex-direction: column;
-          gap: 0.5rem;
-     }
-
-     .project-list-item .d-flex a {
-          display: block;
-          text-align: center;
-          padding: 0.25rem;
-          background: rgba(0, 255, 135, 0.1);
-          border-radius: 4px;
+          /* margin-bottom: 0.5rem; */
      }
 }

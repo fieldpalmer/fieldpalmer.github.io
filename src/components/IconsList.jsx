@@ -8,16 +8,16 @@ import pdf from '../assets/pdf/Field-Palmer-CV.pdf';
 export default function IconsList() {
      return (
           <h2 className='icons-list'>
-               <a href='https://www.linkedin.com/in/fieldpalmer/' target='_blank' rel='noreferrer'>
+               <a title='My LinkedIn' href='https://www.linkedin.com/in/fieldpalmer/' target='_blank' rel='noreferrer'>
                     <SlSocialLinkedin />
                </a>
-               <a href='https://github.com/fieldpalmer' target='_blank' rel='noreferrer'>
+               <a title='My GitHub' href='https://github.com/fieldpalmer' target='_blank' rel='noreferrer'>
                     <VscGithub />
                </a>
-               <a href={pdf} target='_blank' rel='noreferrer'>
+               <a title='My Resume' href={pdf} target='_blank' rel='noreferrer'>
                     <TbFileCv />
                </a>
-               <a href='https://open.spotify.com/user/129959859' target='_blank' rel='noreferrer'>
+               <a title='My Spotify' href='https://open.spotify.com/user/129959859' target='_blank' rel='noreferrer'>
                     <SiSpotify />
                </a>
           </h2>

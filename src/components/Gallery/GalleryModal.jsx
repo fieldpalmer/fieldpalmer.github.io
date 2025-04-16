@@ -1,9 +1,9 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 // import MarkdownView from 'react-showdown';
-import ToolTipSkill from '../ToolTipSkill';
 import { skills } from '../../assets/api/skills';
 import './gallery.css';
+
 export default function GalleryModal({
      name,
      description,
@@ -18,6 +18,13 @@ export default function GalleryModal({
      // setShowModal,
      handleClose
 }) {
+     const ToolTipSkill = ({ className, tip, icon }) => {
+          return (
+               <span className={className} title={tip}>
+                    {icon}&nbsp;
+               </span>
+          );
+     };
      const findSkillIcon = (skillName, skills) => {
           const skill = skills.find(
                (s) => s.name.replace(/[()-. ]/g, '').toLowerCase() === skillName.replace(/[()-_. ]/g, '').toLowerCase()
@@ -56,15 +63,12 @@ export default function GalleryModal({
                     <Button variant='secondary' onClick={handleClose}>
                          Close
                     </Button>
-                    {homepage ? (
-                         <Button variant='primary' href={homepage} target='_blank' rel='noopener noreferrer'>
-                              View Project
-                         </Button>
-                    ) : (
-                         <Button variant='primary' href={repoUrl} target='_blank' rel='noopener noreferrer'>
-                              View Project
-                         </Button>
-                    )}
+                    <Button variant='primary' href={homepage} target='_blank' rel='noopener noreferrer'>
+                         View Demo
+                    </Button>
+                    <Button variant='primary' href={repoUrl} target='_blank' rel='noopener noreferrer'>
+                         View Repo
+                    </Button>
                </Modal.Footer>
           </Modal>
      );

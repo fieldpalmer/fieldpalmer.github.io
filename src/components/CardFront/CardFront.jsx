@@ -15,7 +15,8 @@ export default function CardFront({ cardFlip, handleCardFlip }) {
                     onClick={handleCardFlip}
                     role='button'
                     tabIndex='0'
-                    aria-label='Flip card to back'
+                    title='Flip to back'
+                    aria-label='Flip to back'
                     onKeyDown={(e) => {
                          if (e.key === 'Enter' || e.key === ' ') {
                               handleCardFlip();

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { coreStack, dataTools, otherSkills } from '../../assets/api/skills';
 import SkillsModal from './SkillsModal';
 import './skills.css';
@@ -15,9 +15,9 @@ export default function Skills() {
                </h6>
                {skills.map((skill, index) => (
                     <Col key={`${skill.name}-${index}`} className='skills-overlay mb-3 mx-2' onClick={() => setActiveSkill(skill)}>
-                         <OverlayTrigger placement='bottom' overlay={<Tooltip id={`tooltip-${skill.name}`}>{skill.name}</Tooltip>}>
+                         <div title={skill.name}>
                               <h2>{skill.icon}</h2>
-                         </OverlayTrigger>
+                         </div>
                     </Col>
                ))}
           </>

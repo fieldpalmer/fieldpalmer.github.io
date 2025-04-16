@@ -45,14 +45,13 @@
 @media (max-width: 767px) {
      .backside-nav {
           position: fixed;
-          padding: 0;
-          left: 0;
-          top: 4.15rem;
+          left: -0.25rem;
+          top: 4rem;
      }
 
      .backside-content {
-          max-height: 50vh;
-          margin-top: 5.5rem;
+          max-height: 53vh;
+          margin-top: 2.5rem;
           max-width: 100%;
      }
 }

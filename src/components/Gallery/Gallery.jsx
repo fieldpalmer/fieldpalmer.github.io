@@ -2,17 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import { fetchGitHubRepos } from '../../assets/api/github.js';
 import GalleryModal from './GalleryModal.jsx';
-// import { FaGithub } from 'react-icons/fa';
-// import { FiExternalLink, FiMoreHorizontal } from 'react-icons/fi';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { skills } from '../../assets/api/skills.jsx';
-import ToolTipSkill from '../ToolTipSkill.jsx';
 import './gallery.css';
 
 export default function Gallery() {
      const [repos, setRepos] = useState([]);
      const [loading, setLoading] = useState(true);
      const [activeRepo, setActiveRepo] = useState(null);
+
+     const ToolTipSkill = ({ className, tip, icon }) => {
+          return (
+               <span className={className} title={tip}>
+                    {icon}&nbsp;
+               </span>
+          );
+     };
 
      const findSkillIcon = (skillName, skills) => {
           const skill = skills.find(
@@ -60,7 +65,6 @@ export default function Gallery() {
                                                             <ToolTipSkill
                                                                  key={index}
                                                                  tip={skill}
-                                                                 id={skill + '-tooltip-' + index}
                                                                  icon={findSkillIcon(skill, skills)}
                                                             />
                                                        ))}
@@ -72,30 +76,6 @@ export default function Gallery() {
                                                        <FiMoreHorizontal />
                                                   </span>
                                              </div>
-                                        </div>
-                                        <div className='d-flex gap-3'>
-                                             {repo.repoUrl && (
-                                                  <a
-                                                       href={repo.repoUrl}
-                                                       target='_blank'
-                                                       rel='noopener noreferrer'
-                                                       title='View Repo'
-                                                       style={{ textDecoration: 'underline', color: '#00ffaa' }}
-                                                  >
-                                                       <small>Repo</small>
-                                                  </a>
-                                             )}
-                                             {repo.homepage && (
-                                                  <a
-                                                       href={repo.homepage}
-                                                       target='_blank'
-                                                       rel='noopener noreferrer'
-                                                       title='Live Demo'
-                                                       style={{ textDecoration: 'underline', color: '#00ffaa' }}
-                                                  >
-                                                       <small>Demo</small>
-                                                  </a>
-                                             )}
                                         </div>
                                    </Card.Body>
                               </Card>
