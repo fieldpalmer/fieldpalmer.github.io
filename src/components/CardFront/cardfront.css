@@ -1,24 +1,25 @@
 .circle-image {
-     border-radius: 50%;
-     overflow: hidden;
-     width: 270px;
-     height: 270px;
-     border: 0.33rem solid rgba(255, 255, 255, 0.8);
+   border-radius: 50%;
+   overflow: hidden;
+   width: 270px;
+   height: 270px;
+   border: 0.15rem solid rgba(255, 255, 255, 0.8);
+   /* border: 0.23rem solid rgb(0, 255, 135, 0.3); */
 }
 
 .circle-image img {
-     width: 100%;
-     height: 100%;
+   width: 100%;
+   height: 100%;
 }
 
-.circle-image:hover {
-     border: 0.33rem solid #00ff87;
-}
+/* .circle-image:hover {
+   border: 0.23rem solid rgba(255, 255, 255);
+} */
 
 .icons-list {
-     display: flex;
-     justify-content: space-around;
-     gap: 13px;
+   display: flex;
+   justify-content: space-around;
+   gap: 13px;
 }
 
 /* #readme {
@@ -41,12 +42,12 @@
 } */
 
 .arrow-right {
-     right: 0;
+   right: 0;
 }
 
 /* =================== Smaller Screen Responsive Styles =================== */
 @media (max-width: 767px) {
-     .circle-image {
-          margin-top: 1.3rem;
-     }
+   .circle-image {
+      margin-top: 1.3rem;
+   }
 }

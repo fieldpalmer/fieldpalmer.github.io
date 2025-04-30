@@ -1,57 +1,62 @@
 .backside-header {
-     text-align: left;
-     width: 100%;
-     padding-top: 0.5rem;
-     position: fixed;
-     top: 0;
-     left: 0;
+   text-align: left;
+   width: 100%;
+   padding-top: 0.5rem;
+   position: fixed;
+   top: 0;
+   left: 0;
 }
 
 .backside-content {
-     overflow: scroll;
-     scrollbar-width: thin;
-     scrollbar-color: rgba(255, 255, 255, 0.224) transparent;
+   overflow: scroll;
+   scrollbar-width: thin;
+   scrollbar-color: rgba(255, 255, 255, 0.224) transparent;
 }
 
 .arrow-left {
-     left: 0;
+   left: 0;
+}
+
+.backside-nav {
+   color: #00ff87;
 }
 
 /* =================== Larger Screen Responsive Styles =================== */
 
 @media (min-width: 768px) {
-     .backside-nav {
-          position: fixed;
-          height: 100vh;
-          left: 0;
-          top: 4.15rem;
-          padding-top: 1rem;
-          border-right: 0.18rem solid rgba(255, 255, 255, 0.224);
-     }
+   .backside-nav {
+      position: fixed;
+      height: 100vh;
+      left: 0;
+      top: 4.15rem;
+      padding-top: 1rem;
+      border-right: 0.18rem solid rgba(0, 255, 135, 0.224);
+   }
 
-     .backside-content {
-          position: fixed;
-          top: 4.6rem;
-          left: 7rem;
-          height: calc(100% - 5em);
-          width: calc(100% - 7rem);
-          overflow-y: auto;
-          overflow-x: auto;
-     }
+   .backside-content {
+      position: fixed;
+      top: 4.6rem;
+      left: 7rem;
+      height: calc(100% - 5em);
+      width: calc(100% - 7rem);
+      overflow-y: auto;
+      overflow-x: auto;
+   }
 }
 
 /* =================== Smaller Screen Responsive Styles =================== */
 
 @media (max-width: 767px) {
-     .backside-nav {
-          position: fixed;
-          left: -0.25rem;
-          top: 4rem;
-     }
+   .backside-nav {
+      position: fixed;
+      left: -0.25rem;
+      top: 4rem;
+      /* padding: 0; */
+   }
 
-     .backside-content {
-          max-height: 53vh;
-          margin-top: 2.5rem;
-          max-width: 100%;
-     }
+   .backside-content {
+      max-height: 55vh;
+      margin-top: 2.5rem;
+      max-width: 100%;
+   }
 }

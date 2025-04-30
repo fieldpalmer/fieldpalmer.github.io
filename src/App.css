@@ -1,251 +1,267 @@
 /* =================== Global Styles =================== */
 body {
-     background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
-     background-size: 600%;
-     animation: GradientWave 13s ease infinite;
-     height: 100vh;
-     overflow: hidden;
-     margin: 0;
-     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-          'Droid Sans', 'Helvetica Neue', sans-serif;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
+   background: linear-gradient(127deg, #180025, #0b002e, #011c2e, #001923);
+   background-size: 600%;
+   animation: GradientWave 13s ease infinite;
+   height: 100vh;
+   overflow: hidden;
+   margin: 0;
+   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+      'Droid Sans', 'Helvetica Neue', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 hr {
-     color: white;
-     border: 0.1rem solid white;
+   color: white;
+   border: 1px solid rgba(0, 255, 135, 0.75);
 }
 
 code {
-     color: #00ff87;
+   /* color: #00ff87; */
+   /* color: white; */
+   color: rgba(0, 255, 135, 0.75);
 }
 
 .App {
-     height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: white;
+   height: 100vh;
+   display: flex;
+   color: white;
+   padding: 1rem;
+   box-sizing: border-box;
+   justify-content: center;
+   align-items: center;
 }
 
 /* =================== Animations =================== */
 @keyframes GradientWave {
-     0% {
-          background-position: 0% 51%;
-     }
-     50% {
-          background-position: 100% 50%;
-     }
-     100% {
-          background-position: 0% 51%;
-     }
+   0% {
+      background-position: 0% 51%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 51%;
+   }
 }
 
 @keyframes bounce {
-     0%,
-     100% {
-          transform: translateY(0);
-     }
-     50% {
-          transform: translateY(-5px);
-     }
+   0%,
+   100% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-5px);
+   }
 }
 
 @keyframes blink {
-     0%,
-     50% {
-          opacity: 1;
-     }
-     50.01%,
-     100% {
-          opacity: 0;
-     }
+   0%,
+   50% {
+      opacity: 1;
+   }
+   50.01%,
+   100% {
+      opacity: 0;
+   }
 }
 
 /* ================== Links & Navigation =================== */
 .nav-link,
 .icons-list a {
-     color: white;
-     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-     text-align: center;
-     text-decoration: none;
+   color: white;
+   /* color: #00ff87; */
+   transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+   text-align: center;
+   text-decoration: none;
 }
 
 .nav-link.active,
 .nav-link:active,
 .nav-link:hover,
 .icons-list a:hover {
-     color: #00ff87 !important;
+   color: rgba(0, 255, 135, 0.75) !important;
+   /* color: white !important; */
 }
 
 .nav-link:hover,
 .icons-list a:hover {
-     transform: translateY(-3px);
+   transform: translateY(-3px);
 }
 
 /* =================== Glass Pane =================== */
 .glass-pane {
-     background: rgba(20, 20, 30, 0.33);
-     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-     border: 1px solid rgba(255, 255, 255, 0.25);
-     backdrop-filter: blur(25px);
-     z-index: 1;
-     perspective: 2000px;
-     perspective-origin: center;
-     width: 7in;
-     height: 4in;
-     position: relative;
-     overflow: hidden;
-     transform-style: preserve-3d;
-     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+   background: rgba(20, 20, 30, 0.33);
+   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+   border: 1px solid rgba(0, 255, 135, 0.3);
+   backdrop-filter: blur(25px);
+   z-index: 1;
+   perspective: 2000px;
+   perspective-origin: center;
+   width: 7in;
+   height: 4in;
+   position: relative;
+   overflow: hidden;
+   transform-style: preserve-3d;
+   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .glass-pane:hover {
+   border: 1px solid #00ff8851;
+} */
+
 .glass-pane.flipped {
-     transform: rotateY(180deg);
+   transform: rotateY(180deg);
 }
 
 .glass-card {
-     width: 100%;
-     height: 100%;
-     position: relative;
-     transform-style: preserve-3d;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transform-style: preserve-3d;
 }
 
 .card-face {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: rgba(20, 20, 30, 0.33);
-     padding: 1rem;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     color: white;
-     transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-     transition-delay: 0.2s;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(20, 20, 30, 0.33);
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+   transition-delay: 0.2s;
 }
 
 .card-front {
-     transform: rotateY(0deg);
-     opacity: 1;
-     visibility: visible;
+   transform: rotateY(0deg);
+   opacity: 1;
+   visibility: visible;
 }
 
 .card-back {
-     transform: rotateY(180deg);
-     opacity: 0;
-     visibility: hidden;
-     transition-delay: 0s;
+   transform: rotateY(180deg);
+   opacity: 0;
+   visibility: hidden;
+   transition-delay: 0s;
 }
 
 .glass-pane.flipped .card-front {
-     opacity: 0;
-     visibility: hidden;
-     transition-delay: 0s;
+   opacity: 0;
+   visibility: hidden;
+   transition-delay: 0s;
 }
 
 .glass-pane.flipped .card-back {
-     opacity: 1;
-     visibility: visible;
-     transition-delay: 0.2s;
+   opacity: 1;
+   visibility: visible;
+   transition-delay: 0.2s;
 }
 
 .glass-pane:before {
-     content: '';
-     position: absolute;
-     top: 0;
-     left: -40%;
-     width: 100%;
-     height: 100%;
-     background: rgba(255, 255, 255, 0.05);
-     transform: skewX(-13deg);
-     pointer-events: none;
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -40%;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.05);
+   transform: skewX(-13deg);
+   pointer-events: none;
 }
 
 /* =================== Corner Click Areas =================== */
 .corner-click-area {
-     position: absolute;
-     width: 50px;
-     height: 50px;
-     cursor: pointer;
-     transition: background-color 0.3s ease;
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
 }
 
 .corner-click-area:hover {
-     background-color: rgba(0, 255, 135, 0.1);
+   background-color: rgba(0, 255, 135, 0.1);
 }
 
 .top-left {
-     top: 0;
-     left: 0;
-     border-radius: 0 0 50px 0;
+   top: 0;
+   left: 0;
+   border-radius: 0 0 50px 0;
 }
 
 .top-right {
-     top: 0;
-     right: 0;
-     border-radius: 0 0 0 50px;
+   top: 0;
+   right: 0;
+   border-radius: 0 0 0 50px;
 }
 
 .bottom-left {
-     bottom: 0;
-     left: 0;
-     border-radius: 0 50px 0 0;
+   bottom: 0;
+   left: 0;
+   border-radius: 0 50px 0 0;
 }
 
 .bottom-right {
-     bottom: 0;
-     right: 0;
-     border-radius: 50px 0 0 0;
+   bottom: 0;
+   right: 0;
+   border-radius: 50px 0 0 0;
 }
 
 /* =================== Card Flip Arrow =================== */
 .arrow {
-     color: rgba(255, 255, 255, 0.689);
-     font-size: 1.75rem;
-     z-index: 10;
-     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-     position: absolute;
-     bottom: 0;
+   color: rgba(255, 255, 255, 0.689);
+   font-size: 1.75rem;
+   z-index: 10;
+   transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+   position: absolute;
+   bottom: 0;
 }
 
 .arrow:hover {
-     color: #00ff87;
-     cursor: pointer;
-     transform: translateY(-3px);
+   color: #00ff87;
+   cursor: pointer;
+   transform: translateY(-3px);
 }
 
 /* =================== Larger Screen Responsive Styles =================== */
 
 @media (min-width: 768px) {
-     .card-face {
-          padding: 2rem;
-     }
+   .card-face {
+      padding: 2rem;
+   }
 
-     .card-front {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-     }
+   .card-front {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
 }
 
 /* =================== Smaller Screen Responsive Styles =================== */
 @media (max-width: 767px) {
-     .glass-pane {
-          text-align: left;
-          height: 75vh;
-          width: 88vw;
-     }
+   .App {
+      align-items: flex-start;
+      padding-top: 20%;
+   }
 
-     .card-front {
-          flex-direction: column-reverse;
-     }
+   .glass-pane {
+      text-align: left;
+      height: 75vh;
+      width: 88vw;
+      margin-top: 1rem;
+   }
 
-     .card-front h1,
-     .card-front p {
-          text-align: center;
-     }
+   .card-front {
+      flex-direction: column-reverse;
+   }
+
+   .card-front h1,
+   .card-front p {
+      text-align: center;
+   }
 }
