@@ -58,5 +58,9 @@
       max-height: 55vh;
       margin-top: 2.5rem;
       max-width: 100%;
+      position: fixed;
+      top: 4.5rem;
+      left: 0;
+      border-top: 0.18rem solid rgba(0, 255, 135, 0.224);
    }
 }

@@ -54,14 +54,14 @@ export default function Contact() {
 
    return (
       <>
-         <h4 className='d-md-none'>Get In Touch!</h4>
-         <hr className='d-md-none' />
+         <code>Get in touch:</code>
+         <hr className='my-2' />
          <form onSubmit={sendEmail} ref={form}>
             <Row>
                <Col sm={6}>
                   <input
                      type='text'
-                     className='form-control mb-2'
+                     className='form-control form-control-sm mb-2'
                      name='user_name'
                      placeholder='Your name'
                      value={formData.user_name}
@@ -72,7 +72,7 @@ export default function Contact() {
                <Col sm={6}>
                   <input
                      type='email'
-                     className='form-control mb-2'
+                     className='form-control form-control-sm mb-2'
                      name='user_email'
                      placeholder='Your email address'
                      value={formData.user_email}
@@ -84,7 +84,7 @@ export default function Contact() {
             <Row>
                <Col sm={12}>
                   <textarea
-                     className='form-control mb-2'
+                     className='form-control form-control-sm mb-2'
                      name='user_message'
                      rows='4'
                      placeholder='Write your message here'
@@ -92,8 +92,7 @@ export default function Contact() {
                      onChange={handleChange}
                      required
                   />
-                  <hr />
-                  <button type='submit' className='contact-btn btn'>
+                  <button type='submit' className='contact-btn btn btn-sm'>
                      Submit
                   </button>
                </Col>
